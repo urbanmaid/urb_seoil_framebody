@@ -8,10 +8,24 @@
 	"slotType":"interra_frame",
     "slots": [
         ["type", "default", "description"],
-        ["interra_body","interra_body", "Body", {"coreSlot":false}],
+        ["interra_body", "interra_body", "Body", {"coreSlot":false}],
+        ["interra_bumper_F", "interra_bumper_F","Front Bumper"],
+        ["interra_bumper_R", "interra_bumper_R","Rear Bumper"],
+		["pickup_reversewarn", "pickup_reversewarn", "Reverse Warning Beeper"],
+        ["interra_towhitch", "","Tow Hitch"],
 
-		["interra_suspension_F","interra_IFS", "Body", {"coreSlot":false}],
-        ["interra_suspension_R","interra_axle_R_4link", "Body", {"coreSlot":false}],
+		// Drivetrains
+        ["interra_engine", "interra_engine_v6_3.5", "Engine"],
+        ["interra_fueltank", "interra_fueltank", "Fuel Tank"],
+		["interra_driveshaft_R", "interra_driveshaft_R", "Rear Driveshaft"],
+
+        ["interra_muffler", "interra_muffler","Muffler"],
+        ["interra_radsupport", "interra_radsupport", "Radiator Support"],
+        ["pickup_ABS", "pickup_ABS", "Anti-Lock Braking System"],
+        ["pickup_ESC", "pickup_ESC", "Electronic Stability & Traction Control"],
+		
+		["interra_suspension_F", "interra_IFS", "Front Suspension"],
+        ["interra_suspension_R", "interra_axle_R_4link", "Rear Suspension"],
 
         ["interra_interiorskin", "interra_interiorskin_body", "Interior Skin"],
     ],
@@ -126,7 +140,7 @@
 		//top of shock/spring
 		{"collision":true},
 		{"selfCollision":true},
-		{"group":"pickup_shocktop"},
+		{"group":"interra_shocktop"},
 		{"nodeWeight":7.52},
 		["fs1r", -0.473, -1.50, 0.73],
 		["fs1l", 0.473, -1.50, 0.73],

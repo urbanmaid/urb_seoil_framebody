@@ -1,11 +1,10 @@
 {
 "interra_body":{
 	"information":{
-		"authors":"Blender JBeam Exporter v0.3.5",
+		"authors":"Urbanmaid",
 		"name":"Body",
 	},
 	"slotType":"interra_body",
-//--Nodes--
 	"nodes":[
 		["id", "posX", "posY", "posZ"],
 		{"frictionCoef":0.5},
@@ -93,7 +92,7 @@
 		["fm2rr", -0.83,-2.123,0.991],
 
 		// Pillar A
-		{"nodeWeight":1.6},
+		{"nodeWeight":2.9},
 		{"group":"interra_roof"},
 		["p1l", 0.738,-0.669,1.52],
 		["p1r", -0.738,-0.669,1.52],
@@ -126,7 +125,7 @@
 
 		// Roof
 		{"group":"interra_roof"},
-		{"nodeWeight":3.0},
+		{"nodeWeight":2.5},
 		["rf1ll", 0.689,-0.361,1.828],
 		["rf1l", 0.271,-0.566,1.828],
 		["rf1r", -0.271,-0.566,1.828],
@@ -1011,15 +1010,13 @@
 
 		// Pillar
 			//BNEcolor: 99, 205, 234 
-			{"beamSpring":2675000,"beamDamp":300},
+			{"beamSpring":2675000,"beamDamp":400},
 			{"beamDeform":38000,"beamStrength":"FLT_MAX"},
 			{"deformLimitExpansion":1.2},
 			// A
 				// L
 				["b6ll", "p1l"],
-				["rf1ll", "p1l"],
 				["b6ll", "p2l"],
-				["rf1ll", "p2l"],
 				["p2l", "p1l"],
 
 				["b7ll", "p1l"],
@@ -1029,14 +1026,15 @@
 				["b7l", "p2l"],
 
 				["rf1l", "p1l"],
+				["rf1ll", "p1l"],
+				["rf2l", "p1l"],
+				["rf1ll", "p2l"],
 				["rf2ll", "p2l"],
 				["rf2l", "p2l"],
 
 				// R
 				["b6rr", "p1r"],
-				["rf1rr", "p1r"],
 				["b6rr", "p2r"],
-				["rf1rr", "p2r"],
 				["p2r", "p1r"],
 
 				["b7rr", "p1r"],
@@ -1046,7 +1044,10 @@
 				["b7r", "p2r"],
 
 				["rf1r", "p1r"],
+				["rf1rr", "p1r"],
+				["rf2r", "p1r"],
 				["rf2rr", "p2r"],
+				["rf1rr", "p2r"],
 				["rf2r", "p2r"],
 
 			{"beamSpring":2384000,"beamDamp":270},
@@ -1087,6 +1088,7 @@
 
 					// Roof
 					["rf2ll", "p7l"],
+					["rf2l", "p7l"],
 					["rf3l", "p7l"],
 					["rf3l", "p8l"],
 					["rf4ll", "p8l"],
@@ -1126,6 +1128,7 @@
 
 					// Roof
 					["rf2rr", "p7r"],
+					["rf2r", "p7r"],
 					["rf3r", "p7r"],
 					["rf3r", "p8r"],
 					["rf4rr", "p8r"],
