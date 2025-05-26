@@ -12,6 +12,7 @@
             ["interra_enginemounts","interra_enginemounts","Engine Mounts", {"coreSlot":true}],
             ["interra_intake_i4","interra_intake_i4_carb","Intake", {"coreSlot":true}],
             ["interra_header_i4","interra_header_i4", "Exhaust Manifolds", {"coreSlot":true}],
+
             ["interra_oilpan_i4","interra_oilpan_i4","Oil Pan", {"coreSlot":true}],
             ["interra_engine_i4_ecu","interra_engine_i4_ecu", "Engine Management"],
             ["n2o_system","", "Nitrous Oxide System"],
@@ -109,10 +110,10 @@
             "deformGroups_oilPan":["oilpan_damage"]
         },
         "soundConfig": {
-            "sampleName": "i4p_01600cc_motorsport_02_engine",
+            "sampleName": "I4_3_engine",
             "intakeMuffling": 1,
 
-            "mainGain": -9,
+            "mainGain": -8,
             "onLoadGain":1,
             "offLoadGain":0.36,
 
@@ -134,12 +135,12 @@
             "eqHighWidth": 0.1,
 
             "fundamentalFrequencyCylinderCount":4,
-            "eqFundamentalGain":0,
+            "eqFundamentalGain":-1,
         },
         "soundConfigExhaust": {
-            "sampleName": "i4p_01600cc_motorsport_02_exhaust",
+            "sampleName": "I4_3_exhaust",
 
-            "mainGain": 2,
+            "mainGain": 0,
             "onLoadGain":1,
             "offLoadGain":0.40,
 
@@ -161,7 +162,7 @@
             "eqHighWidth": 0.1,
 
             "fundamentalFrequencyCylinderCount":4,
-            "eqFundamentalGain": -3
+            "eqFundamentalGain": -5
         },
         "vehicleController": {
             "clutchLaunchStartRPM":1500,
@@ -279,6 +280,52 @@
             ["oilpan", "e4r"],
             ["oilpan", "e4l"],
             {"deformGroup":""},
+            {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+        ],
+    },
+// Header (Manifolds)
+    "interra_header_i4": {
+        "information":{
+            "authors":"BeamNG",
+            "name":"Exhaust Manifolds",
+            "value":350,
+        },
+        "slotType" : "interra_header_i4",
+        "slots": [
+            ["type", "default","description"],
+            ["interra_exhaust_v6","interra_exhaust_v6","Exhaust"],
+        ],
+        "flexbodies": [
+            ["mesh", "[group]:", "nonFlexMaterials"],
+            ["gavril_v6_interra_headers", ["interra_engine", "interra_header"]],
+        ],
+        "nodes":[
+            ["id", "posX", "posY", "posZ"],
+            {"selfCollision":false},
+            {"collision":true},
+            {"frictionCoef":0.5},
+            {"nodeMaterial":"|NM_METAL"},
+            {"nodeWeight":6.25},
+            {"group":"interra_header"},
+            ["exm1l", 0.3, -0.7, 0.43, {"afterFireAudioCoef":1.0, "afterFireVisualCoef":1.0, "afterFireVolumeCoef":0.8, "afterFireMufflingCoef":1.0, "exhaustAudioMufflingCoef":1.0, "exhaustAudioGainChange":0}],
+            {"group":"none"},
+        ],
+        "beams": [
+            ["id1:", "id2:"],
+            {"deformLimitExpansion":1.2},
+            {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+            {"beamSpring":11163370,"beamDamp":130.43},
+            {"beamDeform":90000,"beamStrength":"FLT_MAX"},
+
+            ["exm1l","e3l"],
+            ["exm1l","e3r"],
+            ["exm1l","e4l"],
+            ["exm1l","e4r"],
+            ["exm1l", "e1r"],
+            ["exm1l", "e1l"],
+            ["e2l", "exm1l", {"isExhaust":"mainEngine"}],
+            ["exm1l", "e2r"],
+
             {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
         ],
     },
@@ -652,13 +699,13 @@
         "slotType" : "interra_intake_i4",
         "turbocharger": {
             "bovSoundFileName":"event:>Vehicle>Forced_Induction>Turbo_01>turbo_bov",
-            "hissLoopEvent":"event:>Vehicle>Forced_Induction>turbo_semi_01>turbo_hiss",
-            "whineLoopEvent":"event:>Vehicle>Forced_Induction>turbo_semi_01>turbo_spin",
-            "turboSizeCoef": 0.85,
-            "bovSoundVolumeCoef": 0.89,
-            "hissVolumePerPSI": 0.025,
-            "whineVolumePer10kRPM": 0.01,
-            "whinePitchPer10kRPM": 0.039,
+            "hissLoopEvent":"event:>Vehicle>Forced_Induction>turbo_semi_01>turbo_hiss_tuned",
+            "whineLoopEvent":"event:>Vehicle>Forced_Induction>turbo_semi_01>turbo_spin_tuned",
+            "turboSizeCoef": 0.95,
+            "bovSoundVolumeCoef": 1.0,
+            "hissVolumePerPSI": 0.03,
+            "whineVolumePer10kRPM": 0.08,
+            "whinePitchPer10kRPM": 0.068,
             "wastegateStart":15,
             "wastegateLimit":16,
             "maxExhaustPower": 7500,
@@ -694,12 +741,6 @@
                 [8000,  0.08,    1.0],
             ],
         },
-        "soundConfig": {
-            "$+maxLoadMix": 0.2,
-            "$+intakeMuffling":-0.2,
-            "$+mainGain":2,
-            "$+eqHighGain": 2,
-        },
         "mainEngine":{
             //turbocharger name
             "turbocharger":"turbocharger",
@@ -721,7 +762,6 @@
             ["interra_airbox", ["interra_engine","interra_body"]],
             {"deformGroup":""},
         ],
-        /*
         "nodes": [
             ["id", "posX", "posY", "posZ"],
             //--turbo and intercooler weight--
@@ -836,6 +876,5 @@
             {"deformLimitExpansion":1.2},
             {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
         ],
-        */
     },
 }

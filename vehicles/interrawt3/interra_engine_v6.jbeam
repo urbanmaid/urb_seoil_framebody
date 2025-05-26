@@ -106,7 +106,7 @@
         },
         "soundConfig": {
             "sampleName": "V6_2_engine",
-            "intakeMuffling": 0.85,
+            "intakeMuffling": 2,
 
             "mainGain": -5.5,
             "onLoadGain":1,
@@ -135,30 +135,31 @@
         "soundConfigExhaust": {
             "sampleName": "V6_2_exhaust",
 
-            "mainGain": 2,
+            "mainGain": 3.5,
             "onLoadGain":1,
             "offLoadGain":0.40,
 
-            "maxLoadMix": 0.8,
+            "maxLoadMix": 0.67,
             "minLoadMix": 0,
 
-            "lowShelfGain":-8,
-            "lowShelfFreq":80,
+            "lowShelfGain":-15,
+            "lowShelfFreq":120,
 
             "highShelfGain":4,
-            "highShelfFreq":2500,
+            "highShelfFreq":6500,
 
-            "eqLowGain": -4,
-            "eqLowFreq": 250,
-            "eqLowWidth": 0.25,
+            "eqLowGain": 0,
+            "eqLowFreq": 120,
+            "eqLowWidth": 0.2,
 
-            "eqHighGain": -6,
-            "eqHighFreq": 1500,
-            "eqHighWidth": 0.25,
+            "eqHighGain": 0,
+            "eqHighFreq": 4000,
+            "eqHighWidth": 0.1,
 
             "fundamentalFrequencyCylinderCount":6,
-            "eqFundamentalGain": -5,
+            "eqFundamentalGain": -4
         },
+        
         "vehicleController": {
             "clutchLaunchStartRPM":1200,
             "clutchLaunchTargetRPM":1600,
@@ -419,29 +420,29 @@
         "soundConfigExhaust": {
             "sampleName": "V6_2_exhaust",
 
-            "mainGain": 2,
+            "mainGain": 3.5,
             "onLoadGain":1,
             "offLoadGain":0.40,
 
-            "maxLoadMix": 0.8,
+            "maxLoadMix": 0.67,
             "minLoadMix": 0,
 
-            "lowShelfGain":-8,
-            "lowShelfFreq":80,
+            "lowShelfGain":-15,
+            "lowShelfFreq":120,
 
             "highShelfGain":4,
-            "highShelfFreq":2500,
+            "highShelfFreq":6500,
 
-            "eqLowGain": -4,
-            "eqLowFreq": 250,
-            "eqLowWidth": 0.25,
+            "eqLowGain": 0,
+            "eqLowFreq": 120,
+            "eqLowWidth": 0.2,
 
-            "eqHighGain": -6,
-            "eqHighFreq": 1500,
-            "eqHighWidth": 0.25,
+            "eqHighGain": 0,
+            "eqHighFreq": 4000,
+            "eqHighWidth": 0.1,
 
             "fundamentalFrequencyCylinderCount":6,
-            "eqFundamentalGain": -5,
+            "eqFundamentalGain": -4
         },
         "vehicleController": {
             "clutchLaunchStartRPM":1200,
@@ -1314,4 +1315,4 @@
             {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
         ],
     },
-    }
+}
