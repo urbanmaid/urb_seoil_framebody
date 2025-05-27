@@ -1,0 +1,32 @@
+{
+"interra_bumper_R":{
+	"information":{
+		"authors":"Rear Bumper",
+		"name":"Rear Bumper",
+	},
+	"slotType":"interra_bumper_R",
+	"nodes":[
+		["id", "posX", "posY", "posZ"],
+		{"group":"interra_bumper_R"},
+		["rb1",0.0,2.502,0.699],
+		["rb1l",0.63,2.487,0.699],
+		["rb1ll",0.921,2.24,0.699],
+
+		["rb2l",0.63,2.427,0.516],
+		["rb2",0.0,2.442,0.516],
+		["rb2ll",0.84,2.239,0.475],
+
+		["rb3ll",0.991,1.815,0.699],
+		["rb4ll",0.905,1.814,0.357],
+		{"group":""},
+	],
+	"beams":[
+		["id1:", "id2:"],
+
+	],
+	"triangles":[
+		["id1:", "id2:", "id3:"],
+
+	],
+},
+}
