@@ -5,16 +5,19 @@
 		"name":"Body",
 	},
 	"slotType":"interra_body",
-    "slots": [
-        ["type", "default", "description"],
+	"slots": [
+		["type", "default", "description"],
 		// Body Parts
-        ["interra_door_FL","interra_door_FL","Front Left Door"],
-        ["interra_door_FR","interra_door_FR","Front Right Door"],
-        ["interra_door_RL","interra_door_RL","Rear Left Door"],
-        ["interra_door_RR","interra_door_RR","Rear Right Door"],
-        ["interra_tailgate","interra_tailgate","Tailgate"],
-        ["interra_hood","interra_hood","Hood"],
-    ],
+		["interra_door_FL","interra_door_FL","Front Left Door"],
+		["interra_door_FR","interra_door_FR","Front Right Door"],
+		["interra_door_RL","interra_door_RL","Rear Left Door"],
+		["interra_door_RR","interra_door_RR","Rear Right Door"],
+		["interra_tailgate","interra_tailgate","Tailgate"],
+
+		["interra_hood","interra_hood","Hood"],
+		["interra_fender_FL","interra_fender_FL","Front Left Fender"],
+		["interra_fender_FR","interra_fender_FR","Front Right Fender"],
+	],
 	"nodes":[
 		["id", "posX", "posY", "posZ"],
 		{"frictionCoef":0.5},
