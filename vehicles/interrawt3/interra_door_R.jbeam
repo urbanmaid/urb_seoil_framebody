@@ -11,9 +11,10 @@
 			["interra_doorglass_RL","interra_doorglass_RL", "Front Right Door Glass"],
 		],
 		"flexbodies": [
-				["mesh", "[group]:", "nonFlexMaterials"],
-				["interra_door_RL", ["interra_door_RL"]],
-				{"deformGroup":""},
+			["mesh", "[group]:", "nonFlexMaterials"],
+			{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
+			["interra_door_RL", ["interra_door_RL"]],
+			{"deformGroup":""},
 		],
 		"controller": [
 			["fileName"],
@@ -250,6 +251,7 @@
 		],
 		"flexbodies": [
 			["mesh", "[group]:", "nonFlexMaterials"],
+			{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
 			["interra_door_RR", ["interra_door_RR"]],
 			{"deformGroup":""},
 		],

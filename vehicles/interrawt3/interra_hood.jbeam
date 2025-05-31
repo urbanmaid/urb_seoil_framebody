@@ -6,6 +6,12 @@
 	},
 	"slotType":"interra_hood",
 
+	"flexbodies": [
+		["mesh", "[group]:", "nonFlexMaterials"],
+		{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
+		["interra_hood", ["interra_hood"]],
+		{"deformGroup":""},
+	],
     "controller": [
         ["fileName"],
         ["advancedCouplerControl", {"name":"hoodLatchCoupler"}],

@@ -18,6 +18,24 @@
 		["interra_fender_FL","interra_fender_FL","Front Left Fender"],
 		["interra_fender_FR","interra_fender_FR","Front Right Fender"],
 	],
+
+	"flexbodies": [
+		["mesh", "[group]:", "nonFlexMaterials"],
+		{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
+		//body
+		["interra_body", 
+		[
+			"interra_floor", 
+			"interra_fendersupport", 
+			"interra_roof", 
+			"interra_quarterpanel", 
+			"interra_tailgatebase"
+		]
+		],
+		//remove these after merging meshes
+		["interra_trackbarbracket_F", ["interra_frame"]],
+		["interra_trackbarbracket_R", ["interra_frame"]],
+	],
 	"nodes":[
 		["id", "posX", "posY", "posZ"],
 		{"frictionCoef":0.5},
@@ -93,7 +111,8 @@
 		["b9rr", -0.856,-1.6,1.155],
 
 		// Front Engine Room Partition
-		{"nodeWeight":3.0},
+		{"selfCollision":false},
+		{"nodeWeight":3.5},
 		["fm1ll", 0.83,-2.123,1.12],
 		["fm1l", 0.543,-2.178,1.12],
 		["fm1r", -0.543,-2.178,1.12],
@@ -103,9 +122,10 @@
 		["fm2l", 0.543,-2.178,0.753],
 		["fm2r", -0.543,-2.178,0.753],
 		["fm2rr", -0.83,-2.123,0.991],
+		{"selfCollision":true},
 
 		// Pillar A
-		{"nodeWeight":2.9},
+		{"nodeWeight":2.7},
 		{"group":"interra_roof"},
 		["p1l", 0.738,-0.669,1.52],
 		["p1r", -0.738,-0.669,1.52],
@@ -114,7 +134,7 @@
 		["p2r", -0.8,-0.562,1.52],
 
 		// Pillar B
-		{"nodeWeight":2.75},
+		{"nodeWeight":2.55},
 		["p3l", 0.893,0.158,0.891, {"tag":"doorFLLatch"}],
 		["p3r", -0.893,0.158,0.891, {"tag":"doorFRLatch"}],
 		["p4l", 0.893,0.244,0.891],
@@ -138,7 +158,7 @@
 
 		// Roof
 		{"group":"interra_roof"},
-		{"nodeWeight":2.5},
+		{"nodeWeight":2.35},
 		["rf1ll", 0.67,-0.361,1.828],
 		["rf1l", 0.271,-0.566,1.828],
 		["rf1r", -0.271,-0.566,1.828],
@@ -206,12 +226,14 @@
 		{"group":"interra_tailgatebase"},
 		["tb1ll", 0.716,2.368,1.26],
 		["tb1rr", -0.716,2.368,1.26],
-		
+
+		{"selfCollision":false},
 		["tb2ll", 0.741,2.368,0.632],
 		["tb2l", 0.274,2.41,0.632],
 		["tb2r", -0.274,2.41,0.632],
 		["tb2rr", -0.741,2.368,0.632],
 
+		{"selfCollision":true},
 		["tb3ll", 0.728,2.368,0.721],
 		["tb3l", 0.274,2.41,0.721],
 		["tb3r", -0.274,2.41,0.721],

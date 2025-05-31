@@ -5,6 +5,11 @@
 			"name":"Rear Bumper",
 		},
 		"slotType":"interra_bumper_R",
+		"flexbodies": [
+			["mesh", "[group]:", "nonFlexMaterials"],
+			{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
+			["interra_bumper_R", ["interra_bumper_R"]],
+		],
 		"nodes":[
 			["id", "posX", "posY", "posZ"],
 			{"frictionCoef":0.5},
@@ -43,8 +48,8 @@
 		"beams":[
 			["id1:", "id2:"],
 			{"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
-			{"beamSpring":160000,"beamDamp":150},
-			{"beamDeform":20000,"beamStrength":59000},
+			{"beamSpring":880000,"beamDamp":150},
+			{"beamDeform":20000,"beamStrength":"FLT_MAX"},
 			{"deformLimitExpansion":1.2},
 				
 			//BNEcolor: 255, 32, 0
@@ -107,7 +112,7 @@
             ["rbrgd", "rb4ll"],
 
 			//BNEcolor: 192, 24, 0
-			{"beamSpring":501000,"beamDamp":100},
+			{"beamSpring":808400,"beamDamp":140},
 			{"beamDeform":4750,"beamStrength":12500},
 			// Connection
 

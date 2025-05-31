@@ -1,0 +1,201 @@
+{
+  "interrawt3_main": {
+    "name": "interrawt3_main",
+    "mapTo": "interrawt3_main",
+    "class": "Material",
+    "persistentId": "a6e61d13-585d-409d-8086-370d99069f5d",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/interrawt3/interrawt3_main_ao.data.png",
+        "baseColorMap": "/vehicles/common/urb_materials/urb_main_b.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/common/urb_materials/urb_main_m.data.png",
+        "normalMap": "/vehicles/interrawt3/interrawt3_main_n.normal.png",
+        "roughnessMap": "/vehicles/common/urb_materials/urb_main_r.data.png",
+        "useAnisotropic": true
+      },
+      {
+        "ambientOcclusionMap": "/vehicles/interrawt3/interrawt3_main_ao.data.png",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/common/urb_materials/urb_main_cc.data.png",
+        "clearCoatRoughnessFactor": 1,
+        "colorPaletteMap": "/vehicles/common/urb_materials/urb_main_p.color.png",
+        "colorPaletteMapUseUV": 1,
+        "instanceDiffuse": true,
+        "metallicFactor": 1,
+        "normalMap": "/vehicles/interrawt3/interrawt3_main_n.normal.png",
+        "opacityMap": "/vehicles/common/urb_materials/urb_main_c.data.png",
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "activeLayers": 2,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 0,
+    "version": 1.5
+  },
+
+  "interrawt3_innerbody_chrome": {
+    "name": "interrawt3_innerbody_chrome",
+    "mapTo": "interrawt3_innerbody_chrome",
+    "class": "Material",
+    "persistentId": "98427408-552d-41c4-b796-da3130eafef4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/interrawt3/interrawt3_innerbody_ao.data.png",
+        "metallicFactor": 0.980000019,
+        "normalMap": "/vehicles/interrawt3/interrawt3_innerbody_n.normal.png",
+        "roughnessFactor": 0.0769999996
+      },
+      {},
+      {},
+      {}
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "interrawt3_innerbody_painted": {
+    "name": "interrawt3_innerbody_painted",
+    "mapTo": "interrawt3_innerbody_painted",
+    "class": "material",
+    "persistentId": "98427408-552d-41c4-b796-da3130eafef4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/interrawt3/interrawt3_innerbody_ao.data.png",
+        "baseColorMap": "/vehicles/common/urb_materials/urb_main_b.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/common/urb_materials/urb_main_m.data.png",
+        "normalMap": "/vehicles/interrawt3/interrawt3_innerbody_n.normal.png",
+        "roughnessMap": "/vehicles/common/urb_materials/urb_main_r.data.png",
+        "useAnisotropic": true
+      },
+      {
+        "ambientOcclusionMap": "/vehicles/interrawt3/interrawt3_innerbody_ao.data.png",
+        "baseColorMap": "/vehicles/interrawt3/interrawt3_innerbody_ao.data.png",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/common/urb_materials/urb_main_cc.data.png",
+        "clearCoatRoughnessFactor": 1,
+        "colorPaletteMap": "/vehicles/common/urb_materials/urb_main_p.color.png",
+        "colorPaletteMapUseUV": 1,
+        "instanceDiffuse": true,
+        "metallicFactor": 1,
+        "normalMap": "/vehicles/interrawt3/interrawt3_innerbody_n.normal.png",
+        "opacityMap": "/vehicles/common/urb_materials/urb_main_c.data.png",
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "activeLayers": 2,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 0,
+    "version": 1.5
+  },
+  "interrawt3_innerbody_plastic": {
+    "name": "interrawt3_innerbody_plastic",
+    "mapTo": "interrawt3_innerbody_plastic",
+    "class": "material",
+    "persistentId": "c022497e-0451-4683-aed9-3fefb200cd4a",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/interrawt3/interrawt3_innerbody_ao.data.png",
+        "baseColorMap": "/vehicles/common/general_plastic_b.color.png",
+        "metallicMap": "/vehicles/common/general_plastic_m.data.png",
+        "metallicFactor": 1,
+        "normalMap": "/vehicles/interrawt3/interrawt3_innerbody_n.normal.png",
+        "roughnessMap": "/vehicles/common/general_plastic_r.data.png",
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 0,
+    "version": 1.5
+  },
+  "interrawt3_innerbody_rough": {
+    "name": "interrawt3_innerbody_rough",
+    "mapTo": "interrawt3_innerbody_rough",
+    "class": "Material",
+    "persistentId": "0acb6e7c-7ae1-4c9f-a85d-ee6001233b9f",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/interrawt3/interrawt3_innerbody_ao.data.png",
+        "baseColorMap": "/vehicles/common/general_coatediron_b.color.png",
+        "metallicMap": "/vehicles/common/general_coatediron_m.data.png",
+        "metallicFactor": 1,
+        "normalMap": "/vehicles/interrawt3/interrawt3_innerbody_n.normal.png",
+        "roughnessMap": "/vehicles/common/general_coatediron_rough_r.data.png",
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "interrawt3_innerbody_solid": {
+    "name": "interrawt3_innerbody_solid",
+    "mapTo": "interrawt3_innerbody_solid",
+    "class": "material",
+    "persistentId": "ea6968ce-4c35-47c2-9020-86f3177c418d",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/interrawt3/interrawt3_innerbody_ao.data.png",
+        "baseColorMap": "/vehicles/common/general_solidiron_b.color.png",
+        "metallicMap": "/vehicles/common/general_solidiron_m.data.png",
+        "metallicFactor": 1,
+        "normalMap": "/vehicles/interrawt3/interrawt3_innerbody_n.normal.png",
+        "roughnessMap": "/vehicles/common/general_solidiron_rough_r.data.png",
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+
+  "interrawt3_intcarpets": {
+    "name": "interrawt3_intcarpets",
+    "mapTo": "interrawt3_intcarpets",
+    "class": "Material",
+    "persistentId": "interrawt3_intcarpets",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.556,
+          0.556,
+          0.556,
+          1
+        ],
+        "baseColorMap": "/vehicles/interrawt3/interrawt3_intcarpets_b.color.png",
+        "detailNormalMap": "/vehicles/common/general_coatediron_n.normal.png",
+        "metallicFactor": 0.0219999999,
+        "normalMap": "/vehicles/interrawt3/interrawt3_intcarpets_n.normal.png",
+        "roughnessFactor": 0.680999994
+      },
+      {},
+      {},
+      {}
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  }
+}

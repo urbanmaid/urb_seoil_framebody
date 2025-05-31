@@ -5,6 +5,12 @@
 			"name":"Front Left Fender",
 		},
 		"slotType":"interra_fender_FL",
+		"flexbodies": [
+			["mesh", "[group]:", "nonFlexMaterials"],
+			{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
+			//body
+			["interra_fender_FL", ["interra_fender_FL"]],
+		],
 		"nodes":[
 			["id", "posX", "posY", "posZ"],
 			{"frictionCoef":0.5},
@@ -175,6 +181,12 @@
 			"name":"Front Right Fender",
 		},
 		"slotType":"interra_fender_FR",
+		"flexbodies": [
+			["mesh", "[group]:", "nonFlexMaterials"],
+			{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
+			//body
+			["interra_fender_FR", ["interra_fender_FR"]],
+		],
 		"nodes":[
 			["id", "posX", "posY", "posZ"],
 			{"frictionCoef":0.5},

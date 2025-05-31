@@ -5,7 +5,10 @@
 			"name":"Front Bumper",
 		},
 		"slotType":"interra_bumper_F",
-
+		"flexbodies": [
+			["mesh", "[group]:", "nonFlexMaterials"],
+			["interra_bumper_F", ["interra_bumper_F"]],
+		],
 		"nodes":[
 			["id", "posX", "posY", "posZ"],
 			{"frictionCoef":0.5},
@@ -153,6 +156,7 @@
 				["f11l", "fb1l"],
 				["f11l", "fb2l"],
 				["f11l", "fb3l"],
+
 				{"breakGroup":"bumper_FR"},
 				["f1r", "fb1r"],
 				["f1r", "fb1rr"],
@@ -163,10 +167,16 @@
 				["f11r", "fb1r"],
 				["f11r", "fb2r"],
 				["f11r", "fb3r"],
+
 				{"breakGroup":"bumper_fender_FL"},
+				["fe7l", "fb1ll"],
+				["fe8l", "fb1ll"],
+				["fe8l", "fb2ll"],
 
 				{"breakGroup":"bumper_fender_FR"},
-
+				["fe7r", "fb1rr"],
+				["fe8r", "fb1rr"],
+				["fe8r", "fb2rr"],
 				{"breakGroup":""},
 
 			// Support

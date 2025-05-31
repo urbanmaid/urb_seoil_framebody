@@ -59,10 +59,10 @@
 		["mesh", "[group]:", "nonFlexMaterials"],
 		{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
 		//body
-		["hopper_frame", ["hopper_frame"]],
+		["interra_frame", ["interra_frame"]],
 		//remove these after merging meshes
-		["hopper_trackbarbracket_F", ["hopper_frame"]],
-		["hopper_trackbarbracket_R", ["hopper_frame"]],
+		["interra_trackbarbracket_F", ["interra_frame"]],
+		["interra_trackbarbracket_R", ["interra_frame"]],
 	],
 
 	// NBTs
@@ -127,6 +127,7 @@
 		["f19l", 0.542,1.765,0.622],
 		["f19r",-0.542,1.765,0.622],
 
+		{"selfCollision":false},
 		// Rear End
 		["f10l", 0.542,2.385,0.505],
 		["f10", 0.0,2.385,0.505],

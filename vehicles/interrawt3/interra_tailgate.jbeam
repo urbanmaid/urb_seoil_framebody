@@ -5,6 +5,13 @@
 		"name":"Tailgate",
 	},
 	"slotType":"interra_tailgate",
+
+	"flexbodies": [
+		["mesh", "[group]:", "nonFlexMaterials"],
+		{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
+		["interra_tailgate", ["interra_tailgate"]],
+		{"deformGroup":""},
+	],
 	"controller": [
 		["fileName"],
 		["advancedCouplerControl", {"name":"tailgateCoupler"}],

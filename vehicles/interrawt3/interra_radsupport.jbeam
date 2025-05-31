@@ -14,6 +14,11 @@
 			["interra_deflector_F", "interra_deflector_F", "Front Deflector"],
 			["interra_radiator", "interra_radiator", "Radiator"],
 		],
+		"flexbodies": [
+			["mesh", "[group]:", "nonFlexMaterials"],
+			{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
+			["interra_radsupport", ["interra_radsupport"]],
+		],
 		"nodes":[
 			["id", "posX", "posY", "posZ"],
 			{"selfCollision":false},
@@ -22,7 +27,7 @@
 			{"nodeMaterial":"|NM_METAL"},
 			{"nodeWeight":1.6},
 
-			{"group":"jbeam_interra_radsupport"},
+			{"group":"interra_radsupport"},
 			["s1ll", 0.762, -2.203, 1.062],
 			["s1l", 0.522, -2.315, 1.062],
 			["s1", 0.0, -2.315, 1.062],
