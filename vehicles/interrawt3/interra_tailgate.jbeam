@@ -5,7 +5,13 @@
 		"name":"Tailgate",
 	},
 	"slotType":"interra_tailgate",
+	"slots": [
+		["type", "default", "description"],
+		["interra_lights_drl_R","interra_lights_drl_R","Rear DRL Lights", {"coreSlot":true}],
+		["interra_lights_chmsl","interra_lights_chmsl","Center high mounted stop light", {"coreSlot":true}],
 
+		["interra_licenseplate_T","interra_licenseplate_T","Tailgate license plate"],
+	],
 	"flexbodies": [
 		["mesh", "[group]:", "nonFlexMaterials"],
 		{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},

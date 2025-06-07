@@ -1,0 +1,142 @@
+{
+	"interra_windshield":{
+		"information":{
+			"authors":"Urbanmaid",
+			"name":"Windshield",
+			"value":100,
+		},
+		"slotType":"interra_windshield",
+		"flexbodies": [
+			["mesh", "[group]:", "nonFlexMaterials"],
+			{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
+            {"deformGroup":"windshield_break", "deformMaterialBase":"interrawt3_glass", "deformMaterialDamaged":"interrawt3_glass_dmg"},
+			["interra_windshield", ["interra_floor", "interra_fendersupport", "interra_roof"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>impact_glass_windscreen_01", "deformVolume":0.7}],
+
+            {"deformGroup":""},
+			["interra_wipers", ["interra_floor", "interra_fendersupport", "interra_roof"]],
+		],
+        "nodes": [
+            ["id", "posX", "posY", "posZ"],
+            {"selfCollision":true},
+            {"collision":true},
+            {"frictionCoef":0.5},
+            {"nodeMaterial":"|NM_GLASS"},
+            {"nodeWeight":1.2},
+            {"group":["interra_floor","gps"]},
+            ["wi1", 0.00000, -0.85, 1.53],
+            {"nodeMaterial":"|NM_METAL"},
+            {"group":""},
+        ],
+		"beams": [
+			["id1:", "id2:"],
+			{"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+			{"beamSpring":701000,"beamDamp":60},
+			{"beamDeform":6000,"beamStrength":"FLT_MAX"},
+			{"disableMeshBreaking":true,"disableTriangleBreaking":true},
+			{"deformGroup":"windshield_break","deformationTriggerRatio":0.005},
+			{"breakGroup":""},
+			//BNEcolor: 0, 0, 0
+			["wi1", "b6rr"],
+			["wi1", "b7rr"],
+			["wi1", "b7ll"],
+			["wi1", "b6ll"],
+
+			["wi1", "p1l"],
+			["wi1", "p1r"],
+
+			["wi1", "rf1rr"],
+			["wi1", "rf1r"],
+			["wi1", "rf1l"],
+			["wi1", "rf1ll"],
+
+			{"breakGroup":"windshield"},
+			{"beamDeform":5750,"beamStrength":12750},
+			["p1r", "b7r"],
+			["rf1rr", "b7r"],
+			["rf1r", "p1r"],
+			["rf1r", "b7rr"],
+
+			["p1l", "b7l"],
+			["rf1ll", "b7l"],
+			["rf1l", "p1l"],
+			["rf1l", "b7ll"],
+
+			["rf2l", "wi1"],
+			["rf2r", "wi1"],
+			["wi1", "b7r"],
+			["wi1", "b7l"],
+			
+			{"breakGroup":""},
+			{"disableMeshBreaking":false,"disableTriangleBreaking":false},
+			{"deformGroup":""},
+			{"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+			{"deformLimitExpansion":1.1},
+		],
+	},
+	"interra_quarterglass":{
+		"information":{
+			"authors":"Urbanmaid",
+			"name":"Quarter glass",
+			"value":140,
+		},
+		"slotType":"interra_quarterglass",
+		"flexbodies": [
+			["mesh", "[group]:", "nonFlexMaterials"],
+			{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
+			{"deformGroup":"quarterglass_L_break", "deformMaterialBase":"interrawt3_glass", "deformMaterialDamaged":"interrawt3_glass_dmg"},
+			["interra_quarterglass_L", ["interra_quarterpanel", "interra_roof"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound5", "deformVolume":0.7}],
+            {"deformGroup":"quarterglass_R_break", "deformMaterialBase":"interrawt3_glass", "deformMaterialDamaged":"interrawt3_glass_dmg"},
+			["interra_quarterglass_R", ["interra_quarterpanel", "interra_roof"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound5", "deformVolume":0.7}],
+            {"deformGroup":""},
+		],
+		"beams": [
+			["id1:", "id2:"],
+			{"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+			{"beamSpring":701000,"beamDamp":60},
+			{"beamDeform":6000,"beamStrength":"FLT_MAX"},
+			{"disableMeshBreaking":true,"disableTriangleBreaking":true},
+			//BNEcolor: 0, 0, 0
+			{"deformGroup":"quarterglass_L_break", "deformationTriggerRatio":0.01},
+			["rf7ll", "p9l"],
+			["rf5ll", "p10l"],
+			["p9l", "q3l"],
+			["p10l", "q1l"],
+
+			["p10l", "p9l"],
+			["q2l", "rf6ll"],
+
+			["rf6ll", "q1l"],
+			["rf5ll", "q2l"],
+			["q2l", "rf7ll"],
+			["rf6ll", "q3l"],
+
+			["rf6ll", "b5"],
+			["q2l", "rf6l"],
+			["q2l", "b5"],
+
+			{"deformGroup":"quarterglass_R_break", "deformationTriggerRatio":0.01},
+			["rf7rr", "p9r"],
+			["rf5rr", "p10r"],
+			["p9r", "q3r"],
+			["p10r", "q1r"],
+
+			["p10r", "p9r"],
+			["q2r", "rf6rr"],
+
+			["rf6rr", "q1r"],
+			["rf5rr", "q2r"],
+			["q2r", "rf7rr"],
+			["rf6rr", "q3r"],
+
+			["rf6rr", "b5"],
+			["q2r", "rf6r"],
+			["q2r", "b5"],
+
+			{"breakGroup":""},
+			{"disableMeshBreaking":false,"disableTriangleBreaking":false},
+			{"deformGroup":""},
+			{"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+			{"deformLimitExpansion":1.1},
+		],
+	},
+}

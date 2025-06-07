@@ -5,6 +5,10 @@
 			"name":"Front Bumper",
 		},
 		"slotType":"interra_bumper_F",
+		"slots": [
+			["type", "default", "description"],
+			["interra_licenseplate_F","interra_licenseplate_F","Front license plate"],
+		],
 		"flexbodies": [
 			["mesh", "[group]:", "nonFlexMaterials"],
 			["interra_bumper_F", ["interra_bumper_F"]],

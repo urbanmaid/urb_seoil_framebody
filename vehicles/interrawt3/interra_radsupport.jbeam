@@ -8,8 +8,8 @@
 		"slotType":"interra_radsupport",
 		"slots": [
 			["type", "default", "description"],
-			["interra_headlight_F", "interra_headlight_F", "Front Headlight"],
-			["interra_headlight_R", "interra_headlight_R", "Rear Headlight"],
+			["interra_lights_headlight_L","interra_lights_headlight_L","Front Left Headlight"],
+			["interra_lights_headlight_R","interra_lights_headlight_R","Front Right Headlight"],
 			["interra_grille", "interra_grille", "Grille"],
 			["interra_deflector_F", "interra_deflector_F", "Front Deflector"],
 			["interra_radiator", "interra_radiator", "Radiator"],

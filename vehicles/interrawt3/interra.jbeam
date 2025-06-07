@@ -36,65 +36,71 @@
     },
     "glowMap":{
         // Signal
-        "interra_signal_L":
+        "interrawt3_signal_L":
         {
-            "simpleFunction": {"lowhighbeam":0.49,"signal_L":0.49}, 
-            "off":"interra_lights", 
-            "on":"interra_lights_on",
-            "on_intense":"interra_lights_on_intense"
+            "simpleFunction": {"lowhighbeam":0.0,"signal_L":1.0}, 
+            "off":"interrawt3_lights", 
+            "on":"interrawt3_lights_on",
+            "on_intense":"interrawt3_lights_on_intense"
         },
-        "interra_signal_R": {
-            "simpleFunction": {"lowhighbeam":0.49,"signal_R":0.49},
-            "off":"interra_lights",
-            "on":"interra_lights_on",
-            "on_intense":"interra_lights_on_intense"
+        "interrawt3_signal_R": {
+            "simpleFunction": {"lowhighbeam":0.0,"signal_R":1.0},
+            "off":"interrawt3_lights",
+            "on":"interrawt3_lights_on",
+            "on_intense":"interrawt3_lights_on_intense"
         },
 
         // Tail
-        "interra_taillight_ambient":  {
+        "interrawt3_taillight_ambient":  {
             "simpleFunction": {"brake":1.0,"lowhighbeam":0.49},   
-            "off":"interra_lights", 
-            "on":"interra_lights_on",         
-            "on_intense":"interra_lights_on_intense"
+            "off":"interrawt3_lights", 
+            "on":"interrawt3_lights_on",         
+            "on_intense":"interrawt3_lights_on_intense"
         },
-        "interra_chmsl": {
+        "interrawt3_taillight": {
+            "simpleFunction": {"brake":1.0,"lowhighbeam":0.49},   
+            "off":"interrawt3_lights",
+            "on":"interrawt3_lights_on",
+            "on_intense":"interrawt3_lights_on_intense"
+        },
+        "interrawt3_brakelight": {
             "simpleFunction": {"brake":100},
-            "off":"interra_lights",
-            "on":"interra_lights_on",
-            "on_intense":"interra_lights_on_intense"
+            "off":"interrawt3_lights",
+            "on":"interrawt3_lights_on",
+            "on_intense":"interrawt3_lights_on_intense"
         },
-        "interra_reverselight": {
+        "interrawt3_reverselight": {
             "simpleFunction": {"reverse":0.49},
-            "off":"interra_lights",
-            "on":"interra_lights_on",
-            "on_intense":"interra_lights_on_intense"
+            "off":"interrawt3_lights",
+            "on":"interrawt3_lights_on",
+            "on_intense":"interrawt3_lights_on_intense"
         },
 
         // Head
-        "interra_ambientlight": {
+        "interrawt3_ambientlight": {
             "simpleFunction": {"running":0.49},
-            "off":"interra_lights",
-            "on":"interra_lights_on",
-            "on_intense":"interra_lights_on_intense"
+            "off":"interrawt3_lights",
+            "on":"interrawt3_lights_on",
+            "on_intense":"interrawt3_lights_on_intense"
         },
-        "interra_headlight": {
+        "interrawt3_headlight": {
             "simpleFunction": {"lowbeam":0.49,"highbeam":1.0},
-            "off":"interra_lights",
-            "on":"interra_lights_on",
-            "on_intense":"interra_lights_on_intense"
+            "off":"interrawt3_lights",
+            "on":"interrawt3_lights_on",
+            "on_intense":"interrawt3_lights_on_intense"
         },
-        "interra_highbeam": {
+        "interrawt3_highbeam": {
             "simpleFunction": {"highbeam":1.0},
-            "off":"interra_lights",
-            "on":"interra_lights_on",
-            "on_intense":"interra_lights_on_intense"
+            "off":"interrawt3_lights",
+            "on":"interrawt3_lights_on",
+            "on_intense":"interrawt3_lights_on_intense"
         },
 
         // Interior
-        "interra_gauges": {
+        "interrawt3_gauges": {
             "simpleFunction":{"lowhighbeam":0.6}, 
-            "off":"interra_gauges",
-            "on":"interra_gauges_on"
+            "off":"interrawt3_gauges",
+            "on":"interrawt3_gauges_on"
         },
         
         //gauge lights

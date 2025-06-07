@@ -17,6 +17,15 @@
 		["interra_hood","interra_hood","Hood"],
 		["interra_fender_FL","interra_fender_FL","Front Left Fender"],
 		["interra_fender_FR","interra_fender_FR","Front Right Fender"],
+
+		["interra_trim","interra_trim","Trim"],
+
+		// Lights and glass
+		["interra_lights_taillight_L","interra_lights_taillight_L","Front Left Taillight"],
+		["interra_lights_taillight_R","interra_lights_taillight_R","Front Right Taillight"],
+
+		["interra_windshield","interra_windshield","Windshield"],
+		["interra_quarterglass","interra_quarterglass","Quarter glasses"],
 	],
 
 	"flexbodies": [
@@ -24,6 +33,15 @@
 		{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
 		//body
 		["interra_body", 
+		[
+			"interra_floor", 
+			"interra_fendersupport", 
+			"interra_roof", 
+			"interra_quarterpanel", 
+			"interra_tailgatebase"
+		]
+		],
+		["interra_glass", 
 		[
 			"interra_floor", 
 			"interra_fendersupport", 
@@ -195,7 +213,7 @@
 		["rf7rr", -0.67,1.969,1.828],
 
 		// QuarterPanel
-		{"nodeWeight":3.6},
+		{"nodeWeight":3.0},
 		{"group":"interra_quarterpanel"},
 		// L
 		["q1l", 0.863,1.145,1.244],
@@ -222,7 +240,7 @@
 		["q8r", -0.84,2.255,0.632],
 
 		// Rear TB
-		{"nodeWeight":3.05},
+		{"nodeWeight":2.75},
 		{"group":"interra_tailgatebase"},
 		["tb1ll", 0.716,2.368,1.26],
 		["tb1rr", -0.716,2.368,1.26],
