@@ -9,8 +9,8 @@
 		["type", "default", "description"],
 		["interrawt3_lights_drl_R","interrawt3_lights_drl_R","Rear DRL Lights", {"coreSlot":true}],
 		["interrawt3_lights_chmsl","interrawt3_lights_chmsl","Center high mounted stop light", {"coreSlot":true}],
-
-		["interrawt3_licenseplate_T","interrawt3_licenseplate_T","Tailgate license plate"],
+		["interrawt3_tailgateglass","interrawt3_tailgateglass","Tailgate Glass"],
+		["interrawt3_licenseplate_T","interrawt3_licenseplate_T","Tailgate License Plate"],
 	],
 	"flexbodies": [
 		["mesh", "[group]:", "nonFlexMaterials"],

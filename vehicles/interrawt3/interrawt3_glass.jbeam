@@ -76,7 +76,7 @@
 	"interrawt3_quarterglass":{
 		"information":{
 			"authors":"Urbanmaid",
-			"name":"Quarter glass",
+			"name":"Quarter Glass",
 			"value":140,
 		},
 		"slotType":"interrawt3_quarterglass",
@@ -131,6 +131,138 @@
 			["rf6rr", "b5"],
 			["q2r", "rf6r"],
 			["q2r", "b5"],
+
+			{"breakGroup":""},
+			{"disableMeshBreaking":false,"disableTriangleBreaking":false},
+			{"deformGroup":""},
+			{"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+			{"deformLimitExpansion":1.1},
+		],
+	},
+	"interrawt3_doorglass_FL":{
+		"information":{
+			"authors":"Urbanmaid",
+			"name":"Front Left Door Glass",
+			"value":140,
+		},
+		"slotType":"interrawt3_doorglass_FL",
+		"flexbodies": [
+			["mesh", "[group]:", "nonFlexMaterials"],
+			{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
+			{"deformGroup":"doorglass_FL_break", "deformMaterialBase":"interrawt3_glass", "deformMaterialDamaged":"interrawt3_glass_dmg"},
+			["interrawt3_doorglass_FL", ["interrawt3_door_FL"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound5", "deformVolume":0.7}],
+            {"deformGroup":""},
+		],
+		"beams": [
+			["id1:", "id2:"],
+			{"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+			{"beamSpring":701000,"beamDamp":60},
+			{"beamDeform":6000,"beamStrength":"FLT_MAX"},
+			{"disableMeshBreaking":true,"disableTriangleBreaking":true},
+			//BNEcolor: 0, 0, 0
+			{"deformGroup":"doorglass_FL_break", "deformationTriggerRatio":0.004},
+            ["d10l", "d13l"],
+            ["d7l", "d12l"],
+            ["d9l", "d11l"],
+
+            ["d7l", "d9l"],
+            ["d11l", "d12l"],
+            ["d12l", "d9l"],
+            ["d11l", "d7l"],
+
+            ["d10l", "drgdfl"],
+            ["d11l", "drgdfl"],
+            ["d12l", "drgdfl"],
+            ["d13l", "drgdfl"],
+			{"breakGroup":""},
+			{"disableMeshBreaking":false,"disableTriangleBreaking":false},
+			{"deformGroup":""},
+			{"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+			{"deformLimitExpansion":1.1},
+		],
+	},
+	"interrawt3_doorglass_RL":{
+		"information":{
+			"authors":"Urbanmaid",
+			"name":"Rear Left Door Glass",
+			"value":140,
+		},
+		"slotType":"interrawt3_doorglass_RL",
+		"flexbodies": [
+			["mesh", "[group]:", "nonFlexMaterials"],
+			{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
+			{"deformGroup":"doorglass_RL_break", "deformMaterialBase":"interrawt3_glass", "deformMaterialDamaged":"interrawt3_glass_dmg"},
+			["interrawt3_doorglass_RL", ["interrawt3_door_RL"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound5", "deformVolume":0.7}],
+            {"deformGroup":""},
+		],
+		"beams": [
+			["id1:", "id2:"],
+			{"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+			{"beamSpring":701000,"beamDamp":60},
+			{"beamDeform":6000,"beamStrength":"FLT_MAX"},
+			{"disableMeshBreaking":true,"disableTriangleBreaking":true},
+			//BNEcolor: 0, 0, 0
+			{"deformGroup":"doorglass_RL_break", "deformationTriggerRatio":0.004},
+            ["d23l", "d26l"],
+            ["d20l", "d25l"],
+            ["d24l", "d22l"],
+
+            ["d24l", "d25l"],
+            ["d20l", "d22l"],
+            ["d25l", "d22l"],
+            ["d24l", "d20l"],
+
+            ["d23l", "drgdrl"],
+            ["d24l", "drgdrl"],
+            ["d25l", "drgdrl"],
+            ["d26l", "drgdrl"],
+			{"breakGroup":""},
+			{"disableMeshBreaking":false,"disableTriangleBreaking":false},
+			{"deformGroup":""},
+			{"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+			{"deformLimitExpansion":1.1},
+		],
+	},
+
+	"interrawt3_tailgateglass":{
+		"information":{
+			"authors":"Urbanmaid",
+			"name":"Tailgate Glass",
+			"value":140,
+		},
+		"slotType":"interrawt3_tailgateglass",
+		"flexbodies": [
+			["mesh", "[group]:", "nonFlexMaterials"],
+			{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
+			{"deformGroup":"tailgateglass_break", "deformMaterialBase":"interrawt3_glass", "deformMaterialDamaged":"interrawt3_glass_dmg"},
+			["interrawt3_tailgateglass", ["interrawt3_tailgate"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound5", "deformVolume":0.7}],
+            {"deformGroup":""},
+		],
+		"beams": [
+			["id1:", "id2:"],
+			{"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+			{"beamSpring":701000,"beamDamp":60},
+			{"beamDeform":6000,"beamStrength":"FLT_MAX"},
+			{"disableMeshBreaking":true,"disableTriangleBreaking":true},
+			//BNEcolor: 0, 0, 0
+			{"deformGroup":"tailgateglass_break", "deformationTriggerRatio":0.004},
+            ["t1r", "t2ll"],
+            ["t3r", "t2ll"],
+            ["t1l", "t3ll"],
+            ["t3l", "t1ll"],
+
+            ["t3l", "t1r"],
+            ["t3r", "t1l"],
+
+            ["t1l", "t2rr"],
+            ["t3l", "t2rr"],
+            ["t1r", "t3rr"],
+            ["t3r", "t1rr"],
+
+			["t1r", "tgrgd"],
+            ["t1l", "tgrgd"],
+			["t3r", "tgrgd"],
+            ["t3l", "tgrgd"],
 
 			{"breakGroup":""},
 			{"disableMeshBreaking":false,"disableTriangleBreaking":false},
