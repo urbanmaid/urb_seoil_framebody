@@ -1,0 +1,184 @@
+{
+	"interrawt3_grille":{
+		"information":{
+			"authors":"Urbanmaid",
+			"name":"Base Grille",
+            "value":100,
+		},
+		"slotType":"interrawt3_grille",
+		"slots": [
+			["type", "default", "description"],
+			["interrawt3_grillefiller","interrawt3_grillefiller_base","Grille Filler", {"coreSlot":true}],
+			["interrawt3_grillehighlight","interrawt3_grillehighlight_base", "Grille Highlight", {"coreSlot":true}],
+			["interrawt3_lights_drl_F","interrawt3_lights_drl_F","Front DRL Lights", {"coreSlot":true}],
+		],
+		"flexbodies": [
+			["mesh", "[group]:", "nonFlexMaterials"],
+			{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
+			["interrawt3_grille_frame", ["interrawt3_grille"]],
+		],
+		"nodes":[
+			["id", "posX", "posY", "posZ"],
+			{"selfCollision":false},
+			{"collision":true},
+			{"frictionCoef":0.5},
+			{"nodeMaterial":"|NM_METAL"},
+			{"nodeWeight":1.6},
+
+			{"group":"interrawt3_grille"},
+			["gr1l", 0.56, -2.4, 1.02],
+			["gr1", 0.0, -2.44, 1.02],
+			["gr1r", -0.56, -2.4, 1.02],
+
+			["gr2l", 0.56, -2.4, 0.8],
+			["gr2", 0.0, -2.44, 0.8],
+			["gr2r", -0.56, -2.4, 0.8],
+
+			{"selfCollision":false},
+			{"collision":false},
+			{"group":""},
+			{"nodeWeight":2.2},
+			["grrgd", 0.0, -2.16, 0.85],
+			{"group":""},
+		],
+		"beams":[
+			["id1:", "id2:"],
+			{"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+			{"beamSpring":850500,"beamDamp":160},
+			{"beamDeform":9000,"beamStrength":"FLT_MAX"},
+			{"deformLimitExpansion":1.2},
+			
+			//BNEcolor: 255, 32, 0
+			// X
+            ["gr1r", "gr1"],
+            ["gr1", "gr1l"],
+            ["gr2r", "gr2"],
+            ["gr2", "gr2l"],
+
+			// Z
+            ["gr1r", "gr2r"],
+            ["gr1", "gr2"],
+            ["gr1l", "gr2l"],
+
+			// XZ
+            ["gr1", "gr2r"],
+            ["gr1r", "gr2"],
+            ["gr1l", "gr2"],
+            ["gr1", "gr2l"],
+
+			{"beamSpring":728400,"beamDamp":130},
+			{"beamDeform":4000,"beamStrength":"FLT_MAX"},
+			// Rigidfier
+            ["grrgd", "gr1r"],
+            ["grrgd", "gr1"],
+            ["grrgd", "gr1l"],
+            ["grrgd", "gr2r"],
+            ["grrgd", "gr2"],
+            ["grrgd", "gr2l"],
+
+			//BNEcolor: 192, 24, 0
+			{"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0}
+			{"disableTriangleBreaking":true},
+			{"beamSpring":405400,"beamDamp":100},
+			{"beamDeform":3250,"beamStrength":80000},
+			// Connection
+			{"breakGroup":"grille_R"},
+			["s1r", "gr1r"],
+			["s1r", "gr2r"],
+			["s2r", "gr1r"],
+			["s2r", "gr2r"],
+			["s1r", "gr1"],
+			["s2r", "gr2"],
+
+			{"breakGroup":"grille_L"},
+			["s1l", "gr1l"],
+			["s1l", "gr2l"],
+			["s2l", "gr1l"],
+			["s2l", "gr2l"],
+			["s1l", "gr1"],
+			["s2l", "gr2"],
+
+			{"breakGroup":""},
+
+			// Support
+			{"beamType":"|SUPPORT", "beamLongBound":3},
+			{"beamSpring":1001000,"beamDamp":30},
+			{"beamDeform":10000,"beamStrength":125000},
+			{"optional":true},
+			["s1rr", "gr1r"],
+			["s1r", "gr1r"],
+			["s2r", "gr1r"],
+			["s2rr", "gr1r"],
+
+			["s1r", "gr2r"],
+			["s2r", "gr2r"],
+			["s2rr", "gr2r"],
+
+			["s1ll", "gr1l"],
+			["s1l", "gr1l"],
+			["s2l", "gr1l"],
+			["s2ll", "gr1l"],
+
+			["s1l", "gr2l"],
+			["s2l", "gr2l"],
+			["s2ll", "gr2l"],
+
+			{"breakGroup":""},
+			{"optional":false},
+			{"disableTriangleBreaking":false},
+			{"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+			{"deformLimitExpansion":1.2},
+		],
+		/*
+		"triangles":[
+			["id1:", "id2:", "id3:"],
+			{"group":"interrawt3_grille"},
+			{"dragCoef": 4},
+            ["gr1r", "gr2r", "gr1"],
+            ["gr1", "gr2r", "gr2"],
+            ["gr1l", "gr1", "gr2"],
+            ["gr1l", "gr2", "gr2l"],
+		],
+		*/
+	},
+	"interrawt3_grillefiller_base":{
+		"information":{
+			"authors":"Urbanmaid",
+			"name":"Base",
+			"value":20,
+		},
+		"slotType":"interrawt3_grillefiller",
+		"flexbodies": [
+			["mesh", "[group]:", "nonFlexMaterials"],
+			{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
+			["interrawt3_grille_base", ["interrawt3_grille"]],
+		],
+	},
+	"interrawt3_grillehighlight_base":{
+		"information":{
+			"authors":"Urbanmaid",
+			"name":"Base",
+			"value":20,
+		},
+		"slotType":"interrawt3_grillehighlight",
+		"flexbodies": [
+			["mesh", "[group]:", "nonFlexMaterials"],
+			{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
+			["interrawt3_grille_highlight_base", ["interrawt3_grille"]],
+		],
+	},
+	// Deflector
+	"interrawt3_deflector_F":{
+		"information":{
+			"authors":"Urbanmaid",
+			"name":"Front Hood Deflector",
+			"value":100,
+		},
+		"slotType":"interrawt3_deflector_F",
+		"flexbodies": [
+			["mesh", "[group]:", "nonFlexMaterials"],
+			{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
+			["interrawt3_deflector_F", ["interrawt3_radsupport"]],
+		],
+	},
+}

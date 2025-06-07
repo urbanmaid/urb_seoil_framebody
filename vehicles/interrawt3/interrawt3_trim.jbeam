@@ -1,0 +1,23 @@
+{
+	"interrawt3_trim":{
+		"information":{
+			"authors":"Urbanmaid",
+			"name":"Plastic Body Trim",
+			"value":20,
+		},
+		"slotType":"interrawt3_trim",
+		"flexbodies": [
+			["mesh", "[group]:", "nonFlexMaterials"],
+			{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
+			["interrawt3_trim_door_FL", ["interrawt3_door_FL"]],
+			["interrawt3_trim_door_FR", ["interrawt3_door_FR"]],
+			["interrawt3_trim_door_RL", ["interrawt3_door_RL"]],
+			["interrawt3_trim_door_RR", ["interrawt3_door_RR"]],
+
+			["interrawt3_trim_fender_FL", ["interrawt3_fender_FL"]],
+			["interrawt3_trim_fender_FR", ["interrawt3_fender_FR"]],
+			["interrawt3_trim_bumper_F", ["interrawt3_bumper_F"]],
+			["interrawt3_trim_bumper_R", ["interrawt3_bumper_R"]],
+		],
+	},
+}

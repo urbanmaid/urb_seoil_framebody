@@ -1,0 +1,354 @@
+{
+	"interrawt3_fender_FL":{
+		"information":{
+			"authors":"Urbanmaid",
+			"name":"Front Left Fender",
+		},
+		"slotType":"interrawt3_fender_FL",
+		"flexbodies": [
+			["mesh", "[group]:", "nonFlexMaterials"],
+			{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
+			//body
+			["interrawt3_fender_FL", ["interrawt3_fender_FL"]],
+		],
+		"nodes":[
+			["id", "posX", "posY", "posZ"],
+			{"frictionCoef":0.5},
+			{"nodeMaterial":"|NM_METAL"},
+			{"selfCollision":true},
+			{"collision":true},
+
+			{"nodeWeight":2.0},
+			{"group":"interrawt3_fender_FL"},
+			["fe1l", 0.933,-0.823,0.477],
+			["fe2l", 0.933,-0.991,0.477],
+
+			["fe3l", 0.95,-0.823,0.87],
+			["fe4l", 0.99,-1.189,0.87],
+			["fe5l", 0.99,-1.48,0.92],
+			["fe6l", 0.99,-1.789,0.87],
+			["fe7l", 0.98,-1.923,0.712],
+			["fe8l", 0.849,-2.219,0.87],
+
+			["fe9l", 0.875,-0.823,1.27],
+			["fe10l", 0.875,-1.307,1.253],
+			["fe11l", 0.855,-1.785,1.209],
+			["fe12l", 0.810,-2.263,1.128],
+
+			{"group":""},
+			{"collision":false, "selfCollision":false},
+			["fergdl", 0.7, -1.48, 0.9],
+
+			{"collision":true, "selfCollision":true},
+			{"group":""},
+		],
+		"beams":[
+			["id1:", "id2:"],
+			{"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+			{"beamSpring":1880940,"beamDamp":180},
+			{"beamDeform":14140,"beamStrength":"FLT_MAX"},
+			{"deformLimitExpansion":1.2},
+			//BNEcolor: 27, 236, 153
+
+			// Y
+			["fe1l", "fe2l"],
+
+			["fe3l", "fe4l"],
+			["fe4l", "fe5l"],
+			["fe5l", "fe6l"],
+			["fe6l", "fe7l"],
+			["fe7l", "fe8l"],
+
+			["fe9l", "fe10l"],
+			["fe10l", "fe11l"],
+			["fe11l", "fe12l"],
+
+			// Z
+			["fe1l", "fe3l"],
+			["fe3l", "fe9l"],
+
+			["fe2l", "fe4l"],
+			["fe4l", "fe10l"],
+			["fe5l", "fe10l"],
+			["fe5l", "fe11l"],
+
+			["fe6l", "fe11l"],
+			["fe7l", "fe11l"],
+			["fe7l", "fe12l"],
+
+			["fe8l", "fe12l"],
+
+			// YZ
+			["fe2l", "fe3l"],
+			["fe1l", "fe4l"],
+			["fe4l", "fe9l"],
+			["fe3l", "fe10l"],
+			["fe6l", "fe8l"],
+			["fe6l", "fe12l"],
+			["fe8l", "fe11l"],
+
+			{"beamSpring":1050000,"beamDamp":180},
+			{"beamDeform":4000,"beamStrength":"FLT_MAX"},
+			// Rigidfier
+			["fergdl", "fe1l"],
+			["fergdl", "fe2l"],
+			["fergdl", "fe3l"],
+			["fergdl", "fe4l"],
+			["fergdl", "fe5l"],
+			["fergdl", "fe6l"],
+			["fergdl", "fe7l"],
+			["fergdl", "fe8l"],
+			["fergdl", "fe9l"],
+			["fergdl", "fe10l"],
+			["fergdl", "fe11l"],
+			["fergdl", "fe12l"],
+			
+			//BNEcolor: 25, 179, 118
+			{"beamSpring":501000,"beamDamp":100},
+			{"beamDeform":4750,"beamStrength":14000},
+			// Connection
+
+			{"breakGroup":"fender_A_L"},
+			["b1ll", "fe1l"],
+			["b1ul", "fe1l"],
+			["b1ll", "fe2l"],
+			["b1ul", "fe2l"],
+			["b6l", "fe3l"],
+			["b8ll", "fe3l"],
+
+			{"breakGroup":"fender_B_L"},
+			["b6ll", "fe9l"],
+			["b7ll", "fe9l"],
+			["b6ll", "fe10l"],
+			["b7ll", "fe10l"],
+
+			{"breakGroup":"fender_C_L"},
+			["fm2l", "fe8l"],
+			["fm1l", "fe8l"],
+			["fm2ll", "fe8l"],
+			["fm1ll", "fe8l"],
+			["fm2ll", "fe12l"],
+			["fm1ll", "fe12l"],
+
+			{"breakGroup":""},
+
+			{"beamType":"|SUPPORT", "beamLongBound":3},
+			{"beamSpring":1001000,"beamDamp":30},
+			{"beamDeform":10000,"beamStrength":125000},
+			// Support
+			["b1ll", "fe1l"],
+			["b1ul", "fe1l"],
+			["b1ll", "fe2l"],
+			["b1ul", "fe2l"],
+			["b6l", "fe3l"],
+			["b8ll", "fe3l"],
+			["b6ll", "fe9l"],
+			["b7ll", "fe9l"],
+			["b6ll", "fe10l"],
+			["b7ll", "fe10l"],
+			["fm2l", "fe8l"],
+			["fm1l", "fe8l"],
+			["fm2ll", "fe8l"],
+			["fm1ll", "fe8l"],
+			["fm2ll", "fe12l"],
+			["fm1ll", "fe12l"],
+
+			{"breakGroup":""},
+			{"optional":false},
+			{"disableTriangleBreaking":false},
+			{"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+			{"deformLimitExpansion":1.2},
+		],
+		"triangles":[
+			["id1:", "id2:", "id3:"],
+			{"group":"interrawt3_fender_FL"},
+			{"dragCoef": 3.5},
+			["fe3l", "fe2l", "fe1l"],
+			["fe3l", "fe4l", "fe2l"],
+			["fe9l", "fe4l", "fe3l"],
+			["fe9l", "fe10l", "fe4l"],
+			["fe10l", "fe5l", "fe4l"],
+			["fe10l", "fe11l", "fe5l"],
+			["fe11l", "fe6l", "fe5l"],
+			["fe11l", "fe12l", "fe6l"],
+			["fe6l", "fe12l", "fe8l"],
+			["fe6l", "fe8l", "fe7l"],
+		],
+	},
+	"interrawt3_fender_FR":{
+		"information":{
+			"authors":"Urbanmaid",
+			"name":"Front Right Fender",
+		},
+		"slotType":"interrawt3_fender_FR",
+		"flexbodies": [
+			["mesh", "[group]:", "nonFlexMaterials"],
+			{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
+			//body
+			["interrawt3_fender_FR", ["interrawt3_fender_FR"]],
+		],
+		"nodes":[
+			["id", "posX", "posY", "posZ"],
+			{"frictionCoef":0.5},
+			{"nodeMateriar":"|NM_METAL"},
+			{"selfCollision":true},
+			{"collision":true},
+
+			{"nodeWeight":2.0},
+			{"group":"interrawt3_fender_FR"},
+			["fe1r",-0.933,-0.823,0.477],
+			["fe2r",-0.933,-0.991,0.477],
+
+			["fe3r",-0.95,-0.823,0.87],
+			["fe4r",-0.99,-1.189,0.87],
+			["fe5r",-0.99,-1.48,0.92],
+			["fe6r",-0.99,-1.789,0.87],
+			["fe7r",-0.98,-1.923,0.712],
+			["fe8r",-0.849,-2.219,0.87],
+
+			["fe9r",-0.875,-0.823,1.27],
+			["fe10r",-0.875,-1.307,1.253],
+			["fe11r",-0.855,-1.785,1.209],
+			["fe12r",-0.810,-2.263,1.128],
+
+			{"group":""},
+			{"collision":false, "selfCollision":false},
+			["fergdr",-0.7, -1.48, 0.9],
+
+			{"collision":true, "selfCollision":true},
+			{"group":""},
+		],
+		"beams":[
+			["id1:", "id2:"],
+			{"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+			{"beamSpring":1880940,"beamDamp":180},
+			{"beamDeform":14140,"beamStrength":"FLT_MAX"},
+			{"deformLimitExpansion":1.2},
+			//BNEcoror: 27, 236, 153
+
+			// Y
+			["fe1r", "fe2r"],
+
+			["fe3r", "fe4r"],
+			["fe4r", "fe5r"],
+			["fe5r", "fe6r"],
+			["fe6r", "fe7r"],
+			["fe7r", "fe8r"],
+
+			["fe9r", "fe10r"],
+			["fe10r", "fe11r"],
+			["fe11r", "fe12r"],
+
+			// Z
+			["fe1r", "fe3r"],
+			["fe3r", "fe9r"],
+
+			["fe2r", "fe4r"],
+			["fe4r", "fe10r"],
+			["fe5r", "fe10r"],
+			["fe5r", "fe11r"],
+
+			["fe6r", "fe11r"],
+			["fe7r", "fe11r"],
+			["fe7r", "fe12r"],
+
+			["fe8r", "fe12r"],
+
+			// YZ
+			["fe2r", "fe3r"],
+			["fe1r", "fe4r"],
+			["fe4r", "fe9r"],
+			["fe3r", "fe10r"],
+			["fe6r", "fe8r"],
+			["fe6r", "fe12r"],
+			["fe8r", "fe11r"],
+
+			{"beamSpring":1050000,"beamDamp":180},
+			{"beamDeform":4000,"beamStrength":"FLT_MAX"},
+			// Rigidfier
+			["fergdr", "fe1r"],
+			["fergdr", "fe2r"],
+			["fergdr", "fe3r"],
+			["fergdr", "fe4r"],
+			["fergdr", "fe5r"],
+			["fergdr", "fe6r"],
+			["fergdr", "fe7r"],
+			["fergdr", "fe8r"],
+			["fergdr", "fe9r"],
+			["fergdr", "fe10r"],
+			["fergdr", "fe11r"],
+			["fergdr", "fe12r"],
+			
+			//BNEcoror: 25, 179, 118
+			{"beamSpring":501000,"beamDamp":100},
+			{"beamDeform":4750,"beamStrength":14000},
+			// Connection
+
+			{"breakGroup":"fender_A_R"},
+			["b1rr", "fe1r"],
+			["b1ur", "fe1r"],
+			["b1rr", "fe2r"],
+			["b1ur", "fe2r"],
+			["b6r", "fe3r"],
+			["b8rr", "fe3r"],
+
+			{"breakGroup":"fender_B_R"},
+			["b6rr", "fe9r"],
+			["b7rr", "fe9r"],
+			["b6rr", "fe10r"],
+			["b7rr", "fe10r"],
+
+			{"breakGroup":"fender_C_R"},
+			["fm2r", "fe8r"],
+			["fm1r", "fe8r"],
+			["fm2rr", "fe8r"],
+			["fm1rr", "fe8r"],
+			["fm2rr", "fe12r"],
+			["fm1rr", "fe12r"],
+
+			{"breakGroup":""},
+
+			{"beamType":"|SUPPORT", "beamLongBound":3},
+			{"beamSpring":1001000,"beamDamp":30},
+			{"beamDeform":10000,"beamStrength":125000},
+			// Support
+			["b1rr", "fe1r"],
+			["b1ur", "fe1r"],
+			["b1rr", "fe2r"],
+			["b1ur", "fe2r"],
+			["b6r", "fe3r"],
+			["b8rr", "fe3r"],
+			["b6rr", "fe9r"],
+			["b7rr", "fe9r"],
+			["b6rr", "fe10r"],
+			["b7rr", "fe10r"],
+			["fm2r", "fe8r"],
+			["fm1r", "fe8r"],
+			["fm2rr", "fe8r"],
+			["fm1rr", "fe8r"],
+			["fm2rr", "fe12r"],
+			["fm1rr", "fe12r"],
+
+			{"breakGroup":""},
+			{"optional":false},
+			{"disabreTriangleBreaking":false},
+			{"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+			{"deformLimitExpansion":1.2},
+		],
+		"triangles":[
+			["id1:", "id2:", "id3:"],
+			{"group":"interrawt3_fender_FR"},
+			{"dragCoef": 3.5},
+            ["fe4r", "fe3r", "fe1r"],
+            ["fe4r", "fe1r", "fe2r"],
+            ["fe10r", "fe9r", "fe3r"],
+            ["fe10r", "fe3r", "fe4r"],
+            ["fe10r", "fe4r", "fe5r"],
+            ["fe11r", "fe10r", "fe5r"],
+            ["fe11r", "fe5r", "fe6r"],
+            ["fe11r", "fe6r", "fe12r"],
+            ["fe12r", "fe6r", "fe8r"],
+            ["fe8r", "fe6r", "fe7r"],
+		],
+	},
+}
