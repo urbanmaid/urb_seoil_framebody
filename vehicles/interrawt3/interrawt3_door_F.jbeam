@@ -225,13 +225,16 @@
 
 				["d9l", "p3l"],
 				["d9l", "p4l"],
+				{"optional":false},
 
 			// Open limits
 				{"beamPrecompression":1.0, "beamType":"|BOUNDED", "beamLongBound":1, "beamShortBound":1},
 				{"beamSpring":0,"beamDamp":10},
 				{"beamLimitSpring":345000,"beamLimitDamp":280},
-				{"beamDeform":28850,"beamStrength":3500000},
+				{"breakGroup":"doorhinge_a_FL"},
+				{"beamDeform":28850,"beamStrength":"FLT_MAX"},
 				["d6l", "b2l", {"longBoundRange":0.6,"shortBoundRange":0,"boundZone":0.01,"beamLimitDampRebound":0,"breakGroup":""}],
+				{"breakGroup":""},
 
 				{"beamPrecompression":1.05, "beamType":"|SUPPORT","beamLongBound":48},
 				{"beamSpring":300,"beamDamp":100},
@@ -492,13 +495,16 @@
 
 				["d9r", "p3r"],
 				["d9r", "p4r"],
+				{"optional":false},
 
-			//open limits
+			// Open limits
 				{"beamPrecompression":1.0, "beamType":"|BOUNDED", "beamLongBound":1, "beamShortBound":1},
 				{"beamSpring":0,"beamDamp":10},
 				{"beamLimitSpring":345000,"beamLimitDamp":280},
-				{"beamDeform":28850,"beamStrength":3500000},
+				{"breakGroup":"doorhinge_a_FR"},
+				{"beamDeform":28850,"beamStrength":"FLT_MAX"},
 				["d6r", "b2r", {"longBoundRange":0.6,"shortBoundRange":0,"boundZone":0.01,"beamLimitDampRebound":0,"breakGroup":""}],
+				{"breakGroup":""},
 
 				{"beamPrecompression":1.05, "beamType":"|SUPPORT","beamLongBound":48},
 				{"beamSpring":300,"beamDamp":100},
