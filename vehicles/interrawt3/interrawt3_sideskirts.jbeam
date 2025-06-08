@@ -1,0 +1,15 @@
+{
+	"interrawt3_sideskirts":{
+		"information":{
+			"authors":"Urbanmaid",
+			"name":"Sideskirts",
+			"value":20,
+		},
+		"slotType":"interrawt3_sideskirts",
+		"flexbodies": [
+			["mesh", "[group]:", "nonFlexMaterials"],
+			{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
+			["interrawt3_sideskirts", ["interrawt3_floor"]],
+		],
+	},
+}

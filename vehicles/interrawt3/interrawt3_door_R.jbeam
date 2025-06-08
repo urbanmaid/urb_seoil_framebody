@@ -22,7 +22,14 @@
 		],
 		"triggers":[
 			["id", "label", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
-			["doorRL", "", "d18l","d19l","d21l", "box", {"x":0.15, "y":0.02, "z":0.08}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.38, "y":0.225, "z":-0.01}],
+			[
+				"doorRL", "", "d18l","d19l","d21l", "box",
+				{"x":0.15, "y":0.02, "z":0.08}, 
+				{"x":0, "y":0, "z":0}, 
+				{"x":0, "y":0, "z":0}, 
+				{"x":0, "y":0, "z":0}, 
+				{"x":0.27, "y":0.19, "z":0.02}
+			],
 		],
 		"triggerEventLinks":[
 			["triggerId:triggers", "action", "targetEventId:events"],
@@ -56,7 +63,7 @@
 			//--DOOR--
 			{"collision":true},
 			{"selfCollision":true},
-			{"nodeWeight":2.5},
+			{"nodeWeight":2.1},
 			{"group":"interrawt3_door_RL"},
 			["d14l", 0.90, 0.196, 0.477],
 			["d15l", 0.90, 0.552, 0.477],
@@ -79,7 +86,7 @@
 			{"selfCollision":false},
 			{"collision":false},
 			//rigidifier
-			{"nodeWeight":2.5},
+			{"nodeWeight":2.1},
 			["drgdrl", 0.65, 0.65, 1.0],
 			["dlatrl", 0.982, 1.145, 0.891, {"couplerTag":"doorRLLatch","couplerLock":true,"couplerStrength":35000,"couplerRadius":1.35,"couplerStartRadius":0.1,"couplerLockRadius":0.01,"couplerLatchSpeed":0.5, "breakGroup":"door_RLLatch"}],
 			// Pain to q4l
@@ -120,6 +127,15 @@
 				["d18l", "d20l"],
 				["d18l", "d22l"],
 				["d19l", "d21l"],
+
+			// Crossing
+				["d14l", "d16l"],
+				["d17l", "d19l"],
+				["d20l", "d22l"],
+
+				["d14l", "d20l"],
+				["d15l", "d21l"],
+				["d16l", "d22l"],
 
 			// Door Frame
 				["d20l", "d23l"],
@@ -169,7 +185,7 @@
 			//BNEcolor: 28, 170, 205
 			// Hinge
 				{"disableTriangleBreaking":true},
-				{"beamSpring":2600000,"beamDamp":250},
+				{"beamSpring":2600000,"beamDamp":400},
 				{"beamDeform":40000,"beamStrength":72500},
 				{"breakGroup":"doorhinge_a_RL"},
 				["b3ll", "d17l"],
@@ -217,6 +233,16 @@
 				{"beamPrecompression":1.05, "beamType":"|SUPPORT","beamLongBound":48},
 				{"beamSpring":300,"beamDamp":100},
 				["d19l", "b4l"],
+				{"beamPrecompression":3.0},
+				{"beamSpring":40,"beamDamp":40},
+				["d19l", "b4l"],
+
+			// Vibration Control
+			{"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+			{"breakGroup":"doorhinge_a_RL"},
+			{"beamSpring":0,"beamDamp":20},
+			["b4ll", "d16l"],
+			["rf5ll", "d25l"],
 
 			{"breakGroup":""},
 			{"optional":false},
@@ -261,7 +287,14 @@
 		],
 		"triggers":[
 			["id", "label", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
-			["doorRR", "", "d18r","d19r","d21r", "box", {"x":0.15, "y":0.02, "z":0.08}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.38, "y":0.225, "z":-0.01}],
+			[
+				"doorRR", "", "d18r","d19r","d21r", "box",
+				{"x":0.15, "y":0.02, "z":0.08}, 
+				{"x":0, "y":0, "z":0}, 
+				{"x":0, "y":0, "z":0}, 
+				{"x":0, "y":0, "z":0}, 
+				{"x":0.27, "y":0.19, "z":-0.04}
+			],
 		],
 		"triggerEventLinks":[
 			["triggerId:triggers", "action", "targetEventId:events"],
@@ -295,7 +328,7 @@
 			//--DOOR--
 			{"collision":true},
 			{"selfCollision":true},
-			{"nodeWeight":2.5},
+			{"nodeWeight":2.1},
 			{"group":"interrawt3_door_RR"},
 			["d14r",-0.90, 0.196, 0.477],
 			["d15r",-0.90, 0.552, 0.477],
@@ -318,7 +351,7 @@
 			{"selfCollision":false},
 			{"collision":false},
 			//rigidifier
-			{"nodeWeight":2.5},
+			{"nodeWeight":2.1},
 			["drgdrr",-0.65, 0.65, 1.0],
 			["dlatrr",-0.982, 1.145, 0.891, {"couplerTag":"doorRRLatch","couplerLock":true,"couplerStrength":35000,"couplerRadius":1.35,"couplerStartRadius":0.1,"couplerLockRadius":0.01,"couplerLatchSpeed":0.5, "breakGroup":"door_RRLatch"}],
 			// Pain to q4r
@@ -359,6 +392,15 @@
 				["d18r", "d20r"],
 				["d18r", "d22r"],
 				["d19r", "d21r"],
+
+			// Crossing
+				["d14r", "d16r"],
+				["d17r", "d19r"],
+				["d20r", "d22r"],
+
+				["d14r", "d20r"],
+				["d15r", "d21r"],
+				["d16r", "d22r"],
 
 			// Door Frame
 				["d20r", "d23r"],
@@ -408,7 +450,7 @@
 			//BNEcolor: 28, 170, 205
 			// Hinge
 				{"disableTriangleBreaking":true},
-				{"beamSpring":2600000,"beamDamp":250},
+				{"beamSpring":2600000,"beamDamp":400},
 				{"beamDeform":40000,"beamStrength":72500},
 				{"breakGroup":"doorhinge_a_RR"},
 				["b3rr", "d17r"],
@@ -456,6 +498,16 @@
 				{"beamPrecompression":1.05, "beamType":"|SUPPORT","beamLongBound":48},
 				{"beamSpring":300,"beamDamp":100},
 				["d19r", "b4r"],
+				{"beamPrecompression":3.0},
+				{"beamSpring":40,"beamDamp":40},
+				["d19r", "b4r"],
+
+			// Vibration Control
+			{"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+			{"beamSpring":0,"beamDamp":20},
+			{"breakGroup":"doorhinge_a_RR"},
+			["b4rr", "d16r"],
+			["rf5rr", "d25r"],
 
 			{"breakGroup":""},
 			{"optional":false},

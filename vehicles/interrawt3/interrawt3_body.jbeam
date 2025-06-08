@@ -19,6 +19,7 @@
 		["interrawt3_fender_FR","interrawt3_fender_FR","Front Right Fender"],
 
 		["interrawt3_trim","interrawt3_trim","Trim"],
+		["interrawt3_sideskirts","interrawt3_sideskirts","Sideskirts"],
 
 		// Lights and glass
 		["interrawt3_lights_taillight_L","interrawt3_lights_taillight_L","Front Left Taillight"],

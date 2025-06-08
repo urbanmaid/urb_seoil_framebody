@@ -24,7 +24,14 @@
 	],
 	"triggers":[
 		["id", "label", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
-		["tailgate", "", "t4l","t4r","t3l", "box", {"x":0.15, "y":0.02, "z":0.08}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.38, "y":0.225, "z":-0.01}],
+		[
+			"tailgate", "", "t4l","t4r","t3l", "box", 
+			{"x":0.15, "y":0.02, "z":0.06}, 
+			{"x":0, "y":0, "z":0}, 
+			{"x":0, "y":0, "z":0}, 
+			{"x":0, "y":0, "z":0}, 
+			{"x":0.21, "y":0.0, "z":-0.01}
+		],
 	],
 	"triggerEventLinks":[
 		["triggerId:triggers", "action", "targetEventId:events"],
@@ -58,7 +65,7 @@
 		{"selfCollision":true},
 		{"collision":true},
 		//frame lower
-		{"nodeWeight":2.5},
+		{"nodeWeight":2.1},
 		{"group":"interrawt3_tailgate"},
 
 		["t1ll",0.634,2.072,1.818],

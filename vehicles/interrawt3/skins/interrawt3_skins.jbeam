@@ -1,0 +1,11 @@
+{
+    "interrawt3_skins_demo": {
+        "information":{
+            "authors":"BeamNG",
+            "name":"DEMO SKIN",
+            "value":0
+        },
+        "slotType" : "paint_design",
+        "globalSkin": "demoskin",
+    },
+}
