@@ -7,9 +7,9 @@
 		"slotType":"interrawt3_door_FL",
 		"slots": [
 			["type", "default", "description"],
-			["interrawt3_mirror_L","interrawt3_mirror_L","Right Mirror"],
-			["interrawt3_doorpanel_FL","interrawt3_doorpanel_FL","Right Door Panel"],
-			["interrawt3_doorglass_FL","interrawt3_doorglass_FL", "Front Right Door Glass"],
+			["interrawt3_mirror_L","interrawt3_mirror_L","Left Mirror"],
+			["interrawt3_doorpanel_FL","interrawt3_doorpanel_FL","Left Door Panel"],
+			["interrawt3_doorglass_FL","interrawt3_doorglass_FL", "Front Left Door Glass"],
 		],
 		"flexbodies": [
 			["mesh", "[group]:", "nonFlexMaterials"],
@@ -74,7 +74,7 @@
 			["d5l",0.95, -0.317,0.871],
 			["d6l",0.95, 0.166,0.875],
 
-			["d7l",0.95, -0.801,1.203, {"selfCollision":false}],
+			["d7l",0.95, -0.801,1.203, {"selfCollision":false, "nodeWeight":2.4}],
 			["d8l",0.95, -0.317,1.207],
 			["d9l",0.95, 0.166,1.212],
 
@@ -239,7 +239,7 @@
 				{"beamPrecompression":1.05, "beamType":"|SUPPORT","beamLongBound":48},
 				{"beamSpring":300,"beamDamp":100},
 				["d6l", "b2l"],
-				{"beamPrecompression":2.0},
+				{"beamPrecompression":2.4},
 				{"beamSpring":40,"beamDamp":40},
 				["d6l", "b2l"],
 
@@ -277,7 +277,7 @@
 		"slotType":"interrawt3_door_FR",
 		"slots": [
 			["type", "default", "description"],
-			["interrawt3_mirror_L","interrawt3_mirror_L","Right Mirror"],
+			["interrawt3_mirror_R","interrawt3_mirror_R","Right Mirror"],
 			["interrawt3_doorpanel_FR","interrawt3_doorpanel_FR","Right Door Paner"],
 			["interrawt3_doorglass_FR","interrawt3_doorglass_FR", "Front Right Door Glass"],
 		],
@@ -344,7 +344,7 @@
 			["d5r",-0.95, -0.317,0.871],
 			["d6r",-0.95, 0.166,0.875],
 
-			["d7r",-0.95, -0.801,1.203, {"selfCollision":false}],
+			["d7r",-0.95, -0.801,1.203, {"selfCollision":false, "nodeWeight":2.4}],
 			["d8r",-0.95, -0.317,1.207],
 			["d9r",-0.95, 0.166,1.212],
 
@@ -509,7 +509,7 @@
 				{"beamPrecompression":1.05, "beamType":"|SUPPORT","beamLongBound":48},
 				{"beamSpring":300,"beamDamp":100},
 				["d6r", "b2r"],
-				{"beamPrecompression":2.0},
+				{"beamPrecompression":2.4},
 				{"beamSpring":40,"beamDamp":40},
 				["d6r", "b2r"],
 

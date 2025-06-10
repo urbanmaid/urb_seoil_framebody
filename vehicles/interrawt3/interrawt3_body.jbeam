@@ -27,8 +27,30 @@
 
 		["interrawt3_windshield","interrawt3_windshield","Windshield"],
 		["interrawt3_quarterglass","interrawt3_quarterglass","Quarter Glass"],
-	],
 
+		// Universal parts
+        ["soundscape_horn", "soundscape_horn_3", "Horn"],
+        ["gps","","Navigation Unit", {"nodeOffset":{"x":0.15,"y":-0.545,"z":1.355}}],
+	],
+	"soundscape": [
+		["name", "src"],
+		//indicator4
+		{"node:":"dshl"},
+		["indicatorStart", "event:>Vehicle>Interior>Indicator>SUB_On"],
+		["indicatorStop", "event:>Vehicle>Interior>Indicator>SUB_Off"],
+		["indLoop1", "event:>Vehicle>Interior>Indicator>SUB_Click"],
+		["indLoop2", "event:>Vehicle>Interior>Indicator>SUB_Clack"],
+		//lights4
+		["LightOn", "event:>Vehicle>Interior>Light>BRDM_On"],
+		["LightOff", "event:>Vehicle>Interior>Light>BRDM_Off"],
+		//handbrake7
+		{"node:":"b2l"},
+		["handbrakeEngaging","event:>Vehicle>Interior>Handbrake_Ratchet>Ratchet_12_Ratchet"],
+		["handbrakeDisengaging","event:>Vehicle>Interior>Handbrake_Ratchet>Ratchet_12_Button"],
+		["handbrakeDisengaged","event:>Vehicle>Interior>Handbrake_Ratchet>Ratchet_12_Thump"],
+		//affects horn location because horn soundscape is loaded after
+		{"node:":"b7rr"},
+	],
 	"flexbodies": [
 		["mesh", "[group]:", "nonFlexMaterials"],
 		{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
