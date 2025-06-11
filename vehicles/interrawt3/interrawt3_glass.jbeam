@@ -72,6 +72,24 @@
 			{"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
 			{"deformLimitExpansion":1.1},
 		],
+		"triangles":[
+			["id1:", "id2:", "id3:"],
+			{"group":"interrawt3_windshield"},
+			{"dragCoef": 2},
+			["rf1r", "rf1rr", "p1r"],
+			["p1r", "b6rr", "b7rr"],
+			["p1r", "b7rr", "b7r"],
+			["p1l", "rf1ll", "rf1l"],
+			["b7ll", "b6ll", "p1l"],
+			["b7l", "b7ll", "p1l"],
+
+			["rf1r", "p1r", "wi1"],
+			["p1r", "b7r", "wi1"],
+			["b7r", "b7l", "wi1"],
+			["b7l", "p1l", "wi1"],
+			["p1l", "rf1l", "wi1"],
+			["rf1l", "rf1r", "wi1"],
+		],
 	},
 
 	"interrawt3_doorglass_FL":{
@@ -115,6 +133,16 @@
 			{"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
 			{"deformLimitExpansion":1.1},
 		],
+		"triangles":[
+			["id1:", "id2:", "id3:"],
+			{"group":"interrawt3_doorglass_FL"},
+			{"dragCoef": 2},
+			["d10l", "d7l", "d8l"],
+			["d8l", "d9l", "d13l"],
+			["d10l", "d8l", "d13l"],
+			["d11l", "d10l", "d13l"],
+			["d13l", "d12l", "d11l"],
+		],
 	},
 	"interrawt3_doorglass_FR":{
 		"information":{
@@ -156,6 +184,16 @@
 			{"deformGroup":""},
 			{"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
 			{"deformLimitExpansion":1.1},
+		],
+		"triangles":[
+			["id1:", "id2:", "id3:"],
+			{"group":"interrawt3_doorglass_FR"},
+			{"dragCoef": 2},
+			["d8r", "d7r", "d10r"],
+			["d13r", "d9r", "d8r"],
+			["d13r", "d8r", "d10r"],
+			["d13r", "d10r", "d11r"],
+			["d12r", "d13r", "d11r"],
 		],
 	},
 	"interrawt3_doorglass_RL":{
@@ -199,6 +237,16 @@
 			{"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
 			{"deformLimitExpansion":1.1},
 		],
+		"triangles":[
+			["id1:", "id2:", "id3:"],
+			{"group":"interrawt3_doorglass_RL"},
+			{"dragCoef": 2},
+			["d23l", "d20l", "d21l"],
+			["d21l", "d22l", "d26l"],
+			["d23l", "d21l", "d26l"],
+			["d24l", "d23l", "d26l"],
+			["d26l", "d25l", "d24l"],
+		],
 	},
 	"interrawt3_doorglass_RR":{
 		"information":{
@@ -240,6 +288,16 @@
 			{"deformGroup":""},
 			{"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
 			{"deformLimitExpansion":1.1},
+		],
+		"triangles":[
+			["id1:", "id2:", "id3:"],
+			{"group":"interrawt3_doorglass_RL"},
+			{"dragCoef": 2},
+			["d21r", "d20r", "d23r"],
+			["d26r", "d22r", "d21r"],
+			["d26r", "d21r", "d23r"],
+			["d26r", "d23r", "d24r"],
+			["d25r", "d26r", "d24r"],
 		],
 	},
 
@@ -308,6 +366,16 @@
 			{"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
 			{"deformLimitExpansion":1.1},
 		],
+		"triangles":[
+			["id1:", "id2:", "id3:"],
+			{"group":"interrawt3_quarterglass"},
+			{"dragCoef": 2},
+			["p9l", "q2l", "rf6ll"],
+			["rf6ll", "q2l", "p10l"],
+
+			["rf6rr", "q2r", "p9r"],
+			["rf6rr", "p10r", "q2r"],
+		],
 	},
 
 	"interrawt3_tailgateglass":{
@@ -355,6 +423,20 @@
 			{"deformGroup":""},
 			{"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
 			{"deformLimitExpansion":1.1},
+		],
+		"triangles":[
+			["id1:", "id2:", "id3:"],
+			{"group":"interrawt3_tailgateglass"},
+			{"dragCoef": 2},
+            ["t1l", "t1ll", "t2ll"],
+            ["t2ll", "t3ll", "t3l"],
+            ["t3r", "t3rr", "t2rr"],
+            ["t2rr", "t1rr", "t1r"],
+
+            ["t1l", "t2ll", "t3l"],
+            ["t1l", "t3l", "t3r"],
+            ["t3r", "t1r", "t1l"],
+            ["t3r", "t2rr", "t1r"],
 		],
 	},
 }
