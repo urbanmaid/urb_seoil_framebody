@@ -12,13 +12,13 @@
         ["interrawt3_brake_R","interrawt3_brake_R","Rear Brakes", {"nodeOffset":{"x":0.0, "y":0.0, "z":0.0}}],
         //The case() is for backwards compatibility for old configs that use "trackwidth_R" variable.
         //To change the base track width, edit the trackoffset_R offset in the expression.
-        ["wheel_R_5","steelwheel_01a_15x8_R","Rear Wheels", {"nodeOffset":{"x":"$= $trackoffset_R+0.32", "y":1.35, "z":0.4101}}],
+        ["wheel_R_5","steelwheel_01a_15x8_R","Rear Wheels", {"nodeOffset":{"x":"$= $trackoffset_R+0.32", "y":1.35, "z":0.41}}],
         ["interrawt3_wheeldata_R","interrawt3_wheeldata_R", "Rear Spindles", {"coreSlot":true}],
     ],
     "flexbodies": [
         ["mesh", "[group]:", "nonFlexMaterials"],
-        ["brake_hub_5l", ["wheel_RR","wheelhub_RR"], [], {"pos":{"x":-0.77,"y":1.35, "z":0.4101}, "scale":{"x":1.0,"y":1.0,"z":1.0}, "rot":{"x":0,"y":0,"z":0}}],
-        ["brake_hub_5l", ["wheel_RL","wheelhub_RL"], [], {"pos":{"x":0.77,"y":1.35, "z":0.4101}, "scale":{"x":1.0,"y":1.0,"z":1.0}, "rot":{"x":0,"y":0,"z":180}}],
+        ["brake_hub_5l", ["wheel_RR","wheelhub_RR"], [], {"pos":{"x":-0.77,"y":1.35, "z":0.41}, "scale":{"x":1.0,"y":1.0,"z":1.0}, "rot":{"x":0,"y":0,"z":0}}],
+        ["brake_hub_5l", ["wheel_RL","wheelhub_RL"], [], {"pos":{"x":0.77,"y":1.35, "z":0.41}, "scale":{"x":1.0,"y":1.0,"z":1.0}, "rot":{"x":0,"y":0,"z":180}}],
     ],
     "nodes": [
         ["id", "posX", "posY", "posZ"],
@@ -28,11 +28,11 @@
         {"selfCollision":true},
         {"nodeWeight":6.58},
         {"group":"wheelhub_RR"},
-        ["rw1r", -0.71, 1.35, 0.4101],
-        ["rw1rr", -0.85, 1.35, 0.4101],
+        ["rw1r", -0.71, 1.35, 0.41],
+        ["rw1rr", -0.85, 1.35, 0.41],
         {"group":"wheelhub_RL"},
-        ["rw1l", 0.71, 1.35, 0.4101],
-        ["rw1ll", 0.85, 1.35, 0.4101],
+        ["rw1l", 0.71, 1.35, 0.41],
+        ["rw1ll", 0.85, 1.35, 0.41],
         {"group":""},
     ],
     "beams": [
@@ -102,13 +102,13 @@
         ["interrawt3_brake_R","interrawt3_brake_R","Rear Brakes", {"nodeOffset":{"x":0.0, "y":0.0, "z":0.0}}],
         //The case() is for backwards compatibility for old configs that use "trackwidth_R" variable.
         //To change the base track width, edit the trackoffset_R offset in the expression.
-        ["wheel_R_6","steelwheel_02a_16x7_R","Rear Wheels", {"nodeOffset":{"x":"$= $trackoffset_R+0.31", "y":1.35, "z":0.4101}}],
+        ["wheel_R_6","steelwheel_02a_16x7_R","Rear Wheels", {"nodeOffset":{"x":"$= $trackoffset_R+0.31", "y":1.35, "z":0.41}}],
         ["interrawt3_wheeldata_R","interrawt3_wheeldata_R", "Rear Spindles", {"coreSlot":true}],
     ],
     "flexbodies": [
         ["mesh", "[group]:", "nonFlexMaterials"],
-        ["brake_hub_6l", ["wheel_RR","wheelhub_RR"], [], {"pos":{"x":-0.77,"y":1.35, "z":0.4101}, "scale":{"x":1.0,"y":1.0,"z":1.0}, "rot":{"x":0,"y":0,"z":0}}],
-        ["brake_hub_6l", ["wheel_RL","wheelhub_RL"], [], {"pos":{"x":0.77,"y":1.35, "z":0.4101}, "scale":{"x":1.0,"y":1.0,"z":1.0}, "rot":{"x":0,"y":0,"z":180}}],
+        ["brake_hub_6l", ["wheel_RR","wheelhub_RR"], [], {"pos":{"x":-0.77,"y":1.35, "z":0.41}, "scale":{"x":1.0,"y":1.0,"z":1.0}, "rot":{"x":0,"y":0,"z":0}}],
+        ["brake_hub_6l", ["wheel_RL","wheelhub_RL"], [], {"pos":{"x":0.77,"y":1.35, "z":0.41}, "scale":{"x":1.0,"y":1.0,"z":1.0}, "rot":{"x":0,"y":0,"z":180}}],
     ],
     "nodes": [
         ["id", "posX", "posY", "posZ"],
@@ -118,11 +118,11 @@
         {"selfCollision":true},
         {"nodeWeight":6.58},
         {"group":"wheelhub_RR"},
-        ["rw1r", -0.71, 1.35, 0.4101],
-        ["rw1rr", -0.85, 1.35, 0.4101],
+        ["rw1r", -0.71, 1.35, 0.41],
+        ["rw1rr", -0.85, 1.35, 0.41],
         {"group":"wheelhub_RL"},
-        ["rw1l", 0.71, 1.35, 0.4101],
-        ["rw1ll", 0.85, 1.35, 0.4101],
+        ["rw1l", 0.71, 1.35, 0.41],
+        ["rw1ll", 0.85, 1.35, 0.41],
         {"group":""},
     ],
     "beams": [
@@ -192,13 +192,13 @@
         ["interrawt3_brake_R","interrawt3_brake_R_heavy","Rear Brakes", {"nodeOffset":{"x":0.0, "y":0.0, "z":0.0}}],
         //The case() is for backwards compatibility for old configs that use "trackwidth_R" variable.
         //To change the base track width, edit the trackoffset_R offset in the expression.
-        ["wheel_R_8","steelwheel_03a_17x9_R","Rear Wheels", {"nodeOffset":{"x":"$= $trackoffset_R+0.31", "y":1.35, "z":0.4101}}],
+        ["wheel_R_8","steelwheel_03a_17x9_R","Rear Wheels", {"nodeOffset":{"x":"$= $trackoffset_R+0.31", "y":1.35, "z":0.41}}],
         ["interrawt3_wheeldata_R","interrawt3_wheeldata_R", "Rear Spindles", {"coreSlot":true}],
     ],
     "flexbodies": [
         ["mesh", "[group]:", "nonFlexMaterials"],
-        ["brake_hub_8l", ["wheel_RR","wheelhub_RR"], [], {"pos":{"x":-0.77,"y":1.35, "z":0.4101}, "scale":{"x":1.0,"y":1.0,"z":1.0}, "rot":{"x":0,"y":0,"z":0}}],
-        ["brake_hub_8l", ["wheel_RL","wheelhub_RL"], [], {"pos":{"x":0.77,"y":1.35, "z":0.4101}, "scale":{"x":1.0,"y":1.0,"z":1.0}, "rot":{"x":0,"y":0,"z":180}}],
+        ["brake_hub_8l", ["wheel_RR","wheelhub_RR"], [], {"pos":{"x":-0.77,"y":1.35, "z":0.41}, "scale":{"x":1.0,"y":1.0,"z":1.0}, "rot":{"x":0,"y":0,"z":0}}],
+        ["brake_hub_8l", ["wheel_RL","wheelhub_RL"], [], {"pos":{"x":0.77,"y":1.35, "z":0.41}, "scale":{"x":1.0,"y":1.0,"z":1.0}, "rot":{"x":0,"y":0,"z":180}}],
     ],
     "nodes": [
         ["id", "posX", "posY", "posZ"],
@@ -208,11 +208,11 @@
         {"selfCollision":true},
         {"nodeWeight":6.58},
         {"group":"wheelhub_RR"},
-        ["rw1r", -0.71, 1.35, 0.4101],
-        ["rw1rr", -0.85, 1.35, 0.4101],
+        ["rw1r", -0.71, 1.35, 0.41],
+        ["rw1rr", -0.85, 1.35, 0.41],
         {"group":"wheelhub_RL"},
-        ["rw1l", 0.71, 1.35, 0.4101],
-        ["rw1ll", 0.85, 1.35, 0.4101],
+        ["rw1l", 0.71, 1.35, 0.41],
+        ["rw1ll", 0.85, 1.35, 0.41],
         {"group":""},
     ],
     "beams": [
