@@ -32,7 +32,7 @@
             ["interrawt3_uppermounts_R_4link_short", ["interrawt3_frame_short"]],
 
             //["interrawt3_lowermounts_R_4link", ["interrawt3_frame_standard", "interrawt3_frame_ext", "interrawt3_frame_crew"]],
-            ["interrawt3_uppermounts_R_4link", ["interrawt3_frame_standard", "interrawt3_frame_ext", "interrawt3_frame_crew"]],
+            ["interrawt3_uppermounts_R_4link", ["interrawt3_frame", "interrawt3_frame_ext", "interrawt3_frame_crew"]],
 
             //["interrawt3_lowermounts_R_4link_longbed", ["interrawt3_frame_longbed", "interrawt3_frame_extlongbed", "interrawt3_frame_crewlongbed"]],
             ["interrawt3_uppermounts_R_4link_longbed", ["interrawt3_frame_longbed", "interrawt3_frame_extlongbed", "interrawt3_frame_crewlongbed"]],
@@ -58,7 +58,7 @@
             //--REAR LIVE AXLE SUSPENSION--
             {"frictionCoef":0.5},
             {"nodeMaterial":"|NM_METAL"},
-            {"nodeWeight":14.288},
+            {"nodeWeight":13.5},
             {"collision":true},
             {"group":"interrawt3_axle_R"},
             {"selfCollision":false},
@@ -76,15 +76,15 @@
 
             //upper link mount
             {"selfCollision":false},
-            {"nodeWeight":6.58},
-            ["axsr1", -0.23000, 1.46300, 0.57000, {"group":["interrawt3_axle_R","interrawt3_upperlink_R"]}],
+            {"nodeWeight":6.3},
+            ["axsr1", -0.23000, 1.46300, 0.55000, {"group":["interrawt3_axle_R","interrawt3_upperlink_R"]}],
 
             //trackbar mount
-            {"nodeWeight":4.7},
+            {"nodeWeight":4.5},
             ["axsr2", -0.53200, 1.45800, 0.46000, {"group":["interrawt3_axle_R","interrawt3_trackbar_R"]}],
 
             //shock/lower link mounting nodes
-            {"nodeWeight":9.4},
+            {"nodeWeight":9.0},
             {"group":["interrawt3_axle_R","interrawt3_rearshockbottom", "interrawt3_lowerlinks_R"]}
             ["axshr", -0.67000, 1.29300, 0.32000],
             ["axshl", 0.67000, 1.29300, 0.32000],
@@ -94,18 +94,18 @@
             //shock mount
             {"collision":false},
             {"selfCollision":false},
-            {"nodeWeight":7.52},
+            {"nodeWeight":7.2},
             {"group":"interrawt3_rearshocktop"}
             ["rs2r", -0.66000, 1.20600, 0.66000],
             ["rs2l", 0.66000, 1.20600, 0.66000],
 
             //upper link mount
             {"nodeWeight":6.58},
-            ["rx2r", -0.23000, 0.99300, 0.50000, {"group":"interrawt3_upperlink_R"}],
+            ["rx2r", -0.23000, 1.0100, 0.50000, {"group":"interrawt3_upperlink_R"}],
 
             //trackbar mount
             {"nodeWeight":4.7},
-            ["rx2l", 0.50600, 1.49900, 0.40000, {"group":"interrawt3_trackbar_R"}],
+            ["rx2l", 0.50600, 1.49900, 0.45, {"group":"interrawt3_trackbar_R"}],
 
             //lower link mounts
             {"nodeWeight":9.4},
@@ -378,10 +378,10 @@
         "flexbodies": [
             ["mesh", "[group]:", "nonFlexMaterials"],
 
-            ["interrawt3_lowermounts_R_4link_short", ["interrawt3_frame_short"]],
-            ["interrawt3_lowermounts_R_4link", ["interrawt3_frame_standard", "interrawt3_frame_ext", "interrawt3_frame_crew"]],
-            ["interrawt3_lowermounts_R_4link_longbed", ["interrawt3_frame_longbed", "interrawt3_frame_extlongbed", "interrawt3_frame_crewlongbed"]],
-            ["interrawt3_lowermounts_R_4link_upfit", ["interrawt3_frame_upfit"]],
+            //["interrawt3_lowermounts_R_4link_short", ["interrawt3_frame_short"]],
+            ["interrawt3_lowermounts_R_4link", ["interrawt3_frame", "interrawt3_frame_ext", "interrawt3_frame_crew"]],
+            //["interrawt3_lowermounts_R_4link_longbed", ["interrawt3_frame_longbed", "interrawt3_frame_extlongbed", "interrawt3_frame_crewlongbed"]],
+            //["interrawt3_lowermounts_R_4link_upfit", ["interrawt3_frame_upfit"]],
 
             ["interrawt3_lowerlink_R_4link", ["interrawt3_lowerlinks_R"]],
         ],
@@ -395,8 +395,8 @@
             //lower link mounts
             {"nodeWeight":9.4},
             {"group":["interrawt3_lowerlinks_R", "interrawt3_trackbar_R"]}
-            ["rx1r", -0.51, 0.68, 0.33],
-            ["rx1l", 0.51, 0.68, 0.33],
+            ["rx1r", -0.48, 0.645, 0.31],
+            ["rx1l", 0.48, 0.645, 0.31],
             {"group":""},
         ],
         "beams": [
