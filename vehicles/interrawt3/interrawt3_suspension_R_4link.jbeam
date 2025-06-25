@@ -48,7 +48,7 @@
             ["id1:", "id2:", "id3:", "id4:"],
             {"spring":250000, "damp":0, "deform":2500000, "strength":10000000},
             //rigidify upper link
-            ["ax3", "ax1", "ax4r", "axsr1"],
+            ["ax3", "ax1", "ax4r", "axsr1r"],
         ],
         "nodes": [
             ["id", "posX", "posY", "posZ"],
@@ -77,7 +77,8 @@
             //upper link mount
             {"selfCollision":false},
             {"nodeWeight":6.3},
-            ["axsr1", -0.23000, 1.46300, 0.55000, {"group":["interrawt3_axle_R","interrawt3_upperlink_R"]}],
+            ["axsr1r", -0.38000, 1.47000, 0.51600, {"group":["interrawt3_axle_R","interrawt3_upperlink_R"]}],
+            ["axsr1l", 0.38000, 1.47000, 0.51600, {"group":["interrawt3_axle_R","interrawt3_upperlink_R"]}],
 
             //trackbar mount
             {"nodeWeight":4.5},
@@ -101,11 +102,13 @@
 
             //upper link mount
             {"nodeWeight":6.58},
-            ["rx2r", -0.23000, 1.0100, 0.50000, {"group":"interrawt3_upperlink_R"}],
+            ["rx2r", -0.48000, 1.0100, 0.47800, {"group":"interrawt3_upperlink_R"}],
+            ["rx2l", 0.48000, 1.0100, 0.47800, {"group":"interrawt3_upperlink_R"}],
+
 
             //trackbar mount
             {"nodeWeight":4.7},
-            ["rx2l", 0.50600, 1.49900, 0.45, {"group":"interrawt3_trackbar_R"}],
+            ["rx3l", 0.50600, 1.49900, 0.45, {"group":"interrawt3_trackbar_R"}],
 
             //lower link mounts
             {"nodeWeight":9.4},
@@ -214,17 +217,28 @@
             ["rx2r", "f7", {"beamSpring":940940,"beamDamp":141}],
             ["rx2r", "f17", {"beamSpring":940940,"beamDamp":141}],
 
-            //trackbar mount
-            {"beamSpring":9400940,"beamDamp":141},
-            {"beamDeform":84000,"beamStrength":"FLT_MAX"},
-            ["rx2l", "f9l"],
+            ["rx2l", "f7l"],
+            ["rx2l", "f17l"],
             ["rx2l", "f8l"],
             ["rx2l", "f18l"],
+            ["rx2l", "f6l"],
+            ["rx2l", "f16l"],
+            ["rx2l", "f9l"],
             ["rx2l", "f19l"],
-            ["rx2l", "f9r"],
-            ["rx2l", "f8r"],
-            ["rx2l", "f18r"],
-            ["rx2l", "f19r"],
+            ["rx2l", "f7", {"beamSpring":940940,"beamDamp":141}],
+            ["rx2l", "f17", {"beamSpring":940940,"beamDamp":141}],
+
+            //trackbar mount
+            {"beamSpring":8523000,"beamDamp":141},
+            {"beamDeform":70000,"beamStrength":"FLT_MAX"},
+            ["rx3l", "f9l"],
+            ["rx3l", "f8l"],
+            ["rx3l", "f18l"],
+            ["rx3l", "f19l"],
+            ["rx3l", "f9r"],
+            ["rx3l", "f8r"],
+            ["rx3l", "f18r"],
+            ["rx3l", "f19r"],
 
             //shock mounts
             {"beamSpring":9400940,"beamDamp":141},
@@ -259,17 +273,24 @@
 
             //upper link mount
             {"beamSpring":5640940,"beamDamp":141},
-            ["axsr1", "ax2"],
-            ["axsr1", "ax3"],
-            ["axsr1", "ax1"],
-            ["axsr1", "ax4r"],
-            ["axsr1", "ax3r"],
-            ["axsr1", "ax2r"],
+            ["axsr1r", "ax2"],
+            ["axsr1r", "ax3"],
+            ["axsr1r", "ax1"],
+            ["axsr1r", "ax4r"],
+            ["axsr1r", "ax3r"],
+            ["axsr1r", "ax2r"],
+
+            ["axsr1l", "ax2"],
+            ["axsr1l", "ax3"],
+            ["axsr1l", "ax1"],
+            ["axsr1l", "ax4l"],
+            ["axsr1l", "ax3l"],
+            ["axsr1l", "ax2l"],
 
             {"beamSpring":2820940,"beamDamp":141},
             ["axshr", "axsr2"],
-            ["axsr2", "axsr1"],
-            ["axsr1", "axshr"],
+            ["axsr2", "axsr1r"],
+            ["axsr1r", "axshr"],
 
             //lower links
             {"beamSpring":28200940,"beamDamp":940},
@@ -280,12 +301,13 @@
             //upper link
             {"beamSpring":18800940,"beamDamp":940},
             {"beamDeform":157500,"beamStrength":"FLT_MAX"},
-            ["axsr1", "rx2r", {"dampCutoffHz":500}]
+            ["axsr1r", "rx2r", {"dampCutoffHz":500}]
+            ["axsr1l", "rx2l", {"dampCutoffHz":500}]
 
             //trackbar
             {"beamDeform":129500,"beamStrength":"FLT_MAX"},
-            {"beamSpring":18800940,"beamDamp":940},
-            ["rx2l", "axsr2", {"precompressionRange":"$trackbar_R","beamPrecompressionTime":0.5,"dampCutoffHz":500}],
+            {"beamSpring":16750000,"beamDamp":800},
+            ["rx3l", "axsr2", {"precompressionRange":"$trackbar_R","beamPrecompressionTime":0.5,"dampCutoffHz":500}],
 
             //rear limiters
             {"deformLimitExpansion":""},
@@ -507,6 +529,7 @@
             ["interrawt3_shocktop_R_4link", ["interrawt3_frame", "interrawt3_rearshocktop"]],
             ["interrawt3_coilover_R_4link", ["interrawt3_rearshocktop", "interrawt3_rearshockbottom"], [],{"pos":{"x":0,"y":0,"z":0}}],
         ],
+        /*
         "nodes": [
             ["id", "posX", "posY", "posZ"],
             {"frictionCoef":0.5},
@@ -517,9 +540,10 @@
             //upper link mount
             {"selfCollision":false},
             {"nodeWeight":6.58},
-            ["axsr1", -0.23000, 1.46300, 0.57000, {"group":["interrawt3_axle_R","interrawt3_upperlink_R"]}],
+            ["axsr1r", -0.23000, 1.46300, 0.57000, {"group":["interrawt3_axle_R","interrawt3_upperlink_R"]}],
             {"group":""},
         ],
+        */
         "beams": [
             ["id1:", "id2:"],
             //--REAR SPRING--
@@ -703,7 +727,7 @@
             //upper link mount
             {"selfCollision":false},
             {"nodeWeight":6.58},
-            ["axsr1", -0.23000, 1.46300, 0.57000, {"group":["interrawt3_axle_R","interrawt3_upperlink_R"]}],
+            //["axsr1r", -0.23000, 1.46300, 0.57000, {"group":["interrawt3_axle_R","interrawt3_upperlink_R"]}],
             {"group":""},
         ],
         "beams": [

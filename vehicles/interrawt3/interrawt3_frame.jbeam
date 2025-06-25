@@ -27,6 +27,7 @@
 		["interrawt3_suspension_F", "interrawt3_IFS", "Front Suspension"],
         ["interrawt3_suspension_R", "interrawt3_axle_R_4link", "Rear Suspension"],
 
+        ["interrawt3_sparetire", "interrawt3_sparetire_6l", "Spare Tire"],
         ["interrawt3_interiorskin", "interrawt3_interiorskin_body", "Interior Skin"],
     ],
     "refNodes":[
@@ -60,6 +61,7 @@
 		{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
 		//body
 		["interrawt3_frame", ["interrawt3_frame"]],
+		["interrawt3_sparetirehitch", ["interrawt3_frame"]],
 		//remove these after merging meshes
 		["interrawt3_trackbarbracket_F", ["interrawt3_frame"]],
 		["interrawt3_trackbarbracket_R", ["interrawt3_frame"]],
@@ -125,6 +127,7 @@
 		["f9l", 0.542,1.765,0.505],
 		["f9r",-0.542,1.765,0.505],
 		["f19l", 0.542,1.765,0.622],
+		["f19l", 0.0,1.937,0.622], // For sparetire attachment
 		["f19r",-0.542,1.765,0.622],
 
 		{"selfCollision":false},
@@ -273,6 +276,16 @@
 		["f9r", "f19r"],
 		["f9r", "f19l"], // XZ
 		["f9l", "f19r"],
+
+		// For sparetire attachment node
+		["f9l", "f19"],
+		["f9r", "f19"],
+		["f19l", "f19"],
+		["f19r", "f19"],
+		["f10l", "f19"],
+		["f10r", "f19"],
+		["f20l", "f19"],
+		["f20r", "f19"],
 
 		{"beamSpring":4375000,"beamDamp":144},
 		["f10l", "f10"], // X
@@ -465,12 +478,13 @@
 
             ["f17l","f7l","f18l"],
             ["f7l","f8l","f18l"],
+			/*
             ["f18l","f8l","f19l"],
             ["f8l","f9l","f19l"],
 
             ["f19l","f9l","f10l"],
             ["f19l","f10l","f20l"],
-
+			*/
 		// R
             ["f1r","f11r","f2r"],
             ["f11r","f12r","f2r"],
@@ -489,11 +503,13 @@
 
             ["f7r","f17r","f8r"],
             ["f17r","f18r","f8r"],
+			/*
             ["f8r","f18r","f9r"],
             ["f18r","f19r","f9r"],
 
             ["f9r","f19r","f10r"],
             ["f19r","f20r","f10r"],
+			*/
 
 		{"dragCoef":24},
 		// R

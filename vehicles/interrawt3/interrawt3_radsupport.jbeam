@@ -8,8 +8,6 @@
 		"slotType":"interrawt3_radsupport",
 		"slots": [
 			["type", "default", "description"],
-			["interrawt3_lights_headlight_L","interrawt3_lights_headlight_L","Front Left Headlight"],
-			["interrawt3_lights_headlight_R","interrawt3_lights_headlight_R","Front Right Headlight"],
 			["interrawt3_grille", "interrawt3_grille", "Grille"],
 			["interrawt3_deflector_F", "interrawt3_deflector_F", "Front Deflector"],
 			["interrawt3_radiator", "interrawt3_radiator", "Radiator"],
@@ -159,14 +157,14 @@
 			{"group":"interrawt3_radsupport"},
 			{"dragCoef": 10},
 
-			["s1r","s1rr","s2rr"],
-			["s1r","s2rr","s2r"],
+			//["s1r","s1rr","s2rr"],
+			//["s1r","s2rr","s2r"],
 			["s1","s1r","s2r"],
 			["s1","s2r","s2"],
 			["s2l","s1l","s1"],
 			["s2l","s1","s2"],
-			["s2ll","s1ll","s1l"],
-			["s2ll","s1l","s2l"],
+			//["s2ll","s1ll","s1l"],
+			//["s2ll","s1l","s2l"],
 
 			{"group":""},
 		],
