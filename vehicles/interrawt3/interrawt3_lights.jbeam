@@ -90,20 +90,19 @@
 			//BNEcolor: 192, 192, 192
 			{"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0}
 			{"disableTriangleBreaking":true},
-			{"beamSpring":2600000,"beamDamp":250},
-			{"beamDeform":40000,"beamStrength":80000},
+			{"beamSpring":1240000,"beamDamp":250},
+			{"beamDeform":22000,"beamStrength":80000},
 			// Connection
 			{"breakGroup":"headlight_L"},
-			["he1l", "fm2l"],
-			["he1l", "fm1l"],
-			["he2l", "fm2l"],
+			["he1l", "s2l"],
+			["he1l", "s2ll"],
+			["he2l", "s2l"],
+			["he2l", "s2ll"],
 
-			["he3l", "fm1l"],
-			["he3l", "fm2l"],
-			["he3l", "fm1ll"],
-			["he4l", "fm1ll"],
-			["he4l", "fm2ll"],
-			["he4l", "fm1l"],
+			["he3l", "s1l"],
+			["he3l", "s2l"],
+			["he4l", "s1l"],
+			["he4l", "s2l"],
 			{"breakGroup":""},
 
 			{"breakGroup":""},
@@ -204,20 +203,19 @@
 			//BNEcolor: 192, 192, 192
 			{"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0}
 			{"disableTriangleBreaking":true},
-			{"beamSpring":2600000,"beamDamp":250},
-			{"beamDeform":40000,"beamStrength":80000},
+			{"beamSpring":1240000,"beamDamp":250},
+			{"beamDeform":22000,"beamStrength":80000},
 			// Connection
 			{"breakGroup":"headlight_R"},
-			["he1r", "fm2r"],
-			["he1r", "fm1r"],
-			["he2r", "fm2r"],
+			["he1r", "s2r"],
+			["he1r", "s2rr"],
+			["he2r", "s2r"],
+			["he2r", "s2rr"],
 
-			["he3r", "fm1r"],
-			["he3r", "fm2r"],
-			["he3r", "fm1rr"],
-			["he4r", "fm1rr"],
-			["he4r", "fm2rr"],
-			["he4r", "fm1r"],
+			["he3r", "s1r"],
+			["he3r", "s2r"],
+			["he4r", "s1r"],
+			["he4r", "s2r"],
 			{"breakGroup":""},
 
 			{"breakGroup":""},

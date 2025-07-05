@@ -11,6 +11,9 @@
 			["interrawt3_grille", "interrawt3_grille", "Grille"],
 			["interrawt3_deflector_F", "interrawt3_deflector_F", "Front Deflector"],
 			["interrawt3_radiator", "interrawt3_radiator", "Radiator"],
+
+			["interrawt3_lights_headlight_L", "interrawt3_lights_headlight_L", "Left Headlight"],
+			["interrawt3_lights_headlight_R", "interrawt3_lights_headlight_R", "Right Headlight"],
 		],
 		"flexbodies": [
 			["mesh", "[group]:", "nonFlexMaterials"],

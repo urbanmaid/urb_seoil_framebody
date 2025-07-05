@@ -22,8 +22,8 @@
 		["interrawt3_sideskirts","interrawt3_sideskirts","Sideskirts"],
 
 		// Lights and glass
-		["interrawt3_lights_headlight_L","interrawt3_lights_headlight_L","Front Left Headlight"],
-		["interrawt3_lights_headlight_R","interrawt3_lights_headlight_R","Front Right Headlight"],
+		//["interrawt3_lights_headlight_L","interrawt3_lights_headlight_L","Front Left Headlight"],
+		//["interrawt3_lights_headlight_R","interrawt3_lights_headlight_R","Front Right Headlight"],
 		["interrawt3_lights_taillight_L","interrawt3_lights_taillight_L","Front Left Taillight"],
 		["interrawt3_lights_taillight_R","interrawt3_lights_taillight_R","Front Right Taillight"],
 
