@@ -79,7 +79,7 @@
         "slotType" : "interrawt3_radiator",
         "flexbodies": [
             ["mesh", "[group]:", "nonFlexMaterials"],
-            ["interrawt3_radiator1", ["interrawt3_radsupport"]],
+            ["seoil_engine_v6_radiator_highpos", ["interrawt3_radsupport"]],
             ["interrawt3_fanshroud", ["interrawt3_radsupport"]],
         ],
         "mainEngine":{
@@ -150,7 +150,7 @@
         "slotType" : "interrawt3_radiator",
         "flexbodies": [
             ["mesh", "[group]:", "nonFlexMaterials"],
-            ["interrawt3_radiator1", ["interrawt3_radsupport"]],
+            ["seoil_engine_v6_radiator_highpos", ["interrawt3_radsupport"]],
             ["interrawt3_fanshroud", ["interrawt3_radsupport"]],
         ],
         "mainEngine":{
@@ -221,7 +221,7 @@
         "slotType" : "interrawt3_radiator",
         "flexbodies": [
             ["mesh", "[group]:", "nonFlexMaterials"],
-            ["interrawt3_radiator1", ["interrawt3_radsupport"]],
+            ["seoil_engine_v6_radiator_highpos", ["interrawt3_radsupport"]],
             ["interrawt3_fanshroud", ["interrawt3_radsupport"]],
         ],
         "mainEngine":{

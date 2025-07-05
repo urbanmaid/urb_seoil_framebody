@@ -9,25 +9,25 @@
     "slots": [
         ["type", "default", "description"],
         ["interrawt3_body", "interrawt3_body", "Body", {"coreSlot":false}],
+        ["interrawt3_radsupport", "interrawt3_radsupport", "Radiator Support"],
         ["interrawt3_bumper_F", "interrawt3_bumper_F","Front Bumper"],
         ["interrawt3_bumper_R", "interrawt3_bumper_R","Rear Bumper"],
 		["pickup_reversewarn", "pickup_reversewarn", "Reverse Warning Beeper"],
-        ["interrawt3_towhitch", "","Tow Hitch"],
+        ["seoil_framebody_towhitch", "","Tow Hitch"],
 
 		// Drivetrains
-        ["interrawt3_engine", "interrawt3_engine_v6_3.5", "Engine"],
-        ["interrawt3_fueltank", "interrawt3_fueltank", "Fuel Tank"],
-		["interrawt3_driveshaft_R", "interrawt3_driveshaft_R", "Rear Driveshaft"],
+        ["seoil_framebody_engine", "seoil_framebody_engine_v6_3.0", "Engine"],
+        ["seoil_framebody_fueltank", "seoil_framebody_fueltank", "Fuel Tank"],
+		["seoil_framebody_driveshaft_R", "seoil_framebody_driveshaft_R", "Rear Driveshaft"],
 
-        ["interrawt3_muffler", "interrawt3_muffler","Muffler"],
-        ["interrawt3_radsupport", "interrawt3_radsupport", "Radiator Support"],
+        ["seoil_framebody_muffler", "seoil_framebody_muffler","Muffler"],
         ["pickup_ABS", "pickup_ABS", "Anti-Lock Braking System"],
         ["pickup_ESC", "pickup_ESC", "Electronic Stability & Traction Control"],
 		
-		["interrawt3_suspension_F", "interrawt3_IFS", "Front Suspension"],
-        ["interrawt3_suspension_R", "interrawt3_axle_R_4link", "Rear Suspension"],
+		["seoil_framebody_suspension_F", "seoil_framebody_IFS", "Front Suspension"],
+        ["seoil_framebody_suspension_R", "seoil_framebody_axle_R_4link", "Rear Suspension"],
 
-        ["interrawt3_sparetire", "interrawt3_sparetire_6l", "Spare Tire"],
+        ["seoil_framebody_sparetire", "seoil_framebody_sparetire_6l", "Spare Tire"],
         ["interrawt3_interiorskin", "interrawt3_interiorskin_body", "Interior Skin"],
     ],
     "refNodes":[
@@ -60,11 +60,8 @@
 		["mesh", "[group]:", "nonFlexMaterials"],
 		{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
 		//body
-		["interrawt3_frame", ["interrawt3_frame"]],
-		["interrawt3_sparetirehitch", ["interrawt3_frame"]],
-		//remove these after merging meshes
-		["interrawt3_trackbarbracket_F", ["interrawt3_frame"]],
-		["interrawt3_trackbarbracket_R", ["interrawt3_frame"]],
+		["seoil_framebody_frame", ["seoil_framebody_frame"]],
+		["seoil_framebody_sparetirehitch", ["seoil_framebody_frame"]],
 	],
 
 	// NBTs
@@ -76,7 +73,7 @@
 		{"collision":true},
 		//frame lower
 		{"nodeWeight":12.5},
-		{"group":"interrawt3_frame"},
+		{"group":"seoil_framebody_frame"},
 
 		// Front End
 		["f1l", 0.522,-2.275,0.515],
@@ -451,7 +448,7 @@
 	"triangles":[
 		["id1:", "id2:", "id3:"],
 		{"groundModel":"metal"},
-		{"group":"interrawt3_frame"},
+		{"group":"seoil_framebody_frame"},
 
 		{"dragCoef":24},
 		// F

@@ -75,9 +75,6 @@
 			"interrawt3_tailgatebase"
 		]
 		],
-		//remove these after merging meshes
-		["interrawt3_trackbarbracket_F", ["interrawt3_frame"]],
-		["interrawt3_trackbarbracket_R", ["interrawt3_frame"]],
 	],
 	"nodes":[
 		["id", "posX", "posY", "posZ"],

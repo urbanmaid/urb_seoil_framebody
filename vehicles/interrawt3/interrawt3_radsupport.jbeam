@@ -15,7 +15,7 @@
 		"flexbodies": [
 			["mesh", "[group]:", "nonFlexMaterials"],
 			{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
-			["interrawt3_radsupport", ["interrawt3_radsupport"]],
+			["seoil_framebody_radsupport_interra", ["interrawt3_radsupport"]],
 		],
 		"nodes":[
 			["id", "posX", "posY", "posZ"],
