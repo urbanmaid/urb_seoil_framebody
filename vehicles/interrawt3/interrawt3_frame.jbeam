@@ -10,8 +10,8 @@
         ["type", "default", "description"],
         ["interrawt3_body", "interrawt3_body", "Body", {"coreSlot":false}],
         ["interrawt3_radsupport", "interrawt3_radsupport", "Radiator Support"],
-        ["interrawt3_bumper_F", "interrawt3_bumper_F","Front Bumper"],
-        ["interrawt3_bumper_R", "interrawt3_bumper_R","Rear Bumper"],
+        ["interrawt3_bumper_F", "interrawt3_bumper_F", "Front Bumper"],
+        ["interrawt3_bumper_R", "interrawt3_bumper_R", "Rear Bumper"],
 		["pickup_reversewarn", "pickup_reversewarn", "Reverse Warning Beeper"],
         ["seoil_framebody_towhitch", "","Tow Hitch"],
 
@@ -20,7 +20,8 @@
         ["seoil_framebody_fueltank", "seoil_framebody_fueltank", "Fuel Tank"],
 		["seoil_framebody_driveshaft_R", "seoil_framebody_driveshaft_R", "Rear Driveshaft"],
 
-        ["seoil_framebody_muffler", "seoil_framebody_muffler","Muffler"],
+        ["seoil_framebody_muffler_L", "seoil_framebody_muffler_L", "Left Muffler"],
+        ["seoil_framebody_muffler_R", "", "RightMuffler"],
         ["pickup_ABS", "pickup_ABS", "Anti-Lock Braking System"],
         ["pickup_ESC", "pickup_ESC", "Electronic Stability & Traction Control"],
 		
@@ -124,7 +125,7 @@
 		["f9l", 0.542,1.765,0.505],
 		["f9r",-0.542,1.765,0.505],
 		["f19l", 0.542,1.765,0.622],
-		["f19l", 0.0,1.937,0.622], // For sparetire attachment
+		["f19", 0.0,1.937,0.622], // For sparetire attachment
 		["f19r",-0.542,1.765,0.622],
 
 		{"selfCollision":false},
@@ -141,7 +142,7 @@
 		//top of shock/spring
 		{"collision":true},
 		{"selfCollision":true},
-		{"group":"interrawt3_shocktop"},
+		{"group":"seoil_framebody_shocktop"},
 		{"nodeWeight":7.52},
 		["fs1r", -0.473, -1.50, 0.73],
 		["fs1l", 0.473, -1.50, 0.73],
