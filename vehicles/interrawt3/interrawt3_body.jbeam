@@ -75,6 +75,12 @@
 			"interrawt3_tailgatebase"
 		]
 		],
+		["seoil_engine_v6_enginebaycomponent_interra", 
+		[
+			"interrawt3_floor", 
+			"interrawt3_fendersupport", 
+		]
+		],
 	],
 	"nodes":[
 		["id", "posX", "posY", "posZ"],

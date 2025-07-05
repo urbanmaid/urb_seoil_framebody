@@ -8,23 +8,26 @@
         "slotType" : "interrawt3_radiator",
         "flexbodies": [
             ["mesh", "[group]:", "nonFlexMaterials"],
-            ["interrawt3_radiator1", ["interrawt3_radsupport"]],
-            ["interrawt3_fanshroud", ["interrawt3_radsupport"]],
+            ["seoil_engine_v6_radiator_highpos", ["interrawt3_radsupport"]],
+            ["seoil_engine_v6_coolanttank_highpos", ["interrawt3_radsupport"]],
+        ],
+        "props": [
+            ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+            ["radiatorFanSpin"  , "seoil_engine_v6_radiator_fan", "s1","s1l","s2",  {"x":0, "y":0, "z":0}, {"x":0, "y":1, "z":0}    , {"x":0, "y":0, "z":0}, -360, 360, 0, 1],
         ],
         "mainEngine":{
-            //cooling system
-            "radiatorArea":0.4,
-            "radiatorEffectiveness":12000,
-            "coolantVolume":13,
+            "radiatorArea":0.519,
+            "radiatorEffectiveness":18000,
+            "coolantVolume":20,
             "radiatorFanType":"electric",
-            "radiatorFanTemperature":100,
-            "radiatorFanMaxAirSpeed":2,
-            "thermostatTemperature":90,
+            "electricRadiatorFanOverrideIgnitionLevel":1
+            "radiatorFanTemperature":90,
+            "radiatorFanMaxAirSpeed":17.5,
+            "thermostatTemperature":80,
             "radiatorFanLoopEvent": "event:>Vehicle>Cooling Fan>Electric_05",
-            "radiatorFanVolume": 0.4,
-
+            "radiatorFanVolume": 0.9,
             //damage deformGroups
-            "deformGroups_radiator":["radiator_damage", "radhose_damage"],
+            "deformGroups_radiator":["radiator_damage", "radhose_damage"]
         },
         "nodes": [
             ["id", "posX", "posY", "posZ"],
@@ -80,7 +83,7 @@
         "flexbodies": [
             ["mesh", "[group]:", "nonFlexMaterials"],
             ["seoil_engine_v6_radiator_highpos", ["interrawt3_radsupport"]],
-            ["interrawt3_fanshroud", ["interrawt3_radsupport"]],
+            ["seoil_engine_v6_coolanttank_highpos", ["interrawt3_radsupport"]],
         ],
         "mainEngine":{
             //cooling system
@@ -151,7 +154,7 @@
         "flexbodies": [
             ["mesh", "[group]:", "nonFlexMaterials"],
             ["seoil_engine_v6_radiator_highpos", ["interrawt3_radsupport"]],
-            ["interrawt3_fanshroud", ["interrawt3_radsupport"]],
+            ["seoil_engine_v6_coolanttank_highpos", ["interrawt3_radsupport"]],
         ],
         "mainEngine":{
             //cooling system
@@ -222,7 +225,7 @@
         "flexbodies": [
             ["mesh", "[group]:", "nonFlexMaterials"],
             ["seoil_engine_v6_radiator_highpos", ["interrawt3_radsupport"]],
-            ["interrawt3_fanshroud", ["interrawt3_radsupport"]],
+            ["seoil_engine_v6_coolanttank_highpos", ["interrawt3_radsupport"]],
         ],
         "mainEngine":{
             //cooling system

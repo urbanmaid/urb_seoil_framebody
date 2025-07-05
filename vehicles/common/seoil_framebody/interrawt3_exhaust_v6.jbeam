@@ -2,7 +2,7 @@
 "seoil_framebody_exhaust_v6": {
     "information":{
         "authors":"BeamNG",
-        "name":"V6 Exhaust",
+        "name":"V6 Single Muffler Exhaust",
         "value":400,
     },
     "slotType" : "seoil_framebody_exhaust_v6",
@@ -45,9 +45,11 @@
         ["ex1ll", 0.36, -1.02, 0.36, {"selfCollision":false}],
         ["ex2r", -0.36, -0.15, 0.36],
         ["ex2l", 0.36, -0.15, 0.36],
-        ["ex3l",0.36, 0.5, 0.36, {"selfCollision":false, "afterFireAudioCoef":1.0, "afterFireVisualCoef":1.0, "afterFireVolumeCoef":0.8, "afterFireMufflingCoef":0.7, "exhaustAudioMufflingCoef":0.5, "exhaustAudioGainChange":-6}],
-        ["ex4l",0.1, 0.2, 0.31],
+        {"group":["seoil_framebody_exhaust", "seoil_framebody_muffler"]},
+        ["ex3l",0.36, 0.05, 0.36, {"selfCollision":false, "afterFireAudioCoef":1.0, "afterFireVisualCoef":1.0, "afterFireVolumeCoef":0.8, "afterFireMufflingCoef":0.7, "exhaustAudioMufflingCoef":0.5, "exhaustAudioGainChange":-6}],
+        ["ex4l",0.1, 0.0, 0.31],
         //rigidifier
+        {"group":""},
         ["ex5r",-0.22, -0.13, 0.47, {"selfCollision":false}],
         ["ex5l", 0.22, -0.13, 0.47, {"selfCollision":false}],
     ],
@@ -119,7 +121,7 @@
         ["ex1ll", "e2l"],
         ["ex1ll", "e4l"],
         //mid
-        {"beamSpring":44344.5,"beamDamp":347.8},
+        {"beamSpring":80000,"beamDamp":320},
         {"beamDeform":4000,"beamStrength":15000},
         //rear
         {"breakGroup":"exhaust_rear"},
