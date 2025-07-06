@@ -1,0 +1,28 @@
+{
+  "seoil_quantum_v": {
+    "name": "seoil_quantum_v",
+    "mapTo": "seoil_quantum_v",
+    "class": "Material",
+    "persistentId": "0acb6e7c-7ae1-4c9f-a85d-ee6001233b9f",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/common/seoil_quantum_v/seoil_quantum_v_ao.data.png",
+        "baseColorFactor": [
+          0.5,
+          0.5,
+          0.5,
+          1
+        ],
+        "metallicFactor": 0.75,
+        "normalMap": "/vehicles/common/seoil_quantum_v/seoil_quantum_v_n.normal.png",
+        "roughnessFactor": 0.42
+      },
+      {},
+      {},
+      {}
+    ],
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  }
+}
