@@ -19,6 +19,7 @@
         ["seoil_framebody_engine", "seoil_framebody_engine_v6_3.0", "Engine"],
         ["seoil_framebody_fueltank", "seoil_framebody_fueltank", "Fuel Tank"],
 		["seoil_framebody_driveshaft_R", "seoil_framebody_driveshaft_R", "Rear Driveshaft"],
+        ["seoil_framebody_enginebaycomponent", "seoil_framebody_enginebaycomponent_interra", "Engine Bay Component"],
 
         ["seoil_framebody_muffler_L", "seoil_framebody_muffler_L", "Left Muffler"],
         ["seoil_framebody_muffler_R", "", "RightMuffler"],

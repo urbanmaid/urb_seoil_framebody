@@ -9,6 +9,8 @@
         "flexbodies": [
             ["mesh", "[group]:", "nonFlexMaterials"],
             ["seoil_framebody_muffler_L", ["seoil_framebody_muffler"]],
+            ["seoil_framebody_heatshield_muffler_L", ["seoil_framebody_frame"]],
+            //["seoil_framebody_heatshield_muffler_R", ["seoil_framebody_frame"]],
         ],
         "soundConfigExhaust": {
             "$+lowShelfGain":0,
@@ -123,6 +125,8 @@
         "flexbodies": [
             ["mesh", "[group]:", "nonFlexMaterials"],
             ["seoil_framebody_muffler_R", ["seoil_framebody_muffler"]],
+            ["seoil_framebody_heatshield_muffler_L", ["seoil_framebody_frame"]],
+            ["seoil_framebody_heatshield_muffler_R", ["seoil_framebody_frame"]],
         ],
         "soundConfigExhaust": {
             "$+lowShelfGain":0,

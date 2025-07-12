@@ -66,21 +66,6 @@
 			"interrawt3_tailgatebase"
 		]
 		],
-		["interrawt3_glass", 
-		[
-			"interrawt3_floor", 
-			"interrawt3_fendersupport", 
-			"interrawt3_roof", 
-			"interrawt3_quarterpanel", 
-			"interrawt3_tailgatebase"
-		]
-		],
-		["seoil_engine_v6_enginebaycomponent_interra", 
-		[
-			"interrawt3_floor", 
-			"interrawt3_fendersupport", 
-		]
-		],
 	],
 	"nodes":[
 		["id", "posX", "posY", "posZ"],
@@ -1402,7 +1387,7 @@
 		{"groundModel":"metal"},
 
 		{"group":"interrawt3_fendersupport_L"},
-		{"dragCoef": 12},
+		{"dragCoef": 6},
 			["fm1ll", "fm1l", "fm2l"],
 			["fm1ll", "fm2l", "fm2ll"],
 
@@ -1415,7 +1400,7 @@
 			["b6l", "b8ll", "b1ll"],
 
 		{"group":"interrawt3_fendersupport_R"},
-		{"dragCoef": 12},
+		{"dragCoef": 6},
 			["fm1r", "fm1rr", "fm2rr"],
 			["fm1r", "fm2rr", "fm2r"],
 
@@ -1428,7 +1413,7 @@
 			["b8rr", "b6r", "b1rr"],
 
 		{"group":"interrawt3_firewall"},
-		{"dragCoef": 14},
+		{"dragCoef": 10},
 			["b7r", "b6rr", "b7rr"],
 			["b7ll", "b6ll", "b7l"],
 

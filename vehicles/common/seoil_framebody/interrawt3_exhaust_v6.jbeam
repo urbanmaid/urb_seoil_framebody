@@ -10,6 +10,8 @@
             ["mesh", "[group]:", "nonFlexMaterials"],
             ["seoil_framebody_exhaust_V_L", ["seoil_framebody_exhaust", "seoil_framebody_header"]],
             ["seoil_framebody_exhaust_V_integrated", ["seoil_framebody_exhaust", "seoil_framebody_header"]],
+            // Heatshield
+            ["seoil_framebody_heatshield_exhaust", ["seoil_framebody_frame"]],
         ],
         "mainEngine":{
             "torqueModExhaust":[

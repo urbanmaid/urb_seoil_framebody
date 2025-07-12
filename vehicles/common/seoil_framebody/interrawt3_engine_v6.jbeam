@@ -174,7 +174,6 @@
             ["mesh", "[group]:", "nonFlexMaterials"],
             ["seoil_engine_v6_longitudinal", ["seoil_framebody_engine"], [], {"pos":{"x":0, "y":0, "z":0}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":1, "y":1, "z":1}}],
             ["seoil_engine_v6_longitudinal_accesories", ["seoil_framebody_engine"], [], {"pos":{"x":0, "y":0, "z":0}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":1, "y":1, "z":1}}],
-            ["seoil_engine_v6_longitudinal_manifold", ["seoil_framebody_engine"], [], {"pos":{"x":0, "y":0, "z":0}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":1, "y":1, "z":1}}],
             {"deformGroup":"engbay_break", "deformMaterialBase":"interra", "deformMaterialDamaged":"invis"},
             ["seoil_engine_v6_longitudinal_radhose", ["seoil_framebody_engine", "seoil_framebody_radsupport"]],
             {"deformGroup":"", "deformMaterialBase":"", "deformMaterialDamaged":""},
@@ -593,7 +592,7 @@
         ],
         "flexbodies": [
             ["mesh", "[group]:", "nonFlexMaterials"],
-            ["gavril_v6_seoil_framebody_headers", ["seoil_framebody_engine", "seoil_framebody_header"]],
+            ["seoil_engine_v6_longitudinal_manifold", ["seoil_framebody_engine"], [], {"pos":{"x":0, "y":0, "z":0}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":1, "y":1, "z":1}}],
         ],
         "nodes":[
             ["id", "posX", "posY", "posZ"],
@@ -649,7 +648,7 @@
         ],
         "flexbodies": [
             ["mesh", "[group]:", "nonFlexMaterials"],
-            ["gavril_v6_seoil_framebody_headers_race", ["seoil_framebody_engine", "seoil_framebody_header"]],
+            ["seoil_engine_v6_longitudinal_manifold", ["seoil_framebody_engine"], [], {"pos":{"x":0, "y":0, "z":0}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":1, "y":1, "z":1}}],
         ],
         "nodes":[
             ["id", "posX", "posY", "posZ"],

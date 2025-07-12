@@ -158,7 +158,7 @@
 			["id1:", "id2:", "id3:"],
 			{"groundModel":"metal"},
 			{"group":"interrawt3_radsupport"},
-			{"dragCoef": 10},
+			{"dragCoef": 8},
 
 			//["s1r","s1rr","s2rr"],
 			//["s1r","s2rr","s2r"],

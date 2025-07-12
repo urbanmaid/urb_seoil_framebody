@@ -11,6 +11,8 @@
 		["interrawt3_lights_chmsl","interrawt3_lights_chmsl","Center high mounted stop light", {"coreSlot":true}],
 		["interrawt3_tailgateglass","interrawt3_tailgateglass","Tailgate Glass"],
 		["interrawt3_licenseplate_T","interrawt3_licenseplate_T","Tailgate License Plate"],
+
+		["interrawt3_lettering_tailgate_center","interrawt3_lettering_tailgate_center_seoil","Tailgate Center Lettering"],
 	],
 	"flexbodies": [
 		["mesh", "[group]:", "nonFlexMaterials"],

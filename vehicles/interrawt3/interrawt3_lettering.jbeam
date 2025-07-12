@@ -1,0 +1,28 @@
+{
+	"interrawt3_lettering_tailgate_center_seoil":{
+		"information":{
+			"authors":"Urbanmaid",
+			"name":"Seoil Center Mounted Tailgate Lettering",
+			"value":20,
+		},
+		"slotType":"interrawt3_lettering_tailgate_center",
+		"flexbodies": [
+			["mesh", "[group]:", "nonFlexMaterials"],
+			{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
+			["interrawt3_lettering_tailgate_center_seoil", ["interrawt3_tailgate"]],
+		],
+	},
+	"interrawt3_lettering_tailgate_center_interrra":{
+		"information":{
+			"authors":"Urbanmaid",
+			"name":"Interra Center Mounted Tailgate Lettering",
+			"value":20,
+		},
+		"slotType":"interrawt3_lettering_tailgate_center",
+		"flexbodies": [
+			["mesh", "[group]:", "nonFlexMaterials"],
+			{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
+			["interrawt3_lettering_tailgate_center_interrra", ["interrawt3_tailgate"]],
+		],
+	},
+}

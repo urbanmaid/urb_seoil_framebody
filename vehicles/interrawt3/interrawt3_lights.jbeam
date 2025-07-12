@@ -12,6 +12,8 @@
 			["interrawt3_lights_headlight_L_cover", ["interrawt3_lights_headlight_L"]],
 			["interrawt3_lights_headlight_L", ["interrawt3_lights_headlight_L"]],
 			["interrawt3_lights_headlight_L_glass", ["interrawt3_lights_headlight_L"]],
+
+			["interrawt3_lights_headlightline_L", ["interrawt3_fendersupport"]],
 		],
 		"props": [
 			["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
@@ -125,6 +127,8 @@
 			["interrawt3_lights_headlight_R_cover", ["interrawt3_lights_headlight_R"]],
 			["interrawt3_lights_headlight_R", ["interrawt3_lights_headlight_R"]],
 			["interrawt3_lights_headlight_R_glass", ["interrawt3_lights_headlight_R"]],
+
+			["interrawt3_lights_headlightline_R", ["interrawt3_fendersupport"]],
 		],
 		"props": [
 			["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
@@ -264,7 +268,7 @@
 				"texSize":512,
 				"shadowSoftness":0.5,
 			},
-			["brake"    , "SPOTLIGHT"        , "tl1l", "tl2l", "tl3l", {"x":-6, "y":0, "z":10} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.6, "y":0.225, "z":0.0},"lightRange":80,"lightBrightness":0.8,"lightOuterAngle":95,"flareScale":0.1,"deformGroup":"taillight_L_break"}],
+			["brake"    , "SPOTLIGHT"        , "tl1l", "tl2l", "tl3l", {"x":-6, "y":0, "z":10} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.6, "y":0.225, "z":0.0},"lightRange":80,"lightBrightness":0.6,"lightOuterAngle":95,"flareScale":0.1,"deformGroup":"taillight_L_break"}],
 			["lowhighbeam"    , "SPOTLIGHT"        , "tl1l", "tl2l", "tl3l", {"x":-6, "y":0, "z":10} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.6, "y":0.225, "z":0.0},"lightRange":100,"lightBrightness":0.5,"lightOuterAngle":95,"flareScale":0.07,"deformGroup":"taillight_L_break"}],
 			{
 				"lightInnerAngle":0,
@@ -390,7 +394,7 @@
 				"texSize":512,
 				"shadowSoftness":0.5,
 			},
-			["brake"    , "SPOTLIGHT"        , "tl1r", "tl2r", "tl3r", {"x":-6, "y":0, "z":170}, {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.6, "y":0.225, "z":0.0},"lightRange":80,"lightBrightness":0.8,"lightOuterAngle":95,"flareScale":0.1,"deformGroup":"taillight_R_break"}],
+			["brake"    , "SPOTLIGHT"        , "tl1r", "tl2r", "tl3r", {"x":-6, "y":0, "z":170}, {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.6, "y":0.225, "z":0.0},"lightRange":80,"lightBrightness":0.6,"lightOuterAngle":95,"flareScale":0.1,"deformGroup":"taillight_R_break"}],
 			["lowhighbeam"    , "SPOTLIGHT"        , "tl1r", "tl2r", "tl3r", {"x":-6, "y":0, "z":170} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.6, "y":0.225, "z":0.0},"lightRange":100,"lightBrightness":0.5,"lightOuterAngle":95,"flareScale":0.07,"deformGroup":"taillight_R_break"}],
 			{
 				"lightInnerAngle":0,
