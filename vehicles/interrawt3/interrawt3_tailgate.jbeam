@@ -13,6 +13,7 @@
 		["interrawt3_licenseplate_T","interrawt3_licenseplate_T","Tailgate License Plate"],
 
 		["interrawt3_lettering_tailgate_center","interrawt3_lettering_tailgate_center_seoil","Tailgate Center Lettering"],
+		["interrawt3_lettering_tailgate_engine","interrawt3_lettering_tailgate_30v6","Engine Lettering"],
 	],
 	"flexbodies": [
 		["mesh", "[group]:", "nonFlexMaterials"],

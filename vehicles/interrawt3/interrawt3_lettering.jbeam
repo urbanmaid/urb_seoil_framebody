@@ -1,4 +1,5 @@
 {
+// Center
 	"interrawt3_lettering_tailgate_center_seoil":{
 		"information":{
 			"authors":"Urbanmaid",
@@ -23,6 +24,46 @@
 			["mesh", "[group]:", "nonFlexMaterials"],
 			{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
 			["interrawt3_lettering_tailgate_center_interrra", ["interrawt3_tailgate"]],
+		],
+	},
+// Engine
+	"interrawt3_lettering_tailgate_25i4":{
+		"information":{
+			"authors":"Urbanmaid",
+			"name":"2.5",
+			"value":20,
+		},
+		"slotType":"interrawt3_lettering_tailgate_engine",
+		"flexbodies": [
+			["mesh", "[group]:", "nonFlexMaterials"],
+			{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
+			["interrawt3_lettering_tailgate_25i4", ["interrawt3_tailgate"]],
+		],
+	},
+	"interrawt3_lettering_tailgate_30v6":{
+		"information":{
+			"authors":"Urbanmaid",
+			"name":"3.0 V6",
+			"value":20,
+		},
+		"slotType":"interrawt3_lettering_tailgate_engine",
+		"flexbodies": [
+			["mesh", "[group]:", "nonFlexMaterials"],
+			{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
+			["interrawt3_lettering_tailgate_30v6", ["interrawt3_tailgate"]],
+		],
+	},
+	"interrawt3_lettering_tailgate_35v6":{
+		"information":{
+			"authors":"Urbanmaid",
+			"name":"3.5 V6",
+			"value":20,
+		},
+		"slotType":"interrawt3_lettering_tailgate_engine",
+		"flexbodies": [
+			["mesh", "[group]:", "nonFlexMaterials"],
+			{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
+			["interrawt3_lettering_tailgate_35v6", ["interrawt3_tailgate"]],
 		],
 	},
 }
