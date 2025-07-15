@@ -1,4 +1,5 @@
 {
+// Tailgate
 	"interrawt3_tailgate":{
 		"information":{
 			"authors":"Urbanmaid",
@@ -69,7 +70,7 @@
 			{"selfCollision":true},
 			{"collision":true},
 			//frame lower
-			{"nodeWeight":2.1},
+			{"nodeWeight":1.8},
 			{"group":"interrawt3_tailgate"},
 
 			["t1ll",0.634,2.072,1.818],
@@ -109,8 +110,8 @@
 		"beams":[
 			["id1:", "id2:"],
 			{"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
-			{"beamSpring":1880940,"beamDamp":200},
-			{"beamDeform":14140,"beamStrength":"FLT_MAX"},
+			{"beamSpring":1880940,"beamDamp":380},
+			{"beamDeform":16800,"beamStrength":"FLT_MAX"},
 			{"deformLimitExpansion":1.2},
 			//BNEcolor: 152, 59, 187
 			// X
@@ -164,8 +165,8 @@
 				["t4lat", "tb2l"],
 				["t4lat", "tb2r"],
 
-			{"beamSpring":1080000,"beamDamp":200},
-			{"beamDeform":4000,"beamStrength":"FLT_MAX"},
+			{"beamSpring":1080000,"beamDamp":300},
+			{"beamDeform":5200,"beamStrength":"FLT_MAX"},
 			// Rigidfier
 				["tgrgd", "t1ll"],
 				["tgrgd", "t1l"],
@@ -182,21 +183,9 @@
 				["tgrgd", "t4r"],
 				["tgrgd", "t4rr"],
 
-			// Hinge
-			/*
-				["th1ll", "t1ll"],
-				["th1ll", "t1l"],
-				["th1ll", "t2ll"],
-				["th1ll", "t3ll"],
-				["th1ll", "tgrgd"],
-				["th1rr", "t1rr"],
-				["th1rr", "t1r"],
-				["th1rr", "t2rr"],
-				["th1rr", "t3rr"],
-				["th1rr", "tgrgd"],
-			*/
+			// Hinge to door is applied on other jbeam object.
 
-			// Latch Connector
+			// Latch(Default)
 				["t4", "t4l"],
 				["t4", "t4r"],
 				["t4", "t3l"],
@@ -204,25 +193,7 @@
 				["t4", "tgrgd"],
 
 			//BNEcolor: 122, 49, 149
-			// Hinge
-			/*
-				{"disableTriangleBreaking":true},
-				{"beamSpring":2600000,"beamDamp":250},
-				{"beamDeform":40000,"beamStrength":72500},
-				{"breakGroup":"trunkhinge_L"},
-				["th1ll", "rf7ll"],
-				["th1ll", "rf7l"],
-				["th1ll", "rf6ll"],
-				["th1ll", "p10l"],
-				["th1ll", "q3l"],
-				{"breakGroup":"trunkhinge_R"},
-				["th1rr", "rf7rr"],
-				["th1rr", "rf7r"],
-				["th1rr", "rf6rr"],
-				["th1rr", "p10r"],
-				["th1rr", "q3r"],
-				{"breakGroup":""},
-			*/
+			// Hinge to frame is applied on other jbeam object.
 
 			{"beamType":"|SUPPORT","beamLongBound":48},
 			{"beamSpring":1895830,"beamDamp":94},
@@ -379,6 +350,10 @@
 			"name":"Swing(LHD)",
 		},
 		"slotType":"interrawt3_tailgatehinge",
+		"slots": [
+			["type", "default", "description"],
+			["interrawt3_tailgate_sparetireadapter_L","interrawt3_tailgate_sparetireadapter_L","Spare Tire Adapter"],
+		],
 		"nodes":[
 			["id", "posX", "posY", "posZ"],
 			{"frictionCoef":0.5},
@@ -388,8 +363,10 @@
 			{"collision":false},
 			//rigidifier
 			{"nodeWeight":2.5},
+			["t4", -0.72, 2.41, 0.96, {"tag":"tailgateLatch"}],
+			["t4lat", -0.72, 2.41, 0.96, {"couplerTag":"tailgateLatch","couplerLock":true,"couplerStrength":35000,"couplerRadius":1.35,"couplerStartRadius":0.1,"couplerLockRadius":0.01,"couplerLatchSpeed":0.5, "breakGroup":"tailgateLatch"}],
 			["th1l", 0.72, 2.41, 0.75],
-			["th1ll", 0.72, 2.41, 1.25],
+			["th1ll", 0.72, 2.41, 1.35],
 
 			{"selfCollision":true},
 			{"collision":true},
@@ -415,6 +392,9 @@
 				["th1ll", "t3l"],
 				["th1ll", "t2ll"],
 				["th1ll", "th1l"],
+
+				["t4", "t3rr"],
+				["t4", "t4rr"],
 
 			//BNEcolor: 122, 49, 149
 			// Hinge to body
@@ -456,7 +436,7 @@
 
 			//open
 				{"beamPrecompression":4.0, "beamType":"|SUPPORT","beamLongBound":48},
-				{"beamSpring":300,"beamDamp":100},
+				{"beamSpring":180,"beamDamp":100},
 				["tgrgd", "b5"],
 
 			{"breakGroup":""},
@@ -466,4 +446,200 @@
 			{"deformLimitExpansion":1.2},
 		],
 	},
+
+// Spare Tire
+	"interrawt3_tailgate_sparetireadapter_L":{
+		"information":{
+			"authors":"Urbanmaid",
+			"name":"Spare Tire Adapter(LHD)",
+		},
+		"slotType":"interrawt3_tailgate_sparetireadapter_L",
+		"slots": [
+			["type", "default", "description"],
+			["interrawt3_tailgate_sparetire_L","interrawt3_tailgate_sparetire_6l_L","Spare Tire Attachment"],
+		],
+        "flexbodies": [
+            ["mesh", "[group]:", "nonFlexMaterials"],
+            ["interrawt3_sparetireholder", ["interrawt3_tailgate"], [], {"pos":{"x":0.28, "y":2.3975, "z":1.1}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":1.005, "y":1.0, "z":1.0}}],
+        ],
+	},
+    "interrawt3_tailgate_sparetire_6l_L": {
+        "information":{
+            "authors":"BeamNG",
+            "name":"6 Lug Spare Tire",
+            "value":70,
+        },
+
+        "slotType" : "interrawt3_tailgate_sparetire_L",
+        "flexbodies": [
+            ["mesh", "[group]:", "nonFlexMaterials"],
+            ["steelwheel_02a_16x8", ["interrawt3_tailgate_sparetire"], [], {"pos":{"x":0.28, "y":2.55, "z":1.1}, "rot":{"x":0, "y":0, "z":90}, "scale":{"x":1.0, "y":1.0, "z":1.0}}],
+            ["tire_01a_16x8_29", ["interrawt3_tailgate_sparetire"], [], {"pos":{"x":0.28, "y":2.55, "z":1.1}, "rot":{"x":0, "y":0, "z":90}, "scale":{"x":1.0, "y":1.0, "z":1.0}}],
+        ],
+        "nodes": [
+            ["id", "posX", "posY", "posZ"],
+            {"group":"interrawt3_tailgate_sparetire"},
+            {"collision":true},
+            {"selfCollision":true},
+            {"nodeMaterial":"|NM_RUBBER"},
+            {"frictionCoef":1.3},
+            {"nodeWeight":1.7},
+            ["spwt1", 0.28000, 2.66158, 0.70922],
+            ["spwt1r", -0.06741, 2.66158, 0.90491],
+            ["spwt1l", 0.62741, 2.66158, 0.90491],
+            ["spwt2", 0.28000, 2.66158, 1.49208],
+            ["spwt2r", -0.06741, 2.66158, 1.29639],
+            ["spwt2l", 0.62741, 2.66158, 1.29639],
+            {"selfCollision":false},
+            ["spwt3", 0.28000, 2.46710, 0.70922],
+            ["spwt3r", -0.06741, 2.46710, 0.90491],
+            ["spwt3l", 0.62741, 2.46710, 0.90491],
+            ["spwt4", 0.28000, 2.46710, 1.49208],
+            ["spwt4r", -0.06741, 2.46710, 1.29639],
+            ["spwt4l", 0.62741, 2.46710, 1.29639],
+            {"selfCollision":true},
+            ["spwt5", 0.28000, 2.45000, 1.10000],
+            ["spwt5e", 0.28000, 2.65000, 1.10000],
+            {"group":""},
+        ],
+
+        "beams": [
+            ["id1:", "id2:"],
+            {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+            {"beamSpring":43688,"beamDamp":244.4},
+            {"beamDeform":"FLT_MAX","beamStrength":"FLT_MAX"},
+            //main shape
+            ["spwt1", "spwt1r"],
+            ["spwt1r", "spwt2r"],
+            ["spwt2r", "spwt2"],
+            ["spwt1", "spwt1l"],
+            ["spwt1l", "spwt2l"],
+            ["spwt2l", "spwt2"],
+            ["spwt3", "spwt3r"],
+            ["spwt3r", "spwt4r"],
+            ["spwt4r", "spwt4"],
+            ["spwt3", "spwt3l"],
+            ["spwt3l", "spwt4l"],
+            ["spwt4l", "spwt4"],
+            ["spwt3", "spwt1"],
+            ["spwt4", "spwt2"],
+            ["spwt3r", "spwt1r"],
+            ["spwt3l", "spwt1l"],
+            ["spwt4r", "spwt2r"],
+            ["spwt4l", "spwt2l"],
+            //crossing
+            ["spwt1", "spwt3r"],
+            ["spwt3", "spwt1r"],
+            ["spwt1r", "spwt4r"],
+            ["spwt3r", "spwt2r"],
+            ["spwt2r", "spwt4"],
+            ["spwt4r", "spwt2"],
+            ["spwt2", "spwt4l"],
+            ["spwt4", "spwt2l"],
+            ["spwt2l", "spwt3l"],
+            ["spwt4l", "spwt1l"],
+            ["spwt1l", "spwt3"],
+            ["spwt3l", "spwt1"],
+            ["spwt1", "spwt2"],
+            ["spwt2r", "spwt1l"],
+            ["spwt2l", "spwt1r"],
+            ["spwt3l", "spwt4r"],
+            ["spwt3r", "spwt4l"],
+            ["spwt3", "spwt4"],
+            //rigids
+            ["spwt3", "spwt4r"],
+            ["spwt3r", "spwt4"],
+            ["spwt4r", "spwt4l"],
+            ["spwt4", "spwt3l"],
+            ["spwt4l", "spwt3"],
+            ["spwt3l", "spwt3r"],
+            ["spwt1", "spwt2r"],
+            ["spwt1r", "spwt2"],
+            ["spwt2r", "spwt2l"],
+            ["spwt2", "spwt1l"],
+            ["spwt2l", "spwt1"],
+            ["spwt1l", "spwt1r"],
+            //bracing
+            ["spwt1l", "spwt4r"],
+            ["spwt2r", "spwt3l"],
+            ["spwt2l", "spwt3r"],
+            ["spwt1r", "spwt4l"],
+            ["spwt2", "spwt3"],
+            ["spwt1", "spwt4"],
+
+            //center
+            ["spwt5", "spwt1"],
+            ["spwt5", "spwt2"],
+            ["spwt5", "spwt3"],
+            ["spwt5", "spwt4"],
+
+            ["spwt5", "spwt1r"],
+            ["spwt5", "spwt2r"],
+            ["spwt5", "spwt3r"],
+            ["spwt5", "spwt4r"],
+
+            ["spwt5", "spwt1l"],
+            ["spwt5", "spwt2l"],
+            ["spwt5", "spwt3l"],
+            ["spwt5", "spwt4l"],
+
+            ["spwt5e", "spwt1"],
+            ["spwt5e", "spwt2"],
+            ["spwt5e", "spwt3"],
+            ["spwt5e", "spwt4"],
+
+            ["spwt5e", "spwt1r"],
+            ["spwt5e", "spwt2r"],
+            ["spwt5e", "spwt3r"],
+            ["spwt5e", "spwt4r"],
+
+            ["spwt5e", "spwt1l"],
+            ["spwt5e", "spwt2l"],
+            ["spwt5e", "spwt3l"],
+            ["spwt5e", "spwt4l"],
+
+            {"beamSpring":1410940,"beamDamp":366.6},
+            {"beamDeform":16900,"beamStrength":48000},
+            {"breakGroup":"sparetire_attach"},
+
+            ["spwt5", "t3l"],
+            ["spwt5", "t3ll"],
+            ["spwt5", "t4l"],
+            ["spwt5", "t4ll"],
+
+            ["spwt5e", "t3l"],
+            ["spwt5e", "t3ll"],
+            ["spwt5e", "t4l"],
+            ["spwt5e", "t4ll"],
+
+            {"breakGroup":""},
+        ],
+
+        "triangles": [
+                ["id1:","id2:","id3:"],
+                {"group":"interrawt3_tailgate_sparetire"},
+                {"dragCoef":5},
+                {"groundModel":"metal"},
+                ["spwt2", "spwt1", "spwt1r"],
+                ["spwt1r", "spwt2r", "spwt2"],
+                ["spwt2", "spwt1l", "spwt1"],
+                ["spwt2", "spwt2l", "spwt1l"],
+                ["spwt4l", "spwt2l", "spwt2"],
+                ["spwt2", "spwt4", "spwt4l"],
+                ["spwt4", "spwt2", "spwt2r"],
+                ["spwt2r", "spwt4r", "spwt4"],
+                ["spwt4r", "spwt2r", "spwt1r"],
+                ["spwt1r", "spwt3r", "spwt4r"],
+                ["spwt3r", "spwt1r", "spwt1"],
+                ["spwt3r", "spwt1", "spwt3"],
+                ["spwt3", "spwt1", "spwt1l"],
+                ["spwt1l", "spwt3l", "spwt3"],
+                ["spwt3l", "spwt1l", "spwt2l"],
+                ["spwt2l", "spwt4l", "spwt3l"],
+                ["spwt3r", "spwt3", "spwt3l"],
+                ["spwt4r", "spwt4l", "spwt4"],
+                ["spwt4r", "spwt3r", "spwt4l"],
+                ["spwt3r", "spwt3l", "spwt4l"],
+        ],
+    },
 }
