@@ -18,7 +18,7 @@
 			{"selfCollision":true},
 			{"collision":true},
 
-			{"nodeWeight":2.0},
+			{"nodeWeight":1.6},
 			{"group":"interrawt3_fender_FL"},
 			["fe1l", 0.933,-0.823,0.477],
 			["fe2l", 0.933,-0.991,0.477],
@@ -194,7 +194,7 @@
 			{"selfCollision":true},
 			{"collision":true},
 
-			{"nodeWeight":2.0},
+			{"nodeWeight":1.6},
 			{"group":"interrawt3_fender_FR"},
 			["fe1r",-0.933,-0.823,0.477],
 			["fe2r",-0.933,-0.991,0.477],

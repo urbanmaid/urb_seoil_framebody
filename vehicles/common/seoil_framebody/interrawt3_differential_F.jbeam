@@ -11,7 +11,7 @@
             ["type", "default", "description"],
             ["seoil_framebody_driveshaft_F","seoil_framebody_driveshaft_F","Front Driveshaft"],
             ["seoil_framebody_halfshafts_F","seoil_framebody_halfshafts_F","Front Halfshafts"],
-            ["seoil_framebody_finaldrive_F","seoil_framebody_finaldrive_F_393", "Front Final Drive", {"coreSlot":true}],
+            ["seoil_framebody_finaldrive_F","seoil_framebody_finaldrive_F_380", "Front Final Drive", {"coreSlot":true}],
         ],
         "flexbodies": [
             ["mesh", "[group]:", "nonFlexMaterials"],
@@ -89,7 +89,7 @@
             ["type", "default", "description"],
             ["seoil_framebody_driveshaft_F","seoil_framebody_driveshaft_F","Front Driveshaft"],
             ["seoil_framebody_halfshafts_F","seoil_framebody_halfshafts_F","Front Halfshafts"],
-            ["seoil_framebody_finaldrive_F","seoil_framebody_finaldrive_F_393", "Front Final Drive", {"coreSlot":true}],
+            ["seoil_framebody_finaldrive_F","seoil_framebody_finaldrive_F_380", "Front Final Drive", {"coreSlot":true}],
         ],
         "flexbodies": [
             ["mesh", "[group]:", "nonFlexMaterials"],
@@ -167,7 +167,7 @@
             ["type", "default", "description"],
             ["seoil_framebody_driveshaft_F","seoil_framebody_driveshaft_F","Front Driveshaft"],
             ["seoil_framebody_halfshafts_F","seoil_framebody_halfshafts_F","Front Halfshafts"],
-            ["seoil_framebody_finaldrive_F","seoil_framebody_finaldrive_F_393", "Front Final Drive", {"coreSlot":true}],
+            ["seoil_framebody_finaldrive_F","seoil_framebody_finaldrive_F_380", "Front Final Drive", {"coreSlot":true}],
         ],
         "flexbodies": [
             ["mesh", "[group]:", "nonFlexMaterials"],
@@ -245,7 +245,7 @@
             ["type", "default", "description"],
             ["seoil_framebody_driveshaft_F","seoil_framebody_driveshaft_F","Front Driveshaft"],
             ["seoil_framebody_halfshafts_F","seoil_framebody_halfshafts_F","Front Halfshafts"],
-            ["seoil_framebody_finaldrive_F","seoil_framebody_finaldrive_F_393", "Front Final Drive", {"coreSlot":true}],
+            ["seoil_framebody_finaldrive_F","seoil_framebody_finaldrive_F_380", "Front Final Drive", {"coreSlot":true}],
         ],
         "flexbodies": [
             ["mesh", "[group]:", "nonFlexMaterials"],
@@ -326,23 +326,23 @@
             "gearRatio":3.55,
         },
     },
-    "seoil_framebody_finaldrive_F_393": {
+    "seoil_framebody_finaldrive_F_380": {
         "information":{
             "authors":"BeamNG",
-            "name":"3.93:1 Front Final Drive",
+            "name":"3.80:1 Front Final Drive",
             "value":150,
         },
 
         "slotType" : "seoil_framebody_finaldrive_F",
 
         "torsionReactorF" : {
-            "gearRatio":3.93,
+            "gearRatio":3.80,
         },
     },
-    "seoil_framebody_finaldrive_F_410": {
+    "seoil_framebody_finaldrive_F_401": {
         "information":{
             "authors":"BeamNG",
-            "name":"4.10:1 Front Final Drive",
+            "name":"4.01:1 Front Final Drive",
             "value":150,
         },
 
@@ -352,17 +352,30 @@
             "gearRatio":4.10,
         },
     },
-    "seoil_framebody_finaldrive_F_444": {
+    "seoil_framebody_finaldrive_F_436": {
         "information":{
             "authors":"BeamNG",
-            "name":"4.44:1 Front Final Drive",
+            "name":"4.36:1 Front Final Drive",
             "value":150,
         },
 
         "slotType" : "seoil_framebody_finaldrive_F",
 
         "torsionReactorF" : {
-            "gearRatio":4.44,
+            "gearRatio":4.36,
+        },
+    },
+    "seoil_framebody_finaldrive_F_468": {
+        "information":{
+            "authors":"BeamNG",
+            "name":"4.68:1 Front Final Drive",
+            "value":150,
+        },
+
+        "slotType" : "seoil_framebody_finaldrive_F",
+
+        "torsionReactorF" : {
+            "gearRatio":4.68,
         },
     },
     "seoil_framebody_finaldrive_F_race": {

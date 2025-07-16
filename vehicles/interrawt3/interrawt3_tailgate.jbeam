@@ -27,17 +27,6 @@
 			["fileName"],
 			["advancedCouplerControl", {"name":"tailgateCoupler"}],
 		],
-		"triggers":[
-			["id", "label", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
-			[
-				"tailgate", "", "t4l","t4r","t3l", "box", 
-				{"x":0.15, "y":0.02, "z":0.06}, 
-				{"x":0, "y":0, "z":0}, 
-				{"x":0, "y":0, "z":0}, 
-				{"x":0, "y":0, "z":0}, 
-				{"x":0.21, "y":0.0, "z":-0.01}
-			],
-		],
 		"triggerEventLinks":[
 			["triggerId:triggers", "action", "targetEventId:events"],
 			["tailgate", "action0", "tailgateLatch"],
@@ -271,6 +260,17 @@
 			"name":"Conventional",
 		},
 		"slotType":"interrawt3_tailgatehinge",
+		"triggers":[
+			["id", "label", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
+			[
+				"tailgate", "", "t4l","t4r","t3l", "box", 
+				{"x":0.15, "y":0.02, "z":0.06}, 
+				{"x":0, "y":0, "z":0}, 
+				{"x":0, "y":0, "z":0}, 
+				{"x":0, "y":0, "z":0}, 
+				{"x":0.21, "y":0.0, "z":-0.01}
+			],
+		],
 		"nodes":[
 			["id", "posX", "posY", "posZ"],
 			{"frictionCoef":0.5},
@@ -353,6 +353,17 @@
 		"slots": [
 			["type", "default", "description"],
 			["interrawt3_tailgate_sparetireadapter_L","interrawt3_tailgate_sparetireadapter_L","Spare Tire Adapter"],
+		],
+		"triggers":[
+			["id", "label", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
+			[
+				"tailgate", "", "t4r","t4rr","t3r", "box", 
+				{"x":0.15, "y":0.02, "z":0.06}, 
+				{"x":0, "y":0, "z":0}, 
+				{"x":0, "y":0, "z":0}, 
+				{"x":0, "y":0, "z":0}, 
+				{"x":0.21, "y":0.0, "z":-0.01}
+			],
 		],
 		"nodes":[
 			["id", "posX", "posY", "posZ"],

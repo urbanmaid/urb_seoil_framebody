@@ -9,7 +9,7 @@
         "slotType" : "seoil_framebody_differential_R",
         "slots": [
             ["type", "default", "description"],
-            ["seoil_framebody_finaldrive_R","seoil_framebody_finaldrive_R_393", "Rear Final Drive", {"coreSlot":true}],
+            ["seoil_framebody_finaldrive_R","seoil_framebody_finaldrive_R_380", "Rear Final Drive", {"coreSlot":true}],
         ],
         "powertrain" : [
             ["type", "name", "inputName", "inputIndex"],
@@ -31,7 +31,7 @@
         "slotType" : "seoil_framebody_differential_R",
         "slots": [
             ["type", "default", "description"],
-            ["seoil_framebody_finaldrive_R","seoil_framebody_finaldrive_R_393", "Rear Final Drive", {"coreSlot":true}],
+            ["seoil_framebody_finaldrive_R","seoil_framebody_finaldrive_R_380", "Rear Final Drive", {"coreSlot":true}],
         ],
         "powertrain" : [
             ["type", "name", "inputName", "inputIndex"],
@@ -53,7 +53,7 @@
         "slotType" : "seoil_framebody_differential_R",
         "slots": [
             ["type", "default", "description"],
-            ["seoil_framebody_finaldrive_R","seoil_framebody_finaldrive_R_393", "Rear Final Drive", {"coreSlot":true}],
+            ["seoil_framebody_finaldrive_R","seoil_framebody_finaldrive_R_380", "Rear Final Drive", {"coreSlot":true}],
         ],
         "powertrain" : [
             ["type", "name", "inputName", "inputIndex"],
@@ -75,7 +75,7 @@
         "slotType" : "seoil_framebody_differential_R",
         "slots": [
             ["type", "default", "description"],
-            ["seoil_framebody_finaldrive_R","seoil_framebody_finaldrive_R_393", "Rear Final Drive", {"coreSlot":true}],
+            ["seoil_framebody_finaldrive_R","seoil_framebody_finaldrive_R_380", "Rear Final Drive", {"coreSlot":true}],
         ],
         "powertrain" : [
             ["type", "name", "inputName", "inputIndex"],
@@ -105,20 +105,20 @@
     "seoil_framebody_finaldrive_R_393": {
         "information":{
             "authors":"BeamNG",
-            "name":"3.93:1 Rear Final Drive",
+            "name":"3.80:1 Rear Final Drive",
             "value":150,
         },
 
         "slotType" : "seoil_framebody_finaldrive_R",
 
         "differential_R" : {
-            "gearRatio":3.93,
+            "gearRatio":3.80,
         },
     },
-    "seoil_framebody_finaldrive_R_410": {
+    "seoil_framebody_finaldrive_R_401": {
         "information":{
             "authors":"BeamNG",
-            "name":"4.10:1 Rear Final Drive",
+            "name":"4.01:1 Rear Final Drive",
             "value":150,
         },
 
@@ -128,17 +128,30 @@
             "gearRatio":4.10,
         },
     },
-    "seoil_framebody_finaldrive_R_444": {
+    "seoil_framebody_finaldrive_R_436": {
         "information":{
             "authors":"BeamNG",
-            "name":"4.44:1 Rear Final Drive",
+            "name":"4.36:1 Rear Final Drive",
             "value":150,
         },
 
         "slotType" : "seoil_framebody_finaldrive_R",
 
         "differential_R" : {
-            "gearRatio":4.44,
+            "gearRatio":4.36,
+        },
+    },
+    "seoil_framebody_finaldrive_R_468": {
+        "information":{
+            "authors":"BeamNG",
+            "name":"4.68:1 Rear Final Drive",
+            "value":150,
+        },
+
+        "slotType" : "seoil_framebody_finaldrive_R",
+
+        "differential_R" : {
+            "gearRatio":4.68,
         },
     },
     "seoil_framebody_finaldrive_R_race": {

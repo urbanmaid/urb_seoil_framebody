@@ -17,7 +17,7 @@
 			{"selfCollision":true},
 			{"nodeMaterial":"|NM_PLASTIC"},
 
-			{"nodeWeight":2.0},
+			{"nodeWeight":1.2},
 			{"group":"interrawt3_bumper_R"},
 
 			["rb1rr",-0.921,2.24,0.699],

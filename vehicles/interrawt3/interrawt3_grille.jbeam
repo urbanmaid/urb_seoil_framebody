@@ -167,6 +167,19 @@
 			["interrawt3_grille_highlight_base", ["interrawt3_grille"]],
 		],
 	},
+	"interrawt3_grillehighlight_chrome":{
+		"information":{
+			"authors":"Urbanmaid",
+			"name":"Chrome",
+			"value":20,
+		},
+		"slotType":"interrawt3_grillehighlight",
+		"flexbodies": [
+			["mesh", "[group]:", "nonFlexMaterials"],
+			{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
+			["interrawt3_grille_highlight_base", ["interrawt3_grille"], [], {"materialOverride":[["interrawt3_innerbody_plastic","interrawt3_innerbody_chrome"]]}],
+		],
+	},
 	// Deflector
 	"interrawt3_deflector_F":{
 		"information":{

@@ -165,9 +165,15 @@
     "Stages": [
       {
         "ambientOcclusionMap": "/vehicles/interrawt3/interrawt3_innerbody_ao.data.png",
+        "baseColorFactor": [
+          0.679252028,
+          0.679252028,
+          0.679252028,
+          1
+        ],
         "metallicFactor": 0.980000019,
         "normalMap": "/vehicles/interrawt3/interrawt3_innerbody_n.normal.png",
-        "roughnessFactor": 0.0769999996
+        "roughnessFactor": 0.319999993
       },
       {},
       {},

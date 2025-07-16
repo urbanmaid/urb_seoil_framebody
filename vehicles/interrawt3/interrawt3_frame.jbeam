@@ -37,16 +37,16 @@
         ["f16r", "f17r", "f16l", "upref", "f1l", "f1r"],
     ],
     "cameraChase":{
-        "distance":4.8,
+		"distance":5.0,
         "distanceMin":2,
         "defaultRotation":{"x":0,"y":-12,"z":0},
         "offset":{"x":0.552, "y":-0.10, "z":1.2},
         "fov":65,
 	},
 	"cameraExternal":{
-		"distance":4.8,
+		"distance":5.0,
 		"distanceMin":2,
-		"offset":{"x":0.552, "y":-0.10, "z":0.32},
+		"offset":{"x":0.552, "y":-0.10, "z":0.6},
 		"fov":65,
 	},
 	"camerasInternal":[
@@ -74,7 +74,7 @@
 		{"selfCollision":true},
 		{"collision":true},
 		//frame lower
-		{"nodeWeight":12.5},
+		{"nodeWeight":11.5},
 		{"group":"seoil_framebody_frame"},
 
 		// Front End
@@ -117,7 +117,7 @@
 		["f17l", 0.552,0.845,0.472],
 		["f17r",-0.552,0.845,0.472],
 
-		{"nodeWeight":11.5},
+		{"nodeWeight":10.5},
 		["f8l", 0.542,1.095,0.505],
 		["f8r",-0.542,1.095,0.505],
 		["f18l", 0.542,1.095,0.622],
@@ -139,7 +139,7 @@
 		["f20", 0.0,2.385,0.622],
 		["f20r",-0.542,2.385,0.622],
 
-		{"nodeWeight":16},
+		{"nodeWeight":14.5},
 		//top of shock/spring
 		{"collision":true},
 		{"selfCollision":true},

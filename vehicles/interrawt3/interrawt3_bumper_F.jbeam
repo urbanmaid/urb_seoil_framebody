@@ -20,7 +20,7 @@
 			{"selfCollision":true},
 			{"nodeMaterial":"|NM_PLASTIC"},
 
-			{"nodeWeight":2.0},
+			{"nodeWeight":1.8},
 			{"group":"interrawt3_bumper_F"},
 			["fb1rr",-0.817,-2.247,0.79],
 			["fb1r",-0.556,-2.411,0.79],
@@ -57,7 +57,7 @@
 			["id1:", "id2:"],
 			{"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
 			{"beamSpring":1880940,"beamDamp":180},
-			{"beamDeform":14140,"beamStrength":"FLT_MAX"},
+			{"beamDeform":12500,"beamStrength":"FLT_MAX"},
 			{"deformLimitExpansion":1.2},
 			
 			//BNEcolor: 255, 32, 0

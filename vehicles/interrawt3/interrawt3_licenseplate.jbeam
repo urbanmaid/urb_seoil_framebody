@@ -23,4 +23,16 @@
             ["licenseplate", ["interrawt3_tailgate"],[],{"pos":{"x":0.0, "y":2.4, "z":1.03}, "rot":{"x":0.0, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
         ],
     },
+    "interrawt3_licenseplate_T_sp_L": {
+        "information":{
+            "authors":"BeamNG",
+            "name":"Left Sparetire Fit Tailgate License Plate",
+            "value":0,
+        },
+        "slotType" : "interrawt3_licenseplate_T",
+        "flexbodies": [
+            ["mesh", "[group]:", "nonFlexMaterials"],
+            ["licenseplate", ["interrawt3_tailgate"],[],{"pos":{"x":-0.425, "y":2.4, "z":1.03}, "rot":{"x":0.0, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+        ],
+    },
 }

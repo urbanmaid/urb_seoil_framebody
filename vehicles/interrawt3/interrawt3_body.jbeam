@@ -226,7 +226,7 @@
 		["rf7rr", -0.67,1.969,1.828],
 
 		// QuarterPanel
-		{"nodeWeight":3.0},
+		{"nodeWeight":2.5},
 		{"group":"interrawt3_quarterpanel"},
 		// L
 		["q1l", 0.863,1.145,1.244],
@@ -253,7 +253,7 @@
 		["q8r", -0.84,2.255,0.632],
 
 		// Rear TB
-		{"nodeWeight":2.75},
+		{"nodeWeight":2.45},
 		{"group":"interrawt3_tailgatebase"},
 		["tb1ll", 0.716,2.368,1.26],
 		["tb1rr", -0.716,2.368,1.26],
@@ -271,7 +271,7 @@
 		["tb3rr", -0.728,2.368,0.721],
 
 		// Rigidifier Roof
-		{"nodeWeight":2.25},
+		{"nodeWeight":2.15},
 		{"group":""},
 		["rfrgd1", 0.0, 0.1, 1.4],
 		["rfrgd2", 0.0, 1.27, 1.4],

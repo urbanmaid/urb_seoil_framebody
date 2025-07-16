@@ -524,4 +524,43 @@
 			["interrawt3_lights_drl_R_glass", ["interrawt3_tailgate"]],
 		],
 	},
+	"interrawt3_lights_drlcover_R":{
+		"information":{
+			"authors":"Urbanmaid",
+			"name":"Rear DRL Cover (Plastic)",
+			"value":20,
+		},
+		"slotType":"interrawt3_lights_drl_R",
+		"flexbodies": [
+			["mesh", "[group]:", "nonFlexMaterials"],
+			{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
+			["interrawt3_lights_drlcover_R", ["interrawt3_tailgate"]],
+		],
+	},
+	"interrawt3_lights_drlcover_R_bc":{
+		"information":{
+			"authors":"Urbanmaid",
+			"name":"Rear DRL Cover (Body colored)",
+			"value":20,
+		},
+		"slotType":"interrawt3_lights_drl_R",
+		"flexbodies": [
+			["mesh", "[group]:", "nonFlexMaterials"],
+			{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
+			["interrawt3_lights_drlcover_R", ["interrawt3_tailgate"], [], {"materialOverride":[["interrawt3_innerbody_plastic","interrawt3_innerbody_painted"]]}],
+		],
+	},
+	"interrawt3_lights_drlcover_R_chrome":{
+		"information":{
+			"authors":"Urbanmaid",
+			"name":"Rear DRL Cover (Chrome)",
+			"value":20,
+		},
+		"slotType":"interrawt3_lights_drl_R",
+		"flexbodies": [
+			["mesh", "[group]:", "nonFlexMaterials"],
+			{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
+			["interrawt3_lights_drlcover_R", ["interrawt3_tailgate"], [], {"materialOverride":[["interrawt3_innerbody_plastic","interrawt3_innerbody_chrome"]]}],
+		],
+	},
 }
