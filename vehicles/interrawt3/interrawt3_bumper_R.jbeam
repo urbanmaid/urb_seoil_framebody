@@ -5,6 +5,10 @@
 			"name":"Rear Bumper",
 		},
 		"slotType":"interrawt3_bumper_R",
+		"slots": [
+			["type", "default", "description"],
+			["interrawt3_bumperguard_R","interrawt3_bumperguard_R_plastic","Front Bumper Guard"],
+		],
 		"flexbodies": [
 			["mesh", "[group]:", "nonFlexMaterials"],
 			{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
@@ -201,6 +205,32 @@
 			["rb1ll", "rb2ll", "rb2l"],
 			["rb2ll", "rb1ll", "rb3ll"],
 			["rb3ll", "rb4ll", "rb2ll"],
+		],
+	},
+	"interrawt3_bumperguard_R_plastic":{
+		"information":{
+			"authors":"Urbanmaid",
+			"name":"Plastic",
+			"value":20,
+		},
+		"slotType":"interrawt3_bumperguard_R",
+		"flexbodies": [
+			["mesh", "[group]:", "nonFlexMaterials"],
+			{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
+			["interrawt3_bumperguard_R", ["interrawt3_bumper_R"]],
+		],
+	},
+	"interrawt3_bumperguard_R_chrome":{
+		"information":{
+			"authors":"Urbanmaid",
+			"name":"Chrome",
+			"value":20,
+		},
+		"slotType":"interrawt3_bumperguard_R",
+		"flexbodies": [
+			["mesh", "[group]:", "nonFlexMaterials"],
+			{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
+			["interrawt3_bumperguard_R", ["interrawt3_bumper_R"], [], {"materialOverride":[["interrawt3_innerbody_plastic","interrawt3_innerbody_chrome"]]}],
 		],
 	},
 }
