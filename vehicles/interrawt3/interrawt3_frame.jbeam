@@ -27,7 +27,7 @@
         ["pickup_ESC", "pickup_ESC", "Electronic Stability & Traction Control"],
 		
 		["seoil_framebody_suspension_F", "seoil_framebody_IFS", "Front Suspension"],
-        ["seoil_framebody_suspension_R", "seoil_framebody_axle_R_4link", "Rear Suspension"],
+        ["seoil_framebody_suspension_R", "seoil_framebody_axle_R_5link", "Rear Suspension"],
 
         ["seoil_framebody_sparetire", "seoil_framebody_sparetire_6l", "Spare Tire"],
         ["interrawt3_interiorskin", "interrawt3_interiorskin_body", "Interior Skin"],

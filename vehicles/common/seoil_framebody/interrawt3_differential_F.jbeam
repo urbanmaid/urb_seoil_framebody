@@ -11,7 +11,7 @@
             ["type", "default", "description"],
             ["seoil_framebody_driveshaft_F","seoil_framebody_driveshaft_F","Front Driveshaft"],
             ["seoil_framebody_halfshafts_F","seoil_framebody_halfshafts_F","Front Halfshafts"],
-            ["seoil_framebody_finaldrive_F","seoil_framebody_finaldrive_F_380", "Front Final Drive", {"coreSlot":true}],
+            ["seoil_framebody_finaldrive_F","seoil_framebody_finaldrive_F_401", "Front Final Drive", {"coreSlot":true}],
         ],
         "flexbodies": [
             ["mesh", "[group]:", "nonFlexMaterials"],
@@ -89,7 +89,7 @@
             ["type", "default", "description"],
             ["seoil_framebody_driveshaft_F","seoil_framebody_driveshaft_F","Front Driveshaft"],
             ["seoil_framebody_halfshafts_F","seoil_framebody_halfshafts_F","Front Halfshafts"],
-            ["seoil_framebody_finaldrive_F","seoil_framebody_finaldrive_F_380", "Front Final Drive", {"coreSlot":true}],
+            ["seoil_framebody_finaldrive_F","seoil_framebody_finaldrive_F_401", "Front Final Drive", {"coreSlot":true}],
         ],
         "flexbodies": [
             ["mesh", "[group]:", "nonFlexMaterials"],
@@ -167,7 +167,7 @@
             ["type", "default", "description"],
             ["seoil_framebody_driveshaft_F","seoil_framebody_driveshaft_F","Front Driveshaft"],
             ["seoil_framebody_halfshafts_F","seoil_framebody_halfshafts_F","Front Halfshafts"],
-            ["seoil_framebody_finaldrive_F","seoil_framebody_finaldrive_F_380", "Front Final Drive", {"coreSlot":true}],
+            ["seoil_framebody_finaldrive_F","seoil_framebody_finaldrive_F_401", "Front Final Drive", {"coreSlot":true}],
         ],
         "flexbodies": [
             ["mesh", "[group]:", "nonFlexMaterials"],
@@ -245,7 +245,7 @@
             ["type", "default", "description"],
             ["seoil_framebody_driveshaft_F","seoil_framebody_driveshaft_F","Front Driveshaft"],
             ["seoil_framebody_halfshafts_F","seoil_framebody_halfshafts_F","Front Halfshafts"],
-            ["seoil_framebody_finaldrive_F","seoil_framebody_finaldrive_F_380", "Front Final Drive", {"coreSlot":true}],
+            ["seoil_framebody_finaldrive_F","seoil_framebody_finaldrive_F_401", "Front Final Drive", {"coreSlot":true}],
         ],
         "flexbodies": [
             ["mesh", "[group]:", "nonFlexMaterials"],

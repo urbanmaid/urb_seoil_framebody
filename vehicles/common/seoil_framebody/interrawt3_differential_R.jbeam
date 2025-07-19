@@ -9,7 +9,7 @@
         "slotType" : "seoil_framebody_differential_R",
         "slots": [
             ["type", "default", "description"],
-            ["seoil_framebody_finaldrive_R","seoil_framebody_finaldrive_R_380", "Rear Final Drive", {"coreSlot":true}],
+            ["seoil_framebody_finaldrive_R","seoil_framebody_finaldrive_R_401", "Rear Final Drive", {"coreSlot":true}],
         ],
         "powertrain" : [
             ["type", "name", "inputName", "inputIndex"],
@@ -31,7 +31,7 @@
         "slotType" : "seoil_framebody_differential_R",
         "slots": [
             ["type", "default", "description"],
-            ["seoil_framebody_finaldrive_R","seoil_framebody_finaldrive_R_380", "Rear Final Drive", {"coreSlot":true}],
+            ["seoil_framebody_finaldrive_R","seoil_framebody_finaldrive_R_401", "Rear Final Drive", {"coreSlot":true}],
         ],
         "powertrain" : [
             ["type", "name", "inputName", "inputIndex"],
@@ -53,7 +53,7 @@
         "slotType" : "seoil_framebody_differential_R",
         "slots": [
             ["type", "default", "description"],
-            ["seoil_framebody_finaldrive_R","seoil_framebody_finaldrive_R_380", "Rear Final Drive", {"coreSlot":true}],
+            ["seoil_framebody_finaldrive_R","seoil_framebody_finaldrive_R_401", "Rear Final Drive", {"coreSlot":true}],
         ],
         "powertrain" : [
             ["type", "name", "inputName", "inputIndex"],
@@ -75,7 +75,7 @@
         "slotType" : "seoil_framebody_differential_R",
         "slots": [
             ["type", "default", "description"],
-            ["seoil_framebody_finaldrive_R","seoil_framebody_finaldrive_R_380", "Rear Final Drive", {"coreSlot":true}],
+            ["seoil_framebody_finaldrive_R","seoil_framebody_finaldrive_R_401", "Rear Final Drive", {"coreSlot":true}],
         ],
         "powertrain" : [
             ["type", "name", "inputName", "inputIndex"],
@@ -102,7 +102,7 @@
             "gearRatio":3.55,
         },
     },
-    "seoil_framebody_finaldrive_R_393": {
+    "seoil_framebody_finaldrive_R_380": {
         "information":{
             "authors":"BeamNG",
             "name":"3.80:1 Rear Final Drive",

@@ -19,6 +19,8 @@
 		["interrawt3_fender_FR","interrawt3_fender_FR","Front Right Fender"],
 
 		["interrawt3_trim","interrawt3_trim","Trim"],
+		["interrawt3_trim_windows","","Windows Trim"],
+		["interrawt3_fenderflare","","Fender Flare Sets"],
 		["interrawt3_sideskirts","interrawt3_sideskirts","Sideskirts"],
 
 		// Lights and glass
@@ -58,13 +60,13 @@
 		{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
 		//body
 		["interrawt3_body", 
-		[
-			"interrawt3_floor", 
-			"interrawt3_fendersupport", 
-			"interrawt3_roof", 
-			"interrawt3_quarterpanel", 
-			"interrawt3_tailgatebase"
-		]
+			[
+				"interrawt3_floor", 
+				"interrawt3_fendersupport", 
+				"interrawt3_roof", 
+				"interrawt3_quarterpanel", 
+				"interrawt3_tailgatebase"
+			]
 		],
 	],
 	"nodes":[

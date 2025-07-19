@@ -7,7 +7,7 @@
 		"slotType":"interrawt3_bumper_F",
 		"slots": [
 			["type", "default", "description"],
-			["interrawt3_bumperguard_F","interrawt3_bumperguard_F_plastic","Front Bumper Guard"],
+			["interrawt3_bumperguard_F","interrawt3_bumperguard_F_plastic","Front Bumper Guard", {"coreSlot":true}],
 			["interrawt3_licenseplate_F","interrawt3_licenseplate_F","Front license plate"],
 		],
 		"flexbodies": [
@@ -230,7 +230,7 @@
 		"flexbodies": [
 			["mesh", "[group]:", "nonFlexMaterials"],
 			{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
-			["interrawt3_bumperguard_F", ["interrawt3_bumper_F"]],
+			["interrawt3_bumperguard_F", ["interrawt3_bumper_F"], [], {"materialOverride":[["interrawt3_innerbody_painted","interrawt3_innerbody_plastic"]]}],
 		],
 	},
 	"interrawt3_bumperguard_F_chrome":{
@@ -243,7 +243,7 @@
 		"flexbodies": [
 			["mesh", "[group]:", "nonFlexMaterials"],
 			{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
-			["interrawt3_bumperguard_F", ["interrawt3_bumper_F"], [], {"materialOverride":[["interrawt3_innerbody_plastic","interrawt3_innerbody_chrome"]]}],
+			["interrawt3_bumperguard_F", ["interrawt3_bumper_F"], [], {"materialOverride":[["interrawt3_innerbody_painted","interrawt3_innerbody_chrome"]]}],
 		],
 	},
 }

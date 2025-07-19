@@ -7,7 +7,8 @@
 		"slotType":"interrawt3_bumper_R",
 		"slots": [
 			["type", "default", "description"],
-			["interrawt3_bumperguard_R","interrawt3_bumperguard_R_plastic","Front Bumper Guard"],
+			["interrawt3_bumperguard_R","interrawt3_bumperguard_R_plastic","Rear Bumper Guard", {"coreSlot":true}],
+			["interrawt3_bumperguard_R_hitchcover","interrawt3_bumperguard_R_hitchcover","Rear Bumper Hitch Cover"],
 		],
 		"flexbodies": [
 			["mesh", "[group]:", "nonFlexMaterials"],
@@ -207,6 +208,19 @@
 			["rb3ll", "rb4ll", "rb2ll"],
 		],
 	},
+	"interrawt3_bumperguard_R_hitchcover":{
+		"information":{
+			"authors":"Urbanmaid",
+			"name":"Hitch Cover",
+			"value":20,
+		},
+		"slotType":"interrawt3_bumperguard_R_hitchcover",
+		"flexbodies": [
+			["mesh", "[group]:", "nonFlexMaterials"],
+			{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
+			["interrawt3_bumperguard_R_hitchcover", ["interrawt3_bumper_R"]],
+		],
+	},
 	"interrawt3_bumperguard_R_plastic":{
 		"information":{
 			"authors":"Urbanmaid",
@@ -217,7 +231,7 @@
 		"flexbodies": [
 			["mesh", "[group]:", "nonFlexMaterials"],
 			{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
-			["interrawt3_bumperguard_R", ["interrawt3_bumper_R"]],
+			["interrawt3_bumperguard_R", ["interrawt3_bumper_R"], [], {"materialOverride":[["interrawt3_innerbody_painted","interrawt3_innerbody_plastic"]]}],
 		],
 	},
 	"interrawt3_bumperguard_R_chrome":{
@@ -230,7 +244,7 @@
 		"flexbodies": [
 			["mesh", "[group]:", "nonFlexMaterials"],
 			{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
-			["interrawt3_bumperguard_R", ["interrawt3_bumper_R"], [], {"materialOverride":[["interrawt3_innerbody_plastic","interrawt3_innerbody_chrome"]]}],
+			["interrawt3_bumperguard_R", ["interrawt3_bumper_R"], [], {"materialOverride":[["interrawt3_innerbody_painted","interrawt3_innerbody_chrome"]]}],
 		],
 	},
 }

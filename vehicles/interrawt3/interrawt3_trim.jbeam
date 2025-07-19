@@ -20,4 +20,49 @@
 			["interrawt3_trim_bumper_R", ["interrawt3_bumper_R"]],
 		],
 	},
+	"interrawt3_trim_windows_chrome":{
+		"information":{
+			"authors":"Urbanmaid",
+			"name":"Chrome Windows Trim",
+			"value":20,
+		},
+		"slotType":"interrawt3_trim_windows",
+		"flexbodies": [
+			["mesh", "[group]:", "nonFlexMaterials"],
+			{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
+			["interrawt3_trim_window_door_FL", ["interrawt3_door_FL"]],
+			["interrawt3_trim_window_door_FR", ["interrawt3_door_FR"]],
+			["interrawt3_trim_window_door_RL", ["interrawt3_door_RL"]],
+			["interrawt3_trim_window_door_RR", ["interrawt3_door_RR"]],
+
+			["interrawt3_trim_window_body", 
+				[
+				"interrawt3_roof", 
+				"interrawt3_quarterpanel", 
+				"interrawt3_tailgatebase"
+				]
+			],
+		],
+	},
+	"interrawt3_fenderflare_offroad_plastic":{
+		"information":{
+			"authors":"Urbanmaid",
+			"name":"Offroad Plastic Fender Flares",
+			"value":400,
+		},
+		"slotType":"interrawt3_fenderflare",
+		"flexbodies": [
+			["mesh", "[group]:", "nonFlexMaterials"],
+			{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
+			["interrawt3_fenderflare_FL", ["interrawt3_fender_FL"]],
+			["interrawt3_fenderflare_FR", ["interrawt3_fender_FR"]],
+			["interrawt3_fenderflare_R", 
+				[
+				"interrawt3_floor", 
+				"interrawt3_quarterpanel", 
+				"interrawt3_tailgatebase"
+				]
+			],
+		],
+	},
 }

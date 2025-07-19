@@ -1,8 +1,9 @@
 {
-    "seoil_framebody_axle_R_4link": {
+// Base unit
+    "seoil_framebody_axle_R_5link": {
         "information":{
             "authors":"BeamNG",
-            "name":"3 Link Live Axle Rear Suspension",
+            "name":"5 Link Live Axle Rear Suspension",
             "value":4200,
         },
         "slotType" : "seoil_framebody_suspension_R",
@@ -24,24 +25,8 @@
             //rear axle
             ["seoil_framebody_axle_R", ["seoil_framebody_axle_R", "seoil_framebody_rearshockbottom"]],
             ["seoil_framebody_axlemounts_R_4link", ["seoil_framebody_axle_R", "seoil_framebody_rearshockbottom"]],
-
-            //["seoil_framebody_shocktop_R_4link", ["seoil_framebody_frame", "seoil_framebody_rearshocktop"]],
             ["seoil_framebody_trackbarmount_R_4link", ["seoil_framebody_frame"]],
 
-            //["seoil_framebody_lowermounts_R_4link_short", ["seoil_framebody_frame_short"]],
-            ["seoil_framebody_uppermounts_R_4link_short", ["seoil_framebody_frame_short"]],
-
-            //["seoil_framebody_lowermounts_R_4link", ["seoil_framebody_frame_standard", "seoil_framebody_frame_ext", "seoil_framebody_frame_crew"]],
-            ["seoil_framebody_uppermounts_R_4link", ["seoil_framebody_frame", "seoil_framebody_frame_ext", "seoil_framebody_frame_crew"]],
-
-            //["seoil_framebody_lowermounts_R_4link_longbed", ["seoil_framebody_frame_longbed", "seoil_framebody_frame_extlongbed", "seoil_framebody_frame_crewlongbed"]],
-            ["seoil_framebody_uppermounts_R_4link_longbed", ["seoil_framebody_frame_longbed", "seoil_framebody_frame_extlongbed", "seoil_framebody_frame_crewlongbed"]],
-
-            ["seoil_framebody_uppermounts_R_4link", ["seoil_framebody_frame_upfit"]],
-            //["seoil_framebody_lowermounts_R_4link_upfit", ["seoil_framebody_frame_upfit"]],
-
-            //["seoil_framebody_lowerlink_R_4link", ["seoil_framebody_lowerlinks_R"]],
-            ["seoil_framebody_upperlink_R_4link", ["seoil_framebody_trackbar_R", "seoil_framebody_upperlink_R"]],
             ["seoil_framebody_trackbar_R_4link", ["seoil_framebody_trackbar_R"]],
         ],
         "torsionbars": [
@@ -91,6 +76,7 @@
             ["axshl", 0.67000, 1.29300, 0.32000],
 
             //--REAR RUNNING GEAR
+            // Link mount is located in link Jbeam Object
 
             //shock mount
             {"collision":false},
@@ -99,12 +85,6 @@
             {"group":"seoil_framebody_rearshocktop"}
             ["rs2r", -0.66000, 1.20600, 0.66000],
             ["rs2l", 0.66000, 1.20600, 0.66000],
-
-            //upper link mount
-            {"nodeWeight":6.58},
-            ["rx2r", -0.48000, 1.0100, 0.47800, {"group":"seoil_framebody_upperlink_R"}],
-            ["rx2l", 0.48000, 1.0100, 0.47800, {"group":"seoil_framebody_upperlink_R"}],
-
 
             //trackbar mount
             {"nodeWeight":4.7},
@@ -390,6 +370,7 @@
                 {"brakeVentingCoef":false},
         ],
     },
+// Links
     "seoil_framebody_links_R_4link": {
         "information":{
             "authors":"BeamNG",
@@ -399,13 +380,13 @@
         "slotType" : "seoil_framebody_links_R_4link",
         "flexbodies": [
             ["mesh", "[group]:", "nonFlexMaterials"],
-
-            //["seoil_framebody_lowermounts_R_4link_short", ["seoil_framebody_frame_short"]],
-            ["seoil_framebody_lowermounts_R_4link", ["seoil_framebody_frame", "seoil_framebody_frame_ext", "seoil_framebody_frame_crew"]],
-            //["seoil_framebody_lowermounts_R_4link_longbed", ["seoil_framebody_frame_longbed", "seoil_framebody_frame_extlongbed", "seoil_framebody_frame_crewlongbed"]],
-            //["seoil_framebody_lowermounts_R_4link_upfit", ["seoil_framebody_frame_upfit"]],
-
+            // Lower
+            ["seoil_framebody_lowermounts_R_4link", ["seoil_framebody_frame"]],
             ["seoil_framebody_lowerlink_R_4link", ["seoil_framebody_lowerlinks_R"]],
+
+            // Upper
+            ["seoil_framebody_uppermounts_R_4link", ["seoil_framebody_frame"]],
+            ["seoil_framebody_upperlink_R_4link", ["seoil_framebody_trackbar_R", "seoil_framebody_upperlink_R"]],
         ],
         "nodes": [
             ["id", "posX", "posY", "posZ"],
@@ -414,6 +395,11 @@
             {"collision":true},
             {"selfCollision":false},
 
+            //upper link mount
+            {"nodeWeight":6.58},
+            ["rx2r", -0.48000, 1.0100, 0.47800, {"group":"seoil_framebody_upperlink_R"}],
+            ["rx2l", 0.48000, 1.0100, 0.47800, {"group":"seoil_framebody_upperlink_R"}],
+            
             //lower link mounts
             {"nodeWeight":9.4},
             {"group":["seoil_framebody_lowerlinks_R", "seoil_framebody_trackbar_R"]}
@@ -438,19 +424,19 @@
     "seoil_framebody_links_R_4link_offroad": {
         "information":{
             "authors":"BeamNG",
-            "name":"Long Links",
+            "name":"Offroad Compatible Long Links",
             "value":550,
         },
         "slotType" : "seoil_framebody_links_R_4link",
         "flexbodies": [
             ["mesh", "[group]:", "nonFlexMaterials"],
-            ["seoil_framebody_linkguards_R", ["seoil_framebody_frame_standard", "seoil_framebody_frame_ext", "seoil_framebody_frame_crew", "seoil_framebody_frame_short"]],
-            ["seoil_framebody_linkguards_R_longbed", ["seoil_framebody_frame_longbed", "seoil_framebody_frame_extlongbed", "seoil_framebody_frame_crewlongbed"]],
-            ["seoil_framebody_lowermounts_R_4link_offroad", ["seoil_framebody_frame_standard", "seoil_framebody_frame_ext", "seoil_framebody_frame_crew", "seoil_framebody_frame_short"]],
-            ["seoil_framebody_lowermounts_R_4link_offroad_longbed", ["seoil_framebody_frame_longbed", "seoil_framebody_frame_extlongbed", "seoil_framebody_frame_crewlongbed"]],
-            ["seoil_framebody_lowermounts_R_4link_offroad_upfit", ["seoil_framebody_frame_upfit"]],
-
+            // Lower
+            ["seoil_framebody_lowermounts_R_4link_offroad", ["seoil_framebody_frame"]],
             ["seoil_framebody_lowerlink_R_4link_offroad", ["seoil_framebody_lowerlinks_R"]],
+
+            // Upper
+            ["seoil_framebody_uppermounts_R_4link_offroad", ["seoil_framebody_frame"]],
+            ["seoil_framebody_upperlink_R_4link_offroad", ["seoil_framebody_trackbar_R", "seoil_framebody_upperlink_R"]],
         ],
         "nodes": [
             ["id", "posX", "posY", "posZ"],
@@ -459,11 +445,16 @@
             {"collision":true},
             {"selfCollision":false},
 
+            //upper link mount
+            {"nodeWeight":6.58},
+            ["rx2r", -0.48000, 0.86000, 0.35800, {"group":"seoil_framebody_upperlink_R"}],
+            ["rx2l", 0.48000, 0.86000, 0.35800, {"group":"seoil_framebody_upperlink_R"}],
+
             //lower link mounts
             {"nodeWeight":9.4},
             {"group":["seoil_framebody_lowerlinks_R", "seoil_framebody_trackbar_R"]}
-            ["rx1r", -0.52, 0.40, 0.30],
-            ["rx1l", 0.52, 0.40, 0.30],
+            ["rx1r", -0.52, 0.44, 0.315],
+            ["rx1l", 0.52, 0.44, 0.315],
             {"group":""},
         ],
         "beams": [
@@ -480,6 +471,7 @@
             {"deformLimitExpansion":1.2},
         ],
     },
+// Coilovers
     "seoil_framebody_coilover_R": {
         "information":{
             "authors":"BeamNG",
