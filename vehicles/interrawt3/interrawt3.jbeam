@@ -97,6 +97,12 @@
             "on":"interrawt3_lights_on",
             "on_intense":"interrawt3_lights_on_intense"
         },
+        "interrawt3_foglight": {
+            "simpleFunction": {"fog":1.0},
+            "off":"interrawt3_lights",
+            "on":"interrawt3_lights_on",
+            "on_intense":"interrawt3_lights_on_intense"
+        },
 
         // Interior
         "interrawt3_gauges": {
