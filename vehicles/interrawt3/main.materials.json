@@ -435,5 +435,127 @@
     "translucent": true,
     "translucentBlendOp": "None",
     "version": 1.5
+  },
+
+  "interrawt3_brakelight": {
+    "name": "interrawt3_brakelight",
+    "mapTo": "interrawt3_brakelight",
+    "class": "Material",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  "interrawt3_chmsl": {
+    "name": "interrawt3_chmsl",
+    "mapTo": "interrawt3_chmsl",
+    "class": "Material",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  "interrawt3_foglight": {
+    "name": "interrawt3_foglight",
+    "mapTo": "interrawt3_foglight",
+    "class": "Material",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  "interrawt3_lowhighbeam": {
+    "name": "interrawt3_lowhighbeam",
+    "mapTo": "interrawt3_lowhighbeam",
+    "class": "Material",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  "interrawt3_reverselight": {
+    "name": "interrawt3_reverselight",
+    "mapTo": "interrawt3_reverselight",
+    "class": "Material",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  "interrawt3_runninglight": {
+    "name": "interrawt3_runninglight",
+    "mapTo": "interrawt3_runninglight",
+    "class": "Material",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  "interrawt3_signal_L": {
+    "name": "interrawt3_signal_L",
+    "mapTo": "interrawt3_signal_L",
+    "class": "Material",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  "interrawt3_signal_R": {
+    "name": "interrawt3_signal_R",
+    "mapTo": "interrawt3_signal_R",
+    "class": "Material",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  "interrawt3_signal_FL": {
+    "name": "interrawt3_signal_FL",
+    "mapTo": "interrawt3_signal_FL",
+    "class": "Material",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  "interrawt3_signal_FR": {
+    "name": "interrawt3_signal_FR",
+    "mapTo": "interrawt3_signal_FR",
+    "class": "Material",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  "interrawt3_taillight": {
+    "name": "interrawt3_taillight",
+    "mapTo": "interrawt3_taillight",
+    "class": "Material",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ]
   }
 }

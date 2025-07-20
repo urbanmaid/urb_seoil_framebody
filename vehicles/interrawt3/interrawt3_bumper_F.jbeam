@@ -9,6 +9,7 @@
 			["type", "default", "description"],
 			["interrawt3_bumperguard_F","interrawt3_bumperguard_F_plastic","Front Bumper Guard", {"coreSlot":true}],
 			["interrawt3_licenseplate_F","interrawt3_licenseplate_F","Front license plate"],
+			["interrawt3_foglights_F","interrawt3_foglights_F","Front Fog Lights"],
 		],
 		"flexbodies": [
 			["mesh", "[group]:", "nonFlexMaterials"],
