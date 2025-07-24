@@ -29,6 +29,10 @@
 		["seoil_framebody_suspension_F", "seoil_framebody_IFS", "Front Suspension"],
         ["seoil_framebody_suspension_R", "seoil_framebody_axle_R_5link", "Rear Suspension"],
 
+		// Misc
+		["seoil_framebody_skidplate_F", "", "Front Skidplate"],
+        ["seoil_framebody_skidplate_R", "", "Rear Skidplate"],
+
         ["seoil_framebody_sparetire", "seoil_framebody_sparetire_6l", "Spare Tire"],
         ["interrawt3_interiorskin", "interrawt3_interiorskin_body", "Interior Skin"],
     ],

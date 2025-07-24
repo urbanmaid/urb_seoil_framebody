@@ -1,0 +1,26 @@
+{
+    "seoil_framebody_skidplate_F_color": {
+        "information":{
+            "authors":"Urbanmaid",
+            "name":"Third Color Pallete Front Skidplate",
+            "value":250,
+        },
+        "slotType" : "seoil_framebody_skidplate_F",
+        "flexbodies": [
+            ["mesh", "[group]:", "nonFlexMaterials"],
+            ["seoil_framebody_skidplate_F_color", ["seoil_framebody_frame"]],
+        ],
+    },
+    "seoil_framebody_skidplate_R_color": {
+        "information":{
+            "authors":"Urbanmaid",
+            "name":"Third Color Pallete Rear Skidplate",
+            "value":250,
+        },
+        "slotType" : "seoil_framebody_skidplate_R",
+        "flexbodies": [
+            ["mesh", "[group]:", "nonFlexMaterials"],
+            ["seoil_framebody_skidplate_R_color", ["seoil_framebody_frame"]],
+        ],
+    },
+}
