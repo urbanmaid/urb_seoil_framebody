@@ -1412,6 +1412,7 @@
             ["e3r", "f14l"],
             {"breakGroup":""},
 
+            /*
             {"beamType":"|BOUNDED", "beamLongBound":0.025, "beamShortBound":0.025},
             {"beamSpring":20000,"beamDamp":50},
             {"beamLimitSpring":1001000,"beamLimitDamp":200},
@@ -1422,6 +1423,7 @@
             ["airb1r", "f12r"],
             ["airb1r", "f2r"],
             {"deformGroup":""}
+            */
             {"deformLimitExpansion":1.2},
             {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
         ],

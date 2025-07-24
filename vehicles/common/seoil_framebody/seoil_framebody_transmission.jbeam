@@ -110,7 +110,7 @@
     },
     "flexbodies": [
         ["mesh", "[group]:", "nonFlexMaterials"],
-        ["gavril_v8_seoil_framebody_transmission", ["seoil_framebody_engine","seoil_framebody_transmission"]],
+        ["seoil_transmission_longitudinal", ["seoil_framebody_engine","seoil_framebody_transmission"]],
     ],
     "nodes": [
          ["id", "posX", "posY", "posZ"],

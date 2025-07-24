@@ -695,7 +695,7 @@
         ],
         "variables": [
             ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
-            ["$springheight_R3", "range", "+m", "Suspension", 0, -0.1, 0.08, "Spring Height", "Raise or lower the suspension height", {"stepDis":0.005, "subCategory":"Rear"}],
+            ["$springheight_R3", "range", "+m", "Suspension", 0, -0.1, 0.05, "Spring Height", "Raise or lower the suspension height", {"stepDis":0.005, "subCategory":"Rear"}],
             ["$spring_R3", "range", "N/m", "Suspension", 30000, 10000, 90000, "Spring Rate", "Spring stiffness", {"stepDis":500, "subCategory":"Rear"}]
             ["$damp_bump_R3", "range", "N/m/s", "Suspension", 4000, 500, 10000, "Bump Damping", "Damper rate in slow compression", {"stepDis":100, "subCategory":"Rear"}]
             ["$damp_bump_R3_fast", "range", "N/m/s", "Suspension", 9000, 500, 15000, "Fast Bump Damping", "Damper rate in fast compression", {"stepDis":100, "subCategory":"Rear"}]
@@ -728,9 +728,9 @@
             {"beamPrecompression":1, "beamType":"|NORMAL"},
             {"beamDeform":77000,"beamStrength":280000},
             {"beamSpring":"$spring_R3","beamDamp":0},
-            ["axshr","rs2r", {"precompressionRange":"$=$springheight_R3 + 0.3","beamPrecompressionTime":0.1,
+            ["axshr","rs2r", {"precompressionRange":"$=$springheight_R3 + 0.225","beamPrecompressionTime":0.1,
                 "soundFile":"event:>Vehicle>Suspension>seoil_framebody_01>spring_compress_01","colorFactor":0.5,"attackFactor":10,"volumeFactor":3.6,"decayFactor":11,"noiseFactor":0.01,"pitchFactor":0.4,"maxStress":15000}],
-            ["axshl","rs2l", {"precompressionRange":"$=$springheight_R3 + 0.3","beamPrecompressionTime":0.1,
+            ["axshl","rs2l", {"precompressionRange":"$=$springheight_R3 + 0.225","beamPrecompressionTime":0.1,
                 "soundFile":"event:>Vehicle>Suspension>seoil_framebody_01>spring_compress_01","colorFactor":0.5,"attackFactor":10,"volumeFactor":3.6,"decayFactor":11,"noiseFactor":0.01,"pitchFactor":0.4,"maxStress":15000}],
 
             //--REAR SHOCKS--

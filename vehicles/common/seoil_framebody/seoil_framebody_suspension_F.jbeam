@@ -420,40 +420,6 @@
         ],
     },
 // Coilovers
-    "seoil_framebody_coilover_IFS_base": {
-        "information":{
-            "authors":"BeamNG",
-            "name":"Base Front Coilovers",
-            "value":200,
-        },
-        "slotType" : "seoil_framebody_coilover_IFS",
-        "flexbodies": [
-            ["mesh", "[group]:", "nonFlexMaterials"],
-            ["seoil_framebody_coilover_F", ["seoil_framebody_shockbottom","seoil_framebody_shocktop"]],
-        ],
-        "beams": [
-            ["id1:", "id2:"],
-            //front springs
-            {"beamType":"|NORMAL"},
-            {"beamDeform":56000,"beamStrength":245000},
-            {"beamSpring":93940,"beamDamp":0},
-            ["fh7l","fs1l", {"beamPrecompressionTime":0.1,"precompressionRange":0.102,
-                "soundFile":"event:>Vehicle>Suspension>seoil_framebody_01>spring_compress_01","colorFactor":0.5,"attackFactor":10,"volumeFactor":1.8,"decayFactor":8,"noiseFactor":0.01,"pitchFactor":0.2,"maxStress":400}],
-            ["fh7r","fs1r", {"beamPrecompressionTime":0.1,"precompressionRange":0.102,
-                "soundFile":"event:>Vehicle>Suspension>seoil_framebody_01>spring_compress_01","colorFactor":0.5,"attackFactor":10,"volumeFactor":1.8,"decayFactor":8,"noiseFactor":0.01,"pitchFactor":0.2,"maxStress":400}],
-            //dampers
-            {"beamPrecompression":1, "beamType":"|BOUNDED", "beamLongBound":1, "beamShortBound":1},
-            {"beamSpring":0,"beamDamp":8460},
-            ["fh7l","fs1l", {"beamDampFast":4500,"beamDampRebound":18000,"beamDampReboundFast":10000,"beamDampVelocitySplit":0.1,"dampCutoffHz":500}],//acting at hub
-            ["fh7r","fs1r", {"beamDampFast":4500,"beamDampRebound":18000,"beamDampReboundFast":10000,"beamDampVelocitySplit":0.1,"dampCutoffHz":500}],
-            //bumpstops
-            {"beamLimitSpring":251000,"beamLimitDamp":10000},
-            {"beamSpring":0,"beamDamp":0},
-            ["fh3l","fs1l", {"longBoundRange":0.1,"shortBoundRange":0.11,"boundZone":0.04,"beamLimitDampRebound":0,"dampCutoffHz":500}],
-            ["fh3r","fs1r", {"longBoundRange":0.1,"shortBoundRange":0.11,"boundZone":0.04,"beamLimitDampRebound":0,"dampCutoffHz":500}],
-            {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
-        ],
-    },
     "seoil_framebody_coilover_IFS": {
         "information":{
             "authors":"BeamNG",
@@ -679,6 +645,48 @@
             {"beamSpring":0,"beamDamp":0},
             ["fh3l","fs1l", {"longBoundRange":0.12,"shortBoundRange":0.10,"boundZone":0.04,"beamLimitDampRebound":0,"dampCutoffHz":500}],
             ["fh3r","fs1r", {"longBoundRange":0.12,"shortBoundRange":0.10,"boundZone":0.04,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+            {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+        ],
+    },
+    "seoil_framebody_coilover_IFS_offroad": {
+        "information":{
+            "authors":"BeamNG",
+            "name":"Off-Road Front Coilovers",
+            "value":1250,
+        },
+        "slotType" : "seoil_framebody_coilover_IFS",
+        "flexbodies": [
+            ["mesh", "[group]:", "nonFlexMaterials"],
+            ["seoil_framebody_coilover_F_race", ["seoil_framebody_shockbottom","seoil_framebody_shocktop"]],
+            ["seoil_framebody_shocktop_F_race", ["seoil_framebody_frame", "seoil_framebody_shocktop"]],
+        ],
+        "variables": [
+            ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+            ["$springheight_F", "range", "+m", "Suspension", 0, -0.1, 0.05, "Spring Height", "Raise or lower the suspension height", {"stepDis":0.005, "subCategory":"Front"}],
+            ["$spring_F", "range", "N/m", "Suspension", 140000, 75000, 200000, "Spring Rate", "Spring stiffness", {"stepDis":1000, "subCategory":"Front"}]
+            ["$damp_bump_F", "range", "N/m/s", "Suspension", 9000, 1000, 25000, "Bump Damping", "Damper rate in compression", {"stepDis":100, "subCategory":"Front"}]
+            ["$damp_rebound_F", "range", "N/m/s", "Suspension", 9000, 1000, 25000, "Rebound Damping", "Damper rate in extension", {"stepDis":100, "subCategory":"Front"}]
+        ],
+        "beams": [
+            ["id1:", "id2:"],
+            //front springs and shocks
+            {"beamType":"|NORMAL"},
+            {"beamDeform":56000,"beamStrength":245000},
+            {"beamSpring":"$spring_F","beamDamp":0},
+            ["fh7l","fs1l", {"beamPrecompressionTime":0.1,"precompressionRange":"$=($springheight_F+0.225)*0.6",
+                "soundFile":"event:>Vehicle>Suspension>seoil_framebody_01>spring_compress_01","colorFactor":0.5,"attackFactor":20,"volumeFactor":1.9,"decayFactor":20,"noiseFactor":0.01,"pitchFactor":0.5,"maxStress":16000}],
+            ["fh7r","fs1r", {"beamPrecompressionTime":0.1,"precompressionRange":"$=($springheight_F+0.225)*0.6",
+                "soundFile":"event:>Vehicle>Suspension>seoil_framebody_01>spring_compress_01","colorFactor":0.5,"attackFactor":20,"volumeFactor":1.9,"decayFactor":20,"noiseFactor":0.01,"pitchFactor":0.5,"maxStress":13000}],
+            //dampers
+            {"beamPrecompression":1, "beamType":"|BOUNDED", "beamLongBound":1, "beamShortBound":1},
+            {"beamSpring":0,"beamDamp":9400},
+            ["fh7r","fs1r", {"beamDampRebound":"$damp_rebound_F","beamDampVelocitySplit":0.25,"beamDampFast":"$=$damp_bump_F / 3","beamDampReboundFast":"$=$damp_rebound_F / 3","dampCutoffHz":400}],
+            ["fh7l","fs1l", {"beamDampRebound":"$damp_rebound_F","beamDampVelocitySplit":0.25,"beamDampFast":"$=$damp_bump_F / 3","beamDampReboundFast":"$=$damp_rebound_F / 3","dampCutoffHz":400}],
+            //bumpstops
+            {"beamLimitSpring":251000,"beamLimitDamp":10000},
+            {"beamSpring":0,"beamDamp":0},
+            ["fh3l","fs1l", {"longBoundRange":0.10,"shortBoundRange":0.105,"boundZone":0.04,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+            ["fh3r","fs1r", {"longBoundRange":0.10,"shortBoundRange":0.105,"boundZone":0.04,"beamLimitDampRebound":0,"dampCutoffHz":500}],
             {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
         ],
     },
@@ -1056,6 +1064,10 @@
 			"value":0,
 		},
 		"slotType":"seoil_framebody_upperarm_F",
+        "variables": [
+            ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+            ["$armlength_upper_F", "range", "m", "Suspension", 0.005, 0.0, 0.05, "Additional Upper Arm Length", "Sets the upper arm length elongation", {"stepDis":0.001, "subCategory":"Front"}],
+        ],
         "beams": [
             ["id1:","id2:"],
             {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
@@ -1064,10 +1076,10 @@
             {"beamDeform":96000,"beamStrength":280000},
 
             // Upper Arm
-            ["fh2l","fx3l", {"beamPrecompression":"$=$camber_FR+0.0525","beamPrecompressionTime":0.5,"dampCutoffHz":500,"tag":"susp_FL"}],
-            ["fh2l","fx4l", {"beamPrecompression":"$=$camber_FR+0.0525","beamPrecompressionTime":0.5,"dampCutoffHz":500,"tag":"susp_FL"}],
-            ["fh2r","fx3r", {"beamPrecompression":"$=$camber_FR+0.0525","beamPrecompressionTime":0.5,"dampCutoffHz":500,"tag":"susp_FR"}],
-            ["fh2r","fx4r", {"beamPrecompression":"$=$camber_FR+0.0525","beamPrecompressionTime":0.5,"dampCutoffHz":500,"tag":"susp_FR"}],
+            ["fh2l","fx3l", {"beamPrecompression":"$=$camber_FR+$armlength_upper_F","beamPrecompressionTime":0.5,"dampCutoffHz":500,"tag":"susp_FL"}],
+            ["fh2l","fx4l", {"beamPrecompression":"$=$camber_FR+$armlength_upper_F","beamPrecompressionTime":0.5,"dampCutoffHz":500,"tag":"susp_FL"}],
+            ["fh2r","fx3r", {"beamPrecompression":"$=$camber_FR+$armlength_upper_F","beamPrecompressionTime":0.5,"dampCutoffHz":500,"tag":"susp_FR"}],
+            ["fh2r","fx4r", {"beamPrecompression":"$=$camber_FR+$armlength_upper_F","beamPrecompressionTime":0.5,"dampCutoffHz":500,"tag":"susp_FR"}],
 
             {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
             {"deformLimitExpansion":1.2},
