@@ -9,11 +9,13 @@
 			["type", "default", "description"],
 			["interrawt3_bumperguard_R","interrawt3_bumperguard_R_plastic","Rear Bumper Guard", {"coreSlot":true}],
 			["interrawt3_bumperguard_R_hitchcover","interrawt3_bumperguard_R_hitchcover","Rear Bumper Hitch Cover"],
+			["interrawt3_towhook_R","","Rear Tow Hook"],
 		],
 		"flexbodies": [
 			["mesh", "[group]:", "nonFlexMaterials"],
 			{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
 			["interrawt3_bumper_R", ["interrawt3_bumper_R"]],
+			["interrawt3_bumpersupport_R", ["seoil_framebody_frame"]],
 		],
 		"nodes":[
 			["id", "posX", "posY", "posZ"],
@@ -208,6 +210,7 @@
 			["rb3ll", "rb4ll", "rb2ll"],
 		],
 	},
+// Guards
 	"interrawt3_bumperguard_R_hitchcover":{
 		"information":{
 			"authors":"Urbanmaid",
@@ -245,6 +248,18 @@
 			["mesh", "[group]:", "nonFlexMaterials"],
 			{"rot":{"x":0, "y":0, "z":0}, "pos":{"x":0, "y":0, "z":0}},
 			["interrawt3_bumperguard_R", ["interrawt3_bumper_R"], [], {"materialOverride":[["interrawt3_innerbody_painted","interrawt3_innerbody_chrome"]]}],
+		],
+	},
+// Hook
+	"interrawt3_towhook_R":{
+		"information":{
+			"authors":"Urbanmaid",
+			"name":"Front Tow Hook",
+		},
+		"slotType":"interrawt3_towhook_R",
+		"flexbodies": [
+			["mesh", "[group]:", "nonFlexMaterials"],
+			["interrawt3_towhook_R", ["seoil_framebody_frame"]],
 		],
 	},
 }
